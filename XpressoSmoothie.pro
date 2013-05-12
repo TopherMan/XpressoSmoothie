@@ -1,4 +1,4 @@
-update=Sun 12 May 2013 02:09:48 PM EDT
+update=Sun 12 May 2013 06:00:16 PM EDT
 version=1
 last_client=eeschema
 [cvpcb]
@@ -108,3 +108,4 @@ LibName35=KiCAD_Libraries/walter/eesch/w_microcontrollers
 LibName36=KiCAD_Libraries/walter/eesch/w_opto
 LibName37=KiCAD_Libraries/walter/eesch/w_rtx
 LibName38=KiCAD_Libraries/library/pololu_a4988x
+LibName39=KiCAD_Libraries/library/RMC
