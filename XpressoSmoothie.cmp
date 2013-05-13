@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Mon 13 May 2013 01:23:56 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Mon 13 May 2013 07:46:25 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -158,7 +158,7 @@ BeginCmp
 TimeStamp = /518FF715;
 Reference = J3;
 ValeurCmp = HEADER_7;
-IdModule  = ;
+IdModule  = PIN_ARRAY_7X1;
 EndCmp
 
 BeginCmp
@@ -176,10 +176,10 @@ IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FE61F;
+TimeStamp = /519131B7;
 Reference = J6;
-ValeurCmp = LPCXpresso_1769_Header;
-IdModule  = ;
+ValeurCmp = LPCXPRESSO_GENERIC_HEADER;
+IdModule  = LPCXPRESS0_GENERIC;
 EndCmp
 
 BeginCmp
@@ -228,7 +228,7 @@ BeginCmp
 TimeStamp = /518FFBEF;
 Reference = J13;
 ValeurCmp = HEADER_6;
-IdModule  = ;
+IdModule  = PIN_ARRAY-6X1;
 EndCmp
 
 BeginCmp
@@ -564,14 +564,14 @@ BeginCmp
 TimeStamp = /518FF94A;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
-IdModule  = ;
+IdModule  = SW_PUSH_SMALL;
 EndCmp
 
 BeginCmp
 TimeStamp = /518FF94F;
 Reference = SW2;
 ValeurCmp = SW_PUSH;
-IdModule  = ;
+IdModule  = SW_PUSH_SMALL;
 EndCmp
 
 BeginCmp
