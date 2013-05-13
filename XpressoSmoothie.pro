@@ -1,4 +1,4 @@
-update=Mon 13 May 2013 01:16:56 PM EDT
+update=Mon 13 May 2013 02:01:52 PM EDT
 version=1
 last_client=pcbnew
 [general]
@@ -97,7 +97,7 @@ TxtLar=120
 MSegLar=150
 LastNetListRead=
 [pcbnew/libraries]
-LibDir=KiCAD_Libraries/modules/nicholasclewis;KiCAD_Libraries/walter/pcbnew;KiCAD_Libraries/modules
+LibDir=KiCAD_Libraries/modules/nicholasclewis;KiCAD_Libraries/walter/pcbnew;KiCAD_Libraries/modules;KiCAD_Libraries/Chris
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -113,3 +113,4 @@ LibName12=arduino_shields
 LibName13=opendous
 LibName14=RMC
 LibName15=USBMICRO
+LibName16=custom_footprints
