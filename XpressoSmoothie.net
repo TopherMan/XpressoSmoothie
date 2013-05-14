@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Mon 13 May 2013 07:46:25 PM EDT
+# EESchema Netlist Version 1.1 created  Mon 13 May 2013 08:17:17 PM EDT
 (
  ( /51911758 c_elec_6.3x7.7 C1 100u
   ( 1 +12V )
@@ -72,11 +72,11 @@
   ( 1 N-000007 )
   ( 2 N-000106 )
  )
- ( /51900D2D $noname$ F1 FUSE
+ ( /51900D2D MF-R1100 F1 FUSE
   ( 1 N-000001 )
   ( 2 +12P )
  )
- ( /51900D31 $noname$ F2 FUSE
+ ( /51900D31 MF-R500 F2 FUSE
   ( 1 N-000003 )
   ( 2 +12V )
  )

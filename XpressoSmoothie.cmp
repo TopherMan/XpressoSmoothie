@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Mon 13 May 2013 07:46:25 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Mon 13 May 2013 08:17:17 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -130,14 +130,14 @@ BeginCmp
 TimeStamp = /51900D2D;
 Reference = F1;
 ValeurCmp = FUSE;
-IdModule  = ;
+IdModule  = MF-R1100;
 EndCmp
 
 BeginCmp
 TimeStamp = /51900D31;
 Reference = F2;
 ValeurCmp = FUSE;
-IdModule  = ;
+IdModule  = MF-R500;
 EndCmp
 
 BeginCmp
