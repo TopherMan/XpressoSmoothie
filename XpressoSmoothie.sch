@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Tue 14 May 2013 03:20:14 PM EDT
+EESchema Schematic File Version 2  date Tue 14 May 2013 05:12:31 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -54,6 +54,20 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 2800 3550
+Wire Wire Line
+	2900 3550 2800 3550
+Wire Wire Line
+	2900 3150 2800 3150
+Wire Wire Line
+	2800 3150 2800 4300
+Wire Wire Line
+	2900 3450 2050 3450
+Connection ~ 2650 3250
+Wire Wire Line
+	700  2200 900  2200
+Wire Wire Line
+	700  2300 900  2300
 Connection ~ 2650 850 
 Wire Wire Line
 	2700 850  2650 850 
@@ -86,8 +100,6 @@ Connection ~ 6500 3600
 Wire Wire Line
 	5100 3600 7300 3600
 Wire Wire Line
-	850  2250 700  2250
-Wire Wire Line
 	2350 2200 2100 2200
 Wire Wire Line
 	2350 2100 2100 2100
@@ -110,8 +122,6 @@ Wire Wire Line
 	4850 4400 4750 4400
 Wire Wire Line
 	2150 1650 2350 1650
-Wire Wire Line
-	900  1550 700  1550
 Wire Wire Line
 	2350 1450 2150 1450
 Wire Wire Line
@@ -314,9 +324,6 @@ Wire Wire Line
 	750  1750 900  1750
 Wire Wire Line
 	750  1650 900  1650
-Connection ~ 2800 3750
-Wire Wire Line
-	2800 3550 2900 3550
 Connection ~ 2400 4200
 Wire Wire Line
 	2400 4100 2400 4200
@@ -342,8 +349,6 @@ Wire Wire Line
 	2200 3650 2200 3550
 Wire Wire Line
 	2200 3550 1900 3550
-Wire Wire Line
-	2900 3450 2050 3450
 Wire Wire Line
 	2250 2300 2100 2300
 Wire Wire Line
@@ -816,10 +821,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 1850 4050 2450
 Wire Wire Line
-	2050 3650 2900 3650
-Wire Wire Line
-	2700 3250 2900 3250
-Wire Wire Line
 	1900 3350 2200 3350
 Wire Wire Line
 	2200 3350 2200 3450
@@ -833,21 +834,11 @@ Wire Wire Line
 	2150 3700 2150 3650
 Connection ~ 2150 3650
 Wire Wire Line
-	2650 3700 2650 3250
-Wire Wire Line
-	2650 3250 2050 3250
-Connection ~ 2700 3250
+	2650 3250 2650 3700
 Wire Wire Line
 	2650 4200 2650 4100
 Connection ~ 2650 4200
-Wire Wire Line
-	2800 3750 2900 3750
 Connection ~ 2800 4200
-Wire Wire Line
-	2800 4300 2800 3350
-Wire Wire Line
-	2800 3350 2900 3350
-Connection ~ 2800 3550
 Wire Wire Line
 	850  1700 750  1700
 Wire Wire Line
@@ -930,8 +921,6 @@ Wire Wire Line
 Wire Wire Line
 	2100 1500 2350 1500
 Wire Wire Line
-	700  1500 850  1500
-Wire Wire Line
 	4750 4250 4850 4250
 Wire Wire Line
 	4750 4500 4750 4600
@@ -956,10 +945,6 @@ Wire Wire Line
 	2350 2050 2150 2050
 Wire Wire Line
 	2350 2150 2150 2150
-Wire Wire Line
-	700  2200 900  2200
-Wire Wire Line
-	700  2300 900  2300
 Wire Wire Line
 	6050 3500 6350 3500
 Wire Wire Line
@@ -992,6 +977,19 @@ Wire Wire Line
 Wire Wire Line
 	3450 850  3450 950 
 Connection ~ 3450 950 
+Wire Wire Line
+	2350 2250 2150 2250
+Wire Wire Line
+	850  2350 700  2350
+Wire Wire Line
+	850  2250 700  2250
+Wire Wire Line
+	2900 3250 2050 3250
+Wire Wire Line
+	2900 3650 2050 3650
+Wire Wire Line
+	2900 3350 2800 3350
+Connection ~ 2800 3350
 $Comp
 L R R29
 U 1 1 51928DC0
@@ -1132,17 +1130,17 @@ Text GLabel 700  1850 0    30   Input ~ 0
 XMIN
 Text GLabel 700  1800 0    30   Input ~ 0
 XMAX
-Text GLabel 700  2200 0    30   Input ~ 0
+Text GLabel 2350 2250 2    30   Input ~ 0
 B-EN
-Text GLabel 700  2250 0    30   Input ~ 0
-B-STEP
 Text GLabel 700  2300 0    30   Input ~ 0
+B-STEP
+Text GLabel 700  2350 0    30   Input ~ 0
 B-DIR
-Text GLabel 2350 2100 2    30   Input ~ 0
+Text GLabel 2350 2200 2    30   Input ~ 0
 A-DIR
 Text GLabel 2350 2150 2    30   Input ~ 0
 A-STEP
-Text GLabel 2350 2200 2    30   Input ~ 0
+Text GLabel 2350 2100 2    30   Input ~ 0
 A-EN
 Text GLabel 2350 1850 2    30   Input ~ 0
 Z-EN
@@ -1166,9 +1164,9 @@ Text GLabel 700  1400 0    30   Input ~ 0
 POWER4
 Text GLabel 700  1450 0    30   Input ~ 0
 POWER3
-Text GLabel 700  1500 0    30   Input ~ 0
+Text GLabel 700  2200 0    30   Input ~ 0
 POWER2
-Text GLabel 700  1550 0    30   Input ~ 0
+Text GLabel 700  2250 0    30   Input ~ 0
 POWER1
 $Comp
 L HEADER_2 J20
@@ -1810,11 +1808,11 @@ F 1 "VCC" H 1250 3150 30  0000 C CNN
 	1    1250 3050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 3650 0    30   Input ~ 0
+Text GLabel 2050 3250 0    30   Input ~ 0
 THERM2
 Text GLabel 2050 3450 0    30   Input ~ 0
 THERM1
-Text GLabel 2050 3250 0    30   Input ~ 0
+Text GLabel 2050 3650 0    30   Input ~ 0
 THERM0
 $Comp
 L GND #PWR022
@@ -1828,10 +1826,10 @@ $EndComp
 $Comp
 L HEADER_6 J13
 U 1 1 518FFBEF
-P 3000 3500
-F 0 "J13" H 3000 3850 60  0000 C CNN
-F 1 "HEADER_6" H 3000 3150 60  0000 C CNN
-	1    3000 3500
+P 3000 3400
+F 0 "J13" H 3000 3750 60  0000 C CNN
+F 1 "HEADER_6" H 3000 3050 60  0000 C CNN
+	1    3000 3400
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 2300 2    30   Input ~ 0
