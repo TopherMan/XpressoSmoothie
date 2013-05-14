@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Mon 13 May 2013 08:17:17 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Tue 14 May 2013 01:26:56 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -239,13 +239,6 @@ IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51911513;
-Reference = J15;
-ValeurCmp = HEADER_2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
 TimeStamp = /518FFF1C;
 Reference = J16;
 ValeurCmp = HEADER_3;
@@ -316,24 +309,24 @@ IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FF492;
-Reference = JP1;
-ValeurCmp = USB-B;
-IdModule  = USB_B;
+TimeStamp = /51925D98;
+Reference = J26;
+ValeurCmp = USB_1;
+IdModule  = USB_MICRO_RMC;
 EndCmp
 
 BeginCmp
 TimeStamp = /51901435;
 Reference = Q1;
 ValeurCmp = IRLB_8743;
-IdModule  = TO220_VERT;
+IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
 TimeStamp = /5190144A;
 Reference = Q2;
 ValeurCmp = IRLB_8743;
-IdModule  = TO220_VERT;
+IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
@@ -347,14 +340,14 @@ BeginCmp
 TimeStamp = /5190142C;
 Reference = Q4;
 ValeurCmp = IRLB_8743;
-IdModule  = TO220_VERT;
+IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
 TimeStamp = /51901111;
 Reference = Q5;
 ValeurCmp = IRLB_8743;
-IdModule  = TO220_VERT;
+IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
