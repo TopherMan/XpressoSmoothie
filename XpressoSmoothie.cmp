@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Tue 14 May 2013 02:21:30 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Tue 14 May 2013 03:23:45 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -152,13 +152,6 @@ TimeStamp = /518FF294;
 Reference = J2;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
-EndCmp
-
-BeginCmp
-TimeStamp = /518FF715;
-Reference = J3;
-ValeurCmp = HEADER_7;
-IdModule  = PIN_ARRAY_7X1;
 EndCmp
 
 BeginCmp
@@ -554,6 +547,27 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /51928D90;
+Reference = R27;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51928DB6;
+Reference = R28;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51928DC0;
+Reference = R29;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /518FF94A;
 Reference = SW1;
 ValeurCmp = SW_PUSH;
@@ -600,6 +614,13 @@ TimeStamp = /518FF2C6;
 Reference = U5;
 ValeurCmp = POLOLU_A4988;
 IdModule  = POLOLU;
+EndCmp
+
+BeginCmp
+TimeStamp = /51928A47;
+Reference = U6;
+ValeurCmp = CONN_MICROSD;
+IdModule  = Memory_Card_microSD_3M_290805;
 EndCmp
 
 EndListe
