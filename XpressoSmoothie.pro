@@ -1,6 +1,6 @@
-update=Tue 14 May 2013 02:17:12 PM EDT
+update=Wed 15 May 2013 11:45:24 AM EDT
 version=1
-last_client=cvpcb
+last_client=eeschema
 [general]
 version=1
 [pcbnew]
@@ -74,6 +74,11 @@ LibName50=w_smd_trans
 LibName51=w_to
 LibName52=borniers
 LibDir=KiCAD_Libraries/modules/nicholasclewis;KiCAD_Libraries/walter/pcbnew;KiCAD_Libraries/modules;KiCAD_Libraries/Chris
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -104,7 +109,7 @@ offY_E=0
 RptD_X=0
 RptD_Y=100
 RptLab=1
-LabSize=60
+LabSize=30
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -146,8 +151,4 @@ LibName37=KiCAD_Libraries/walter/eesch/w_rtx
 LibName38=KiCAD_Libraries/library/pololu_a4988x
 LibName39=KiCAD_Libraries/library/RMC
 LibName40=KiCAD_Libraries/library/opendous
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName41=KiCAD_Libraries/library/lm1117
