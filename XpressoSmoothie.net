@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Wed 15 May 2013 12:00:18 PM EDT
+# EESchema Netlist Version 1.1 created  Wed 15 May 2013 12:11:25 PM EDT
 (
  ( /51911758 c_elec_6.3x7.7 C1 100u
   ( 1 +12V )
@@ -553,7 +553,7 @@
   ( 9 GND )
   ( 10 ? )
  )
- ( /5193AD97 SOT223_Opendous U7 LM1117
+ ( /5193AD97 TO220_VERT_1117 U7 LM1117
   ( 1 GND )
   ( 2 N-000108 )
   ( 3 +12V )

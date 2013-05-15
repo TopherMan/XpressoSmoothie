@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Wed 15 May 2013 12:00:18 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Wed 15 May 2013 12:11:25 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -648,7 +648,7 @@ BeginCmp
 TimeStamp = /5193AD97;
 Reference = U7;
 ValeurCmp = LM1117;
-IdModule  = SOT223_Opendous;
+IdModule  = TO220_VERT_1117;
 EndCmp
 
 EndListe
