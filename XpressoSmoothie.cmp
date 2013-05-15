@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Tue 14 May 2013 03:23:45 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Wed 15 May 2013 12:00:18 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -85,6 +85,20 @@ IdModule  = c_elec_6.3x7.7;
 EndCmp
 
 BeginCmp
+TimeStamp = /5193B0D1;
+Reference = C13;
+ValeurCmp = 20u;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5193B0D6;
+Reference = C14;
+ValeurCmp = 20u;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /51900BC6;
 Reference = D1;
 ValeurCmp = LED_GREEN;
@@ -152,6 +166,13 @@ TimeStamp = /518FF294;
 Reference = J2;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5193AC8C;
+Reference = J3;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
@@ -621,6 +642,13 @@ TimeStamp = /51928A47;
 Reference = U6;
 ValeurCmp = CONN_MICROSD;
 IdModule  = Memory_Card_microSD_3M_290805;
+EndCmp
+
+BeginCmp
+TimeStamp = /5193AD97;
+Reference = U7;
+ValeurCmp = LM1117;
+IdModule  = SOT223_Opendous;
 EndCmp
 
 EndListe
