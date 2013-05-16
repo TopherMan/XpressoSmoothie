@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Thu 16 May 2013 09:03:30 AM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Thu 16 May 2013 10:19:16 AM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -620,28 +620,28 @@ BeginCmp
 TimeStamp = /5194D2F6;
 Reference = U8;
 ValeurCmp = ZXGD3005E6;
-IdModule  = SOT26;
+IdModule  = SOT23_6;
 EndCmp
 
 BeginCmp
 TimeStamp = /5194D2E9;
 Reference = U9;
 ValeurCmp = ZXGD3005E6;
-IdModule  = SOT26;
+IdModule  = SOT23_6;
 EndCmp
 
 BeginCmp
 TimeStamp = /5194CA37;
 Reference = U10;
 ValeurCmp = ZXGD3005E6;
-IdModule  = SOT26;
+IdModule  = SOT23_6;
 EndCmp
 
 BeginCmp
 TimeStamp = /5194D2C9;
 Reference = U11;
 ValeurCmp = ZXGD3005E6;
-IdModule  = SOT26;
+IdModule  = SOT23_6;
 EndCmp
 
 EndListe
