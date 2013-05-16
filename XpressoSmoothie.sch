@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 16 May 2013 12:26:38 PM EDT
+EESchema Schematic File Version 2  date Thu 16 May 2013 04:33:21 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -55,6 +55,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	900  1550 700  1550
 Wire Wire Line
 	2800 4300 2800 4200
 Connection ~ 3200 3450
@@ -292,8 +294,6 @@ Wire Wire Line
 	2350 1900 2100 1900
 Wire Wire Line
 	2350 1800 2100 1800
-Wire Wire Line
-	2350 1700 2100 1700
 Wire Wire Line
 	850  2100 700  2100
 Wire Wire Line
@@ -967,8 +967,6 @@ Wire Wire Line
 Wire Wire Line
 	700  2150 900  2150
 Wire Wire Line
-	2350 1750 2150 1750
-Wire Wire Line
 	2350 1850 2150 1850
 Wire Wire Line
 	2350 2050 2150 2050
@@ -1069,6 +1067,8 @@ Wire Wire Line
 Wire Wire Line
 	2900 4200 2150 4200
 Connection ~ 3200 3550
+Wire Wire Line
+	700  1500 850  1500
 $Comp
 L HEADER_3X2 J13
 U 1 1 51950866
@@ -1592,55 +1592,55 @@ F 1 "100u" H 8650 3900 50  0000 L CNN
 $EndComp
 Text GLabel 700  1350 0    30   Input ~ 0
 LED
-Text GLabel 700  2150 0    30   Input ~ 0
-ZMIN
-Text GLabel 700  2100 0    30   Input ~ 0
-ZMAX
-Text GLabel 700  2050 0    30   Input ~ 0
-YMIN
-Text GLabel 700  1900 0    30   Input ~ 0
-YMAX
-Text GLabel 700  1850 0    30   Input ~ 0
-XMIN
-Text GLabel 700  1800 0    30   Input ~ 0
-XMAX
-Text GLabel 2350 2250 2    30   Input ~ 0
-B-EN
-Text GLabel 700  2300 0    30   Input ~ 0
-B-STEP
-Text GLabel 700  2350 0    30   Input ~ 0
-B-DIR
-Text GLabel 2350 2200 2    30   Input ~ 0
-A-DIR
-Text GLabel 2350 2150 2    30   Input ~ 0
-A-STEP
-Text GLabel 2350 2100 2    30   Input ~ 0
-A-EN
-Text GLabel 2350 1850 2    30   Input ~ 0
-Z-EN
-Text GLabel 2350 1900 2    30   Input ~ 0
-Z-STEP
-Text GLabel 2350 2050 2    30   Input ~ 0
-Z-DIR
-Text GLabel 2350 1700 2    30   Input ~ 0
-Y-EN
-Text GLabel 2350 1750 2    30   Input ~ 0
-Y-STEP
 Text GLabel 2350 1800 2    30   Input ~ 0
+ZMIN
+Text GLabel 2350 1850 2    30   Input ~ 0
+ZMAX
+Text GLabel 700  2350 0    30   Input ~ 0
+YMIN
+Text GLabel 700  2300 0    30   Input ~ 0
+YMAX
+Text GLabel 700  2250 0    30   Input ~ 0
+XMIN
+Text GLabel 700  2200 0    30   Input ~ 0
+XMAX
+Text GLabel 2350 1900 2    30   Input ~ 0
+B-EN
+Text GLabel 2350 2050 2    30   Input ~ 0
+B-STEP
+Text GLabel 2350 2100 2    30   Input ~ 0
+B-DIR
+Text GLabel 2350 2250 2    30   Input ~ 0
+A-DIR
+Text GLabel 2350 2200 2    30   Input ~ 0
+A-STEP
+Text GLabel 2350 2150 2    30   Input ~ 0
+A-EN
+Text GLabel 700  2150 0    30   Input ~ 0
+Z-EN
+Text GLabel 700  2100 0    30   Input ~ 0
+Z-STEP
+Text GLabel 700  2050 0    30   Input ~ 0
+Z-DIR
+Text GLabel 700  1900 0    30   Input ~ 0
+Y-EN
+Text GLabel 700  1850 0    30   Input ~ 0
+Y-STEP
+Text GLabel 700  1800 0    30   Input ~ 0
 Y-DIR
-Text GLabel 2350 1500 2    30   Input ~ 0
+Text GLabel 700  1500 0    30   Input ~ 0
 X-STEP
-Text GLabel 2350 1650 2    30   Input ~ 0
+Text GLabel 700  1450 0    30   Input ~ 0
 X-DIR
-Text GLabel 2350 1450 2    30   Input ~ 0
+Text GLabel 700  1550 0    30   Input ~ 0
 X-EN
 Text GLabel 700  1400 0    30   Input ~ 0
 POWER4
-Text GLabel 700  1450 0    30   Input ~ 0
+Text GLabel 2350 1450 2    30   Input ~ 0
 POWER3
-Text GLabel 700  2200 0    30   Input ~ 0
+Text GLabel 2350 1500 2    30   Input ~ 0
 POWER2
-Text GLabel 700  2250 0    30   Input ~ 0
+Text GLabel 2350 1650 2    30   Input ~ 0
 POWER1
 Text GLabel 2350 5800 2    30   Input ~ 0
 POWER1
