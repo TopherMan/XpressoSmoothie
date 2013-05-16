@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Thu 16 May 2013 10:53:21 AM EDT
+EESchema Schematic File Version 2  date Thu 16 May 2013 12:26:38 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -55,6 +55,11 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Wire Wire Line
+	2800 4300 2800 4200
+Connection ~ 3200 3450
+Wire Wire Line
+	2900 3550 2900 3650
 Wire Wire Line
 	2150 1550 2350 1550
 Wire Wire Line
@@ -246,13 +251,6 @@ Wire Wire Line
 	6200 4900 6200 4750
 Wire Wire Line
 	5450 4150 5050 4150
-Connection ~ 2800 3550
-Wire Wire Line
-	2900 3550 2800 3550
-Wire Wire Line
-	2900 3150 2800 3150
-Wire Wire Line
-	2800 3150 2800 4300
 Wire Wire Line
 	2900 3450 2050 3450
 Connection ~ 2650 3250
@@ -368,9 +366,7 @@ Connection ~ 2400 4200
 Wire Wire Line
 	2400 4100 2400 4200
 Wire Wire Line
-	2800 4200 2150 4200
-Wire Wire Line
-	2150 4200 2150 4100
+	2150 4100 2150 4200
 Connection ~ 2400 3450
 Wire Wire Line
 	2400 3700 2400 3450
@@ -1013,12 +1009,9 @@ Wire Wire Line
 Wire Wire Line
 	850  2250 700  2250
 Wire Wire Line
-	2900 3250 2050 3250
+	2050 3250 2900 3250
 Wire Wire Line
 	2900 3650 2050 3650
-Wire Wire Line
-	2900 3350 2800 3350
-Connection ~ 2800 3350
 Wire Wire Line
 	700  1300 850  1300
 Wire Wire Line
@@ -1065,6 +1058,26 @@ Wire Wire Line
 Connection ~ 7900 4750
 Wire Wire Line
 	2350 1600 2100 1600
+Wire Wire Line
+	2900 3250 2900 3350
+Wire Wire Line
+	3200 3350 3200 3850
+Wire Wire Line
+	3200 3850 2900 3850
+Wire Wire Line
+	2900 3850 2900 4200
+Wire Wire Line
+	2900 4200 2150 4200
+Connection ~ 3200 3550
+$Comp
+L HEADER_3X2 J13
+U 1 1 51950866
+P 3050 3450
+F 0 "J13" H 3050 3650 60  0000 C CNN
+F 1 "HEADER_3X2" H 3050 3250 60  0000 C CNN
+	1    3050 3450
+	1    0    0    -1  
+$EndComp
 Text GLabel 2350 1600 2    30   Input ~ 0
 SCL
 Text GLabel 2350 1550 2    30   Input ~ 0
@@ -2006,15 +2019,6 @@ P 2800 4300
 F 0 "#PWR030" H 2800 4300 30  0001 C CNN
 F 1 "GND" H 2800 4230 30  0001 C CNN
 	1    2800 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L HEADER_6 J13
-U 1 1 518FFBEF
-P 3000 3400
-F 0 "J13" H 3000 3750 60  0000 C CNN
-F 1 "HEADER_6" H 3000 3050 60  0000 C CNN
-	1    3000 3400
 	1    0    0    -1  
 $EndComp
 Text GLabel 2250 2300 2    30   Input ~ 0
