@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Thu 16 May 2013 04:33:25 PM EDT
+# EESchema Netlist Version 1.1 created  Thu 16 May 2013 07:04:38 PM EDT
 (
  ( /51950866 $noname  J13 HEADER_3X2 {Lib=HEADER_3X2}
   (    1 THERM2 )
@@ -28,7 +28,7 @@
  )
  ( /5194D2FC $noname  Q1 IRLB_8743 {Lib=MOSFET_N_RMC}
   (    D N-000051 )
-  (    G N-000053 )
+  (    G N-000054 )
   (    S GND )
  )
  ( /5194D2FB $noname  R17 1k {Lib=R}
@@ -47,9 +47,9 @@
   (    1 +12P )
   (    2 N-000052 )
   (    3 GND )
-  (    4 N-000053 )
+  (    4 N-000054 )
   (    5 ? )
-  (    6 N-000053 )
+  (    6 N-000054 )
  )
  ( /5194D2E9 SOT26  U9 ZXGD3005E6 {Lib=ZXGD3005E6}
   (    1 +12V )
@@ -190,11 +190,11 @@
   (   20 Y-EN )
   (   21 Z-DIR )
   (   22 Z-STEP )
-  (   23 Z-EN )
-  (   24 XMAX )
-  (   25 XMIN )
-  (   26 YMAX )
-  (   27 YMIN )
+  (   23 YMAX )
+  (   24 YMIN )
+  (   25 XMAX )
+  (   26 XMIN )
+  (   27 Z-EN )
   (   28 VCC )
   (   29 ? )
   (   30 ? )
@@ -210,11 +210,11 @@
   (   40 SDA )
   (   41 SCL )
   (   42 POWER1 )
-  (   43 ? )
+  (   43 B-EN )
   (   44 ? )
-  (   45 ZMIN )
-  (   46 ZMAX )
-  (   47 B-EN )
+  (   45 ? )
+  (   46 ZMIN )
+  (   47 ZMAX )
   (   48 B-STEP )
   (   49 B-DIR )
   (   50 A-EN )
@@ -881,22 +881,22 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 2 "B-DIR" "B-DIR"
+Net 2 "Z-EN" "Z-EN"
+ J6 27
+ R5 2
+ U3 9
+Net 3 "B-DIR" "B-DIR"
  U5 16
  J6 49
-Net 3 "B-STEP" "B-STEP"
+Net 4 "B-STEP" "B-STEP"
  J6 48
  U5 15
-Net 4 "B-EN" "B-EN"
- R13 2
+Net 5 "ZMAX" "ZMAX"
+ J25 1
  J6 47
- U5 9
-Net 5 "YMIN" "YMIN"
- J18 1
- J6 27
 Net 6 "A-DIR" "A-DIR"
- U4 16
  J6 52
+ U4 16
 Net 8 "A-STEP" "A-STEP"
  U4 15
  J6 51
@@ -905,51 +905,51 @@ Net 10 "A-EN" "A-EN"
  U4 9
  J6 50
 Net 12 "LED" "LED"
- J6 9
  R7 1
-Net 13 "ZMAX" "ZMAX"
+ J6 9
+Net 13 "ZMIN" "ZMIN"
  J6 46
- J25 1
-Net 14 "YMAX" "YMAX"
- J23 1
- J6 26
-Net 15 "ZMIN" "ZMIN"
  J24 1
- J6 45
-Net 17 "XMIN" "XMIN"
- J6 25
+Net 14 "XMIN" "XMIN"
  J16 1
-Net 18 "Z-STEP" "Z-STEP"
- J6 22
- U3 15
-Net 21 "XMAX" "XMAX"
+ J6 26
+Net 17 "XMAX" "XMAX"
  J17 1
+ J6 25
+Net 18 "Z-STEP" "Z-STEP"
+ U3 15
+ J6 22
+Net 21 "YMIN" "YMIN"
+ J18 1
  J6 24
-Net 25 "Z-EN" "Z-EN"
+Net 23 "B-EN" "B-EN"
+ U5 9
+ R13 2
+ J6 43
+Net 25 "YMAX" "YMAX"
+ J23 1
  J6 23
- R5 2
- U3 9
 Net 26 "" ""
- D1 1
  R7 2
+ D1 1
 Net 27 "GND" "GND"
- SW2 2
+ R14 1
  SW1 2
  R3 1
  R4 1
  U1 1
  U1 7
+ SW2 2
  U3 7
  U3 1
  U2 7
- U5 7
+ C10 2
  U4 1
  U4 7
  R9 1
  C9 2
  C11 2
- R14 1
- C10 2
+ U5 7
  J25 2
  J24 2
  J23 2
@@ -961,62 +961,62 @@ Net 27 "GND" "GND"
  J13 2
  J13 4
  C13 2
- U7 1
- J11 2
  J26 4
+ J11 2
+ C3 2
  J15 2
- J11 4
  J6 1
  C14 2
- C1 2
  J26 6
+ J26 5
  U10 3
  Q1 S
  C7 2
- C4 2
- U6 6
- C6 2
- C12 2
+ C8 2
  C5 2
+ U6 6
+ C12 2
+ C4 2
+ C6 2
  D1 2
  U6 9
- C3 2
  U8 3
  U11 3
+ U7 1
  Q2 S
  U9 3
+ C2 2
  Q3 S
  J6 54
  R8 1
  Q5 S
- C2 2
- C8 2
- J26 5
+ C1 2
  U2 1
+ J11 4
 Net 28 "+12P" "+12P"
- U8 1
  F1 2
- J19 1
  R19 1
+ U8 1
+ J19 1
 Net 29 "" ""
  F1 1
  J11 1
 Net 30 "VCC" "VCC"
- C6 1
- U6 4
  J14 6
- J10 6
- J10 4
- R27 1
  J14 4
  J14 2
- U4 2
- R13 1
  J10 2
+ J10 4
+ J10 6
+ C6 1
+ U6 4
+ U4 2
  R29 2
- R6 1
  U5 14
+ R13 1
  R28 1
+ R27 1
+ R6 1
  J15 1
  R15 1
  R16 1
@@ -1025,22 +1025,24 @@ Net 30 "VCC" "VCC"
  U1 14
  J4 6
  U3 13
+ U3 14
  J5 6
- J4 2
- J4 4
  J6 28
+ J4 4
+ J4 2
  J5 4
- U5 2
  J5 2
+ U1 2
  R1 1
  R2 1
- U1 2
- U2 13
+ J17 3
+ J18 3
  J16 3
  J24 3
- J9 6
  J25 3
- U3 14
+ J9 6
+ U5 2
+ U2 13
  U2 14
  R10 1
  J9 4
@@ -1050,11 +1052,9 @@ Net 30 "VCC" "VCC"
  U2 2
  R5 1
  U4 13
- J18 3
  U4 14
- J17 3
- U3 2
  J23 3
+ U3 2
 Net 31 "POWER3" "POWER3"
  J6 38
  R20 2
@@ -1065,21 +1065,21 @@ Net 33 "" ""
  R18 2
  D6 1
 Net 34 "POWER4" "POWER4"
- R17 2
  J6 10
+ R17 2
 Net 35 "X-EN" "X-EN"
  J6 13
- U1 9
  R1 2
+ U1 9
 Net 36 "X-DIR" "X-DIR"
- J6 11
  U1 16
+ J6 11
 Net 37 "X-STEP" "X-STEP"
- J6 12
  U1 15
+ J6 12
 Net 38 "Y-DIR" "Y-DIR"
- J6 18
  U2 16
+ J6 18
 Net 39 "Y-STEP" "Y-STEP"
  U2 15
  J6 19
@@ -1091,63 +1091,63 @@ Net 41 "Z-DIR" "Z-DIR"
  J6 21
  U3 16
 Net 42 "" ""
- F2 1
  J11 3
+ F2 1
 Net 43 "POWER1" "POWER1"
- J6 42
  R26 2
+ J6 42
 Net 44 "" ""
- D4 1
  R21 2
+ D4 1
 Net 45 "" ""
+ D4 2
  J20 2
  Q2 D
- D4 2
 Net 47 "" ""
- R20 1
  U9 2
+ R20 1
 Net 48 "" ""
  D5 1
  R23 2
 Net 49 "" ""
- U11 2
  R22 1
+ U11 2
 Net 50 "" ""
- Q3 D
  J21 2
+ Q3 D
  D5 2
 Net 51 "" ""
- J19 2
- Q1 D
  D3 2
+ Q1 D
+ J19 2
 Net 52 "" ""
- U8 2
  R17 1
-Net 53 "" ""
+ U8 2
+Net 54 "" ""
  U8 4
- Q1 G
  U8 6
+ Q1 G
 Net 55 "" ""
- D3 1
  R19 2
+ D3 1
 Net 58 "CS" "CS"
- U6 2
  J6 8
+ U6 2
  R27 2
 Net 59 "VIN" "VIN"
- J3 2
  C5 1
+ J3 2
  J6 2
 Net 61 "+5V" "+5V"
  J26 1
  J3 1
 Net 64 "" ""
- U10 2
  R26 1
+ U10 2
 Net 65 "" ""
- U11 4
- U11 6
  Q3 G
+ U11 6
+ U11 4
 Net 67 "" ""
  J9 1
  R8 2
@@ -1162,11 +1162,11 @@ Net 70 "" ""
  J7 2
  U3 4
 Net 71 "" ""
- J7 1
  U3 3
+ J7 1
 Net 72 "" ""
- U2 3
  J2 1
+ U2 3
 Net 73 "" ""
  J9 5
  U3 12
@@ -1180,8 +1180,8 @@ Net 76 "" ""
  J1 4
  U1 6
 Net 77 "" ""
- U1 5
  J1 3
+ U1 5
 Net 78 "" ""
  U1 4
  J1 2
@@ -1204,12 +1204,12 @@ Net 84 "" ""
  J2 2
  U2 4
 Net 85 "" ""
- U1 11
  J4 3
+ U1 11
 Net 86 "MOSI" "MOSI"
- R29 1
- J6 5
  U6 3
+ J6 5
+ R29 1
 Net 87 "MISO" "MISO"
  U6 7
  J6 6
@@ -1218,8 +1218,8 @@ Net 88 "SCK" "SCK"
  U6 5
  J6 7
 Net 89 "RESET" "RESET"
- SW1 1
  J6 4
+ SW1 1
 Net 90 "PLAY/PAUSE" "PLAY/PAUSE"
  J6 53
  SW2 1
@@ -1227,120 +1227,120 @@ Net 91 "USB-D+" "USB-D+"
  J6 37
  J26 3
 Net 92 "USB-D-" "USB-D-"
- J6 36
  J26 2
+ J6 36
 Net 93 "" ""
- J10 1
- U4 10
  R9 2
+ U4 10
+ J10 1
 Net 94 "" ""
- U4 12
  J10 5
+ U4 12
 Net 95 "" ""
- U4 11
  J10 3
+ U4 11
 Net 96 "" ""
- J8 4
  U4 6
+ J8 4
 Net 97 "" ""
- U4 5
  J8 3
+ U4 5
 Net 98 "" ""
  J8 2
  U4 4
 Net 99 "" ""
- J8 1
  U4 3
+ J8 1
 Net 100 "" ""
  U5 6
  J12 4
 Net 101 "" ""
- U5 5
  J12 3
+ U5 5
 Net 102 "" ""
- J12 2
  U5 4
+ J12 2
 Net 103 "" ""
- U5 3
  J12 1
+ U5 3
 Net 104 "" ""
- U5 12
  J14 5
+ U5 12
 Net 105 "SDA" "SDA"
+ R15 2
  J15 3
  J6 40
- R15 2
 Net 106 "" ""
- J14 3
  U5 11
+ J14 3
 Net 107 "" ""
  J14 1
  R14 2
  U5 10
 Net 108 "" ""
- Q2 G
  U9 4
  U9 6
+ Q2 G
 Net 109 "" ""
  Q5 D
  D6 2
  J22 2
 Net 110 "THERM1" "THERM1"
- R11 2
- C10 1
- J6 16
  J13 3
+ J6 16
+ C10 1
+ R11 2
 Net 111 "THERM0" "THERM0"
- R12 2
- J6 15
  J13 5
  C9 1
-Net 112 "SCL" "SCL"
+ R12 2
+ J6 15
+Net 112 "THERM2" "THERM2"
+ C11 1
+ R10 2
+ J6 17
+ J13 1
+Net 113 "SCL" "SCL"
  J6 41
  R16 2
  J15 4
-Net 113 "THERM2" "THERM2"
- C11 1
- J13 1
- J6 17
- R10 2
 Net 114 "" ""
  U10 4
  Q5 G
  U10 6
 Net 115 "+12V" "+12V"
- U7 3
- R18 1
- R23 1
+ C12 1
+ U4 8
+ C4 1
+ U2 8
  C1 1
+ C2 1
+ U3 8
+ C14 1
+ U9 1
+ U7 3
+ R23 1
  U1 8
  C3 1
- C4 1
- U9 1
- U2 8
- U3 8
- C2 1
- C14 1
  R21 1
  J22 1
- C7 1
- J20 1
- C8 1
+ U5 8
+ R18 1
  J21 1
  U10 1
- U4 8
- C12 1
+ C8 1
+ J20 1
+ C7 1
  U11 1
- U5 8
  F2 2
 Net 116 "" ""
+ J3 3
  C13 1
  U7 2
- J3 3
 Net 117 "" ""
  U2 10
- J5 1
  R4 2
+ J5 1
 Net 118 "" ""
  U1 10
  J4 1
