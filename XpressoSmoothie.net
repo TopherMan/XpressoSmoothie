@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  Sat 18 May 2013 02:19:15 PM EDT
+# EESchema Netlist Version 1.1 created  Sat 18 May 2013 03:12:53 PM EDT
 (
  ( /51911758 c_elec_6.3x7.7 C1 100u
   ( 1 Vin )
@@ -543,7 +543,7 @@
   ( 15 X-STEP )
   ( 16 X-DIR )
  )
- ( /51928A47 Memory_Card_microSD_3M_290805 U6 CONN_MICROSD
+ ( /51928A47 TRANSFLASH_MICROSD U6 CONN_MICROSD
   ( 1 ? )
   ( 2 CS )
   ( 3 MOSI )

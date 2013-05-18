@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 18 May 2013 02:19:15 PM EDT
+Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 18 May 2013 03:12:53 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -648,7 +648,7 @@ BeginCmp
 TimeStamp = /51928A47;
 Reference = U6;
 ValeurCmp = CONN_MICROSD;
-IdModule  = Memory_Card_microSD_3M_290805;
+IdModule  = TRANSFLASH_MICROSD;
 EndCmp
 
 BeginCmp
