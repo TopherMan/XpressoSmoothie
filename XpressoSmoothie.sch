@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date Fri 17 May 2013 01:36:46 PM EDT
+EESchema Schematic File Version 2  date Fri 17 May 2013 06:49:38 PM EDT
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1671,13 +1671,13 @@ Text GLabel 2350 1850 2    30   Input ~ 0
 ZMIN
 Text GLabel 2350 1900 2    30   Input ~ 0
 ZMAX
-Text GLabel 700  2150 0    30   Input ~ 0
+Text GLabel 700  2600 0    30   Input ~ 0
 YMIN
-Text GLabel 700  2100 0    30   Input ~ 0
+Text GLabel 700  2650 0    30   Input ~ 0
 YMAX
-Text GLabel 700  2300 0    30   Input ~ 0
+Text GLabel 700  2100 0    30   Input ~ 0
 XMIN
-Text GLabel 700  2250 0    30   Input ~ 0
+Text GLabel 700  2150 0    30   Input ~ 0
 XMAX
 Text GLabel 2350 1700 2    30   Input ~ 0
 B-EN
@@ -1691,7 +1691,7 @@ Text GLabel 2350 2200 2    30   Input ~ 0
 A-STEP
 Text GLabel 2350 2150 2    30   Input ~ 0
 A-EN
-Text GLabel 700  2350 0    30   Input ~ 0
+Text GLabel 700  2700 0    30   Input ~ 0
 Z-EN
 Text GLabel 700  2050 0    30   Input ~ 0
 Z-STEP
@@ -1711,11 +1711,11 @@ Text GLabel 700  1550 0    30   Input ~ 0
 X-EN
 Text GLabel 700  1400 0    30   Input ~ 0
 POWER4
-Text GLabel 2350 1450 2    30   Input ~ 0
+Text GLabel 700  2350 0    30   Input ~ 0
 POWER3
-Text GLabel 2350 1500 2    30   Input ~ 0
+Text GLabel 700  2300 0    30   Input ~ 0
 POWER2
-Text GLabel 2350 1650 2    30   Input ~ 0
+Text GLabel 700  2250 0    30   Input ~ 0
 POWER1
 Text GLabel 2350 5800 2    30   Input ~ 0
 POWER1
