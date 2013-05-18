@@ -1,13 +1,11 @@
-update=Fri 17 May 2013 11:42:31 AM EDT
+update=5/18/2013 10:13:15 AM
 version=1
-last_client=pcbnew
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -118,3 +116,5 @@ LibName15=/home/chris/gitspace/XpressoSmoothie/KiCAD_Libraries/modules/borniers
 LibName16=/home/chris/gitspace/XpressoSmoothie/KiCAD_Libraries/modules/opendous
 LibName17=/home/chris/gitspace/XpressoSmoothie/KiCAD_Libraries/modules/RMC
 LibName18=/home/chris/gitspace/XpressoSmoothie/KiCAD_Libraries/modules/USBMICRO
+[general]
+version=1
