@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/19/2013 9:46:35 PM
+EESchema Schematic File Version 2  date 5/19/2013 10:07:56 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -235,11 +235,11 @@ Text GLabel 750  7000 0    30   Input ~ 0
 Y-STEP
 Text GLabel 750  6950 0    30   Input ~ 0
 Y-DIR
-Text GLabel 750  7200 0    30   Input ~ 0
-X-STEP
-Text GLabel 750  7150 0    30   Input ~ 0
-X-DIR
 Text GLabel 750  7250 0    30   Input ~ 0
+X-STEP
+Text GLabel 750  7200 0    30   Input ~ 0
+X-DIR
+Text GLabel 750  7300 0    30   Input ~ 0
 X-EN
 Text GLabel 2850 6550 2    30   Input ~ 0
 POWER4
@@ -3208,11 +3208,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 5850 1000 5850
 Wire Wire Line
-	750  7250 1100 7250
-Wire Wire Line
 	1150 7200 750  7200
-Wire Wire Line
-	1100 7150 750  7150
 Wire Wire Line
 	1100 6300 750  6300
 Wire Wire Line
@@ -3220,20 +3216,9 @@ Wire Wire Line
 Wire Wire Line
 	1100 6400 750  6400
 Wire Wire Line
-	750  7050 750  7100
-Wire Wire Line
-	750  7100 500  7100
+	500  7100 1150 7100
 Wire Wire Line
 	500  7100 500  7350
-Wire Wire Line
-	500  7350 800  7350
-Wire Wire Line
-	800  7350 800  7250
-Connection ~ 800  7250
-Wire Wire Line
-	1150 7100 850  7100
-Wire Wire Line
-	850  7100 750  7000
 Wire Wire Line
 	1150 7050 850  7050
 Wire Wire Line
@@ -3372,4 +3357,17 @@ Wire Wire Line
 	6050 7150 5850 7150
 Wire Wire Line
 	6050 7250 5850 7250
+Wire Wire Line
+	1100 7250 750  7250
+Wire Wire Line
+	500  7350 750  7350
+Wire Wire Line
+	750  7350 750  7300
+Wire Wire Line
+	750  7050 800  7100
+Connection ~ 800  7100
+Wire Wire Line
+	750  7000 900  7150
+Wire Wire Line
+	900  7150 1100 7150
 $EndSCHEMATC
