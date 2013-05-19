@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/19/2013 7:54:30 AM
+EESchema Schematic File Version 2  date 5/19/2013 10:17:23 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -90,28 +90,6 @@ Text GLabel 2600 6250 2    30   Input ~ 0
 SCL
 Text GLabel 2600 6200 2    30   Input ~ 0
 SDA
-$Comp
-L R R16
-U 1 1 5194D3FD
-P 6300 6000
-F 0 "R16" V 6380 6000 50  0000 C CNN
-F 1 "4k7" V 6300 6000 50  0000 C CNN
-F 2 "" H 6300 6000 60  0001 C CNN
-F 3 "" H 6300 6000 60  0001 C CNN
-	1    6300 6000
-	-1   0    0    -1  
-$EndComp
-$Comp
-L R R15
-U 1 1 5194D3F2
-P 6500 6000
-F 0 "R15" V 6580 6000 50  0000 C CNN
-F 1 "4k7" V 6500 6000 50  0000 C CNN
-F 2 "" H 6500 6000 60  0001 C CNN
-F 3 "" H 6500 6000 60  0001 C CNN
-	1    6500 6000
-	-1   0    0    -1  
-$EndComp
 Text GLabel 6250 6300 0    30   Input ~ 0
 SCL
 Text GLabel 6250 6400 0    30   Input ~ 0
@@ -677,9 +655,9 @@ F 3 "" H 3850 4850 60  0001 C CNN
 	1    3850 4850
 	-1   0    0    1   
 $EndComp
-Text GLabel 4600 4700 3    60   Input ~ 0
+Text GLabel 6150 4700 3    60   Input ~ 0
 X-STEP
-Text GLabel 4700 4700 3    60   Input ~ 0
+Text GLabel 6250 4700 3    60   Input ~ 0
 X-DIR
 $Comp
 L VCC #PWR010
@@ -692,7 +670,7 @@ F 3 "" H 3650 4550 60  0001 C CNN
 	1    3650 4550
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 4700 3    60   Input ~ 0
+Text GLabel 5550 4700 3    60   Input ~ 0
 X-EN
 $Comp
 L HEADER_3X2 J4
@@ -1370,17 +1348,6 @@ F 3 "" H 5950 2450 60  0001 C CNN
 $EndComp
 Text GLabel 5950 750  2    39   Input ~ 8
 Vin_Hi_curr
-$Comp
-L VCC #PWR046
-U 1 1 51986A90
-P 6400 5750
-F 0 "#PWR046" H 6400 5850 30  0001 C CNN
-F 1 "VCC" H 6400 5850 30  0000 C CNN
-F 2 "" H 6400 5750 60  0001 C CNN
-F 3 "" H 6400 5750 60  0001 C CNN
-	1    6400 5750
-	-1   0    0    -1  
-$EndComp
 Text GLabel 3450 3300 2    39   Input ~ 8
 Vin
 $Comp
@@ -1427,11 +1394,11 @@ F 3 "" H 5400 4850 60  0001 C CNN
 	1    5400 4850
 	-1   0    0    1   
 $EndComp
-Text GLabel 6150 4700 3    60   Input ~ 0
+Text GLabel 7700 4700 3    60   Input ~ 0
 Y-STEP
-Text GLabel 6250 4700 3    60   Input ~ 0
+Text GLabel 7800 4700 3    60   Input ~ 0
 Y-DIR
-Text GLabel 5550 4700 3    60   Input ~ 0
+Text GLabel 7100 4700 3    60   Input ~ 0
 Y-EN
 $Comp
 L HEADER_3X2 J5
@@ -1547,11 +1514,11 @@ F 3 "" H 6950 4850 60  0001 C CNN
 	1    6950 4850
 	-1   0    0    1   
 $EndComp
-Text GLabel 7700 4700 3    60   Input ~ 0
+Text GLabel 9250 4700 3    60   Input ~ 0
 Z-STEP
-Text GLabel 7800 4700 3    60   Input ~ 0
+Text GLabel 9350 4700 3    60   Input ~ 0
 Z-DIR
-Text GLabel 7100 4700 3    60   Input ~ 0
+Text GLabel 8650 4700 3    60   Input ~ 0
 Z-EN
 $Comp
 L HEADER_3X2 J9
@@ -1667,11 +1634,11 @@ F 3 "" H 8500 4850 60  0001 C CNN
 	1    8500 4850
 	-1   0    0    1   
 $EndComp
-Text GLabel 9250 4700 3    60   Input ~ 0
+Text GLabel 10800 4700 3    60   Input ~ 0
 A-STEP
-Text GLabel 9350 4700 3    60   Input ~ 0
+Text GLabel 10900 4700 3    60   Input ~ 0
 A-DIR
-Text GLabel 8650 4700 3    60   Input ~ 0
+Text GLabel 10200 4700 3    60   Input ~ 0
 A-EN
 $Comp
 L HEADER_3X2 J10
@@ -1787,11 +1754,11 @@ F 3 "" H 10050 4850 60  0001 C CNN
 	1    10050 4850
 	-1   0    0    1   
 $EndComp
-Text GLabel 10800 4700 3    60   Input ~ 0
+Text GLabel 4600 4700 3    60   Input ~ 0
 B-STEP
-Text GLabel 10900 4700 3    60   Input ~ 0
+Text GLabel 4700 4700 3    60   Input ~ 0
 B-DIR
-Text GLabel 10200 4700 3    60   Input ~ 0
+Text GLabel 4000 4700 3    60   Input ~ 0
 B-EN
 $Comp
 L HEADER_3X2 J14
@@ -2650,14 +2617,6 @@ Wire Wire Line
 	4800 3450 4800 3400
 Wire Wire Line
 	4100 3400 4100 3300
-Connection ~ 6400 5750
-Wire Wire Line
-	6300 5750 6500 5750
-Connection ~ 6500 6400
-Wire Wire Line
-	6500 6250 6500 6400
-Wire Wire Line
-	6300 6300 6300 6250
 Wire Wire Line
 	6550 6700 6400 6700
 Wire Wire Line
@@ -3034,7 +2993,6 @@ Wire Wire Line
 Connection ~ 10750 2450
 Wire Wire Line
 	6250 6300 6550 6300
-Connection ~ 6300 6300
 Wire Wire Line
 	2600 6250 2350 6250
 Wire Wire Line
