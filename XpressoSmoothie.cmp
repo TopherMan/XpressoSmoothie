@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 5/19/2013 11:03:07 AM
+Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 5/19/2013 9:35:34 PM
 
 BeginCmp
 TimeStamp = /51911758;
@@ -73,15 +73,15 @@ EndCmp
 BeginCmp
 TimeStamp = /5193B0D1;
 Reference = C13;
-ValeurCmp = 22u;
-IdModule  = c_elec_4x5.3;
+ValeurCmp = 100u;
+IdModule  = c_elec_6.3x7.7;
 EndCmp
 
 BeginCmp
 TimeStamp = /5193B0D6;
 Reference = C14;
-ValeurCmp = 22u;
-IdModule  = c_elec_4x5.3;
+ValeurCmp = 100u;
+IdModule  = c_elec_6.3x7.7;
 EndCmp
 
 BeginCmp
@@ -136,8 +136,8 @@ EndCmp
 BeginCmp
 TimeStamp = /51992585;
 Reference = C22;
-ValeurCmp = 220n;
-IdModule  = SM0805;
+ValeurCmp = 1u;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
@@ -194,6 +194,27 @@ TimeStamp = /51985914;
 Reference = D8;
 ValeurCmp = 1N4007;
 IdModule  = DO-41;
+EndCmp
+
+BeginCmp
+TimeStamp = /5199029C;
+Reference = D10;
+ValeurCmp = LED_GREEN;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519902BE;
+Reference = D11;
+ValeurCmp = LED_GREEN;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519902D3;
+Reference = D12;
+ValeurCmp = LED_GREEN;
+IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
@@ -323,6 +344,13 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
+TimeStamp = /51991996;
+Reference = J13;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
 TimeStamp = /5198A177;
 Reference = J14;
 ValeurCmp = HEADER_3X2;
@@ -411,6 +439,13 @@ TimeStamp = /5197E8F8;
 Reference = J26;
 ValeurCmp = USB;
 IdModule  = USB_MICRO_RMC;
+EndCmp
+
+BeginCmp
+TimeStamp = /51991D45;
+Reference = J27;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
@@ -563,14 +598,14 @@ EndCmp
 BeginCmp
 TimeStamp = /51901247;
 Reference = R18;
-ValeurCmp = 1K8;
+ValeurCmp = 3k3;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /51985A41;
 Reference = R19;
-ValeurCmp = 1K8;
+ValeurCmp = 3k3;
 IdModule  = SM0805;
 EndCmp
 
@@ -584,7 +619,7 @@ EndCmp
 BeginCmp
 TimeStamp = /519859F2;
 Reference = R21;
-ValeurCmp = 1K8;
+ValeurCmp = 3k3;
 IdModule  = SM0805;
 EndCmp
 
@@ -598,7 +633,7 @@ EndCmp
 BeginCmp
 TimeStamp = /51985927;
 Reference = R23;
-ValeurCmp = 1K8;
+ValeurCmp = 3k3;
 IdModule  = SM0805;
 EndCmp
 
@@ -620,6 +655,27 @@ BeginCmp
 TimeStamp = /51901148;
 Reference = R26;
 ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51990296;
+Reference = R28;
+ValeurCmp = 3k3;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519902B8;
+Reference = R29;
+ValeurCmp = 3k3;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /519902CD;
+Reference = R30;
+ValeurCmp = 3k3;
 IdModule  = SM0805;
 EndCmp
 
@@ -701,10 +757,10 @@ IdModule  = TRANSFLASH_MICROSD;
 EndCmp
 
 BeginCmp
-TimeStamp = /5198DDC8;
+TimeStamp = /5198EACF;
 Reference = U7;
-ValeurCmp = LM1117-12;
-IdModule  = SOT223_LM1117;
+ValeurCmp = LM7812CT;
+IdModule  = TO220_VERT_1117;
 EndCmp
 
 BeginCmp
