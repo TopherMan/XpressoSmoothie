@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2012-apr-16-27)-stable date = Sat 18 May 2013 03:12:53 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-03-31 BZR 4008)-stable date = 5/19/2013 6:37:24 AM
 
 BeginCmp
 TimeStamp = /51911758;
@@ -29,31 +29,17 @@ IdModule  = c_elec_6.3x7.7;
 EndCmp
 
 BeginCmp
-TimeStamp = /5196F080;
-Reference = C5;
-ValeurCmp = 100u;
-IdModule  = c_elec_6.3x7.7;
-EndCmp
-
-BeginCmp
 TimeStamp = /5196F07A;
 Reference = C6;
-ValeurCmp = 220n;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51900DC7;
-Reference = C7;
-ValeurCmp = 100u;
-IdModule  = c_elec_6.3x7.7;
+ValeurCmp = 1u/50v;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
 TimeStamp = /51900DCA;
 Reference = C8;
-ValeurCmp = 220n;
-IdModule  = SM0805;
+ValeurCmp = 1u/50v;
+IdModule  = SM1206;
 EndCmp
 
 BeginCmp
@@ -157,15 +143,15 @@ EndCmp
 BeginCmp
 TimeStamp = /51985A2E;
 Reference = D1;
-ValeurCmp = DIODE;
-IdModule  = DO214;
+ValeurCmp = 1N4007;
+IdModule  = DO-41;
 EndCmp
 
 BeginCmp
 TimeStamp = /519859DF;
 Reference = D2;
-ValeurCmp = DIODE;
-IdModule  = DO214;
+ValeurCmp = 1N4007;
+IdModule  = DO-41;
 EndCmp
 
 BeginCmp
@@ -199,15 +185,15 @@ EndCmp
 BeginCmp
 TimeStamp = /519652D7;
 Reference = D7;
-ValeurCmp = DIODE;
-IdModule  = DO214;
+ValeurCmp = 1N4007;
+IdModule  = DO-41;
 EndCmp
 
 BeginCmp
 TimeStamp = /51985914;
 Reference = D8;
-ValeurCmp = DIODE;
-IdModule  = DO214;
+ValeurCmp = 1N4007;
+IdModule  = DO-41;
 EndCmp
 
 BeginCmp
@@ -222,6 +208,34 @@ TimeStamp = /51900D31;
 Reference = F2;
 ValeurCmp = FUSE;
 IdModule  = MF-R500;
+EndCmp
+
+BeginCmp
+TimeStamp = /5197EDF9;
+Reference = Hole1;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5197EE17;
+Reference = Hole2;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5197EE1D;
+Reference = Hole3;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
+EndCmp
+
+BeginCmp
+TimeStamp = /5197EE23;
+Reference = Hole4;
+ValeurCmp = CONN_1;
+IdModule  = 1pin;
 EndCmp
 
 BeginCmp
@@ -309,13 +323,6 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51950866;
-Reference = J13;
-ValeurCmp = HEADER_3X2;
-IdModule  = pin_array_3x2;
-EndCmp
-
-BeginCmp
 TimeStamp = /5198A177;
 Reference = J14;
 ValeurCmp = HEADER_3X2;
@@ -400,37 +407,37 @@ IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51925D98;
+TimeStamp = /5197E8F8;
 Reference = J26;
-ValeurCmp = USB_1;
+ValeurCmp = USB;
 IdModule  = USB_MICRO_RMC;
 EndCmp
 
 BeginCmp
 TimeStamp = /51985A4D;
 Reference = Q1;
-ValeurCmp = IRLB_8743;
+ValeurCmp = IRLB 8743;
 IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
 TimeStamp = /519859FE;
 Reference = Q2;
-ValeurCmp = IRLB_8743;
+ValeurCmp = IRLB 8743;
 IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
 TimeStamp = /51985933;
 Reference = Q3;
-ValeurCmp = IRLB_8743;
+ValeurCmp = IRLB 8743;
 IdModule  = TO220_VERT_C;
 EndCmp
 
 BeginCmp
 TimeStamp = /51901111;
 Reference = Q4;
-ValeurCmp = IRLB_8743;
+ValeurCmp = IRLB 8743;
 IdModule  = TO220_VERT_C;
 EndCmp
 
@@ -607,6 +614,27 @@ TimeStamp = /518FF94F;
 Reference = SW2;
 ValeurCmp = SW_PUSH;
 IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /519825D7;
+Reference = Th0;
+ValeurCmp = CONN_2;
+IdModule  = PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /519825D1;
+Reference = Th1;
+ValeurCmp = CONN_2;
+IdModule  = PINHEAD1-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /519825B8;
+Reference = Th2;
+ValeurCmp = CONN_2;
+IdModule  = PINHEAD1-2;
 EndCmp
 
 BeginCmp
