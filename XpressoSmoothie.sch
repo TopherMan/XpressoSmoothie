@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/19/2013 6:38:50 AM
+EESchema Schematic File Version 2  date 5/19/2013 7:54:30 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -1984,7 +1984,7 @@ F 3 "" H 9850 4850 60  0001 C CNN
 	1    9850 4850
 	-1   0    0    1   
 $EndComp
-Text Notes 4100 2100 0    59   ~ 0
+Text Notes 4150 1700 0    59   ~ 0
 TODO: add at routing\n- leds terminations\n- positioned decoupling
 Text Notes 3350 6950 0    59   ~ 0
 TODO: \n- check alt detect method by cs/ss\n- data transmision with internal pullups
