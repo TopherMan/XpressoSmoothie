@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/19/2013 10:07:56 PM
+EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -41,13 +41,13 @@ LIBS:RMC
 LIBS:opendous
 LIBS:lm1117
 LIBS:XpressoSmoothie-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "19 may 2013"
+Date "20 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -211,17 +211,17 @@ Text GLabel 2850 6950 2    30   Input ~ 0
 XMIN
 Text GLabel 2850 7050 2    30   Input ~ 0
 XMAX
-Text GLabel 750  6400 0    30   Input ~ 0
+Text GLabel 750  7300 0    30   Input ~ 0
 B-EN
-Text GLabel 750  6350 0    30   Input ~ 0
+Text GLabel 750  7250 0    30   Input ~ 0
 B-STEP
-Text GLabel 750  6300 0    30   Input ~ 0
+Text GLabel 750  7200 0    30   Input ~ 0
 B-DIR
-Text GLabel 700  6500 0    30   Input ~ 0
+Text GLabel 750  6950 0    30   Input ~ 0
 A-DIR
-Text GLabel 700  6550 0    30   Input ~ 0
+Text GLabel 750  7000 0    30   Input ~ 0
 A-STEP
-Text GLabel 700  6600 0    30   Input ~ 0
+Text GLabel 750  7050 0    30   Input ~ 0
 A-EN
 Text GLabel 750  6850 0    30   Input ~ 0
 Z-EN
@@ -229,17 +229,17 @@ Text GLabel 750  6800 0    30   Input ~ 0
 Z-STEP
 Text GLabel 750  6750 0    30   Input ~ 0
 Z-DIR
-Text GLabel 750  7050 0    30   Input ~ 0
+Text GLabel 700  6600 0    30   Input ~ 0
 Y-EN
-Text GLabel 750  7000 0    30   Input ~ 0
+Text GLabel 700  6550 0    30   Input ~ 0
 Y-STEP
-Text GLabel 750  6950 0    30   Input ~ 0
+Text GLabel 700  6500 0    30   Input ~ 0
 Y-DIR
-Text GLabel 750  7250 0    30   Input ~ 0
+Text GLabel 750  6350 0    30   Input ~ 0
 X-STEP
-Text GLabel 750  7200 0    30   Input ~ 0
+Text GLabel 750  6300 0    30   Input ~ 0
 X-DIR
-Text GLabel 750  7300 0    30   Input ~ 0
+Text GLabel 750  6400 0    30   Input ~ 0
 X-EN
 Text GLabel 2850 6550 2    30   Input ~ 0
 POWER4
@@ -648,9 +648,9 @@ F 3 "" H 3900 4950 60  0001 C CNN
 	1    3900 4950
 	-1   0    0    1   
 $EndComp
-Text GLabel 4650 4800 3    60   Input ~ 0
+Text GLabel 10850 4800 3    60   Input ~ 0
 X-STEP
-Text GLabel 4750 4800 3    60   Input ~ 0
+Text GLabel 10950 4800 3    60   Input ~ 0
 X-DIR
 $Comp
 L VCC #PWR010
@@ -663,7 +663,7 @@ F 3 "" H 3700 4650 60  0001 C CNN
 	1    3700 4650
 	1    0    0    -1  
 $EndComp
-Text GLabel 4050 4800 3    60   Input ~ 0
+Text GLabel 10250 4800 3    60   Input ~ 0
 X-EN
 $Comp
 L HEADER_3X2 J4
@@ -1387,11 +1387,11 @@ F 3 "" H 5450 4950 60  0001 C CNN
 	1    5450 4950
 	-1   0    0    1   
 $EndComp
-Text GLabel 6200 4800 3    60   Input ~ 0
+Text GLabel 9300 4800 3    60   Input ~ 0
 Y-STEP
-Text GLabel 6300 4800 3    60   Input ~ 0
+Text GLabel 9400 4800 3    60   Input ~ 0
 Y-DIR
-Text GLabel 5600 4800 3    60   Input ~ 0
+Text GLabel 8700 4800 3    60   Input ~ 0
 Y-EN
 $Comp
 L HEADER_3X2 J5
@@ -1616,11 +1616,11 @@ F 3 "" H 8550 4950 60  0001 C CNN
 	1    8550 4950
 	-1   0    0    1   
 $EndComp
-Text GLabel 9300 4800 3    60   Input ~ 0
+Text GLabel 6200 4800 3    60   Input ~ 0
 A-STEP
-Text GLabel 9400 4800 3    60   Input ~ 0
+Text GLabel 6300 4800 3    60   Input ~ 0
 A-DIR
-Text GLabel 8700 4800 3    60   Input ~ 0
+Text GLabel 5600 4800 3    60   Input ~ 0
 A-EN
 $Comp
 L HEADER_3X2 J10
@@ -1725,11 +1725,11 @@ F 3 "" H 10100 4950 60  0001 C CNN
 	1    10100 4950
 	-1   0    0    1   
 $EndComp
-Text GLabel 10850 4800 3    60   Input ~ 0
+Text GLabel 4650 4800 3    60   Input ~ 0
 B-STEP
-Text GLabel 10950 4800 3    60   Input ~ 0
+Text GLabel 4750 4800 3    60   Input ~ 0
 B-DIR
-Text GLabel 10250 4800 3    60   Input ~ 0
+Text GLabel 4050 4800 3    60   Input ~ 0
 B-EN
 $Comp
 L HEADER_3X2 J14
