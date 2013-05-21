@@ -1,6 +1,6 @@
-update=5/21/2013 6:36:34 AM
+update=Tue 21 May 2013 01:48:45 PM EDT
 version=1
-last_client=kicad
+last_client=pcbnew
 [cvpcb]
 version=1
 NetIExt=net
@@ -57,25 +57,27 @@ LibName39=KiCAD_Libraries/library/RMC
 LibName40=KiCAD_Libraries/library/opendous
 LibName41=KiCAD_Libraries/library/lm1117
 LibName42=fet_driver
+[general]
+version=1
 [pcbnew]
 version=1
 LastNetListRead=XpressoSmoothie.net
 UseCmpFile=1
-PadDrill=0.600000000000
-PadDrillOvalY=0.600000000000
-PadSizeH=1.800860000000
-PadSizeV=1.399540000000
-PcbTextSizeV=2.032000000000
-PcbTextSizeH=1.524000000000
-PcbTextThickness=0.304800000000
-ModuleTextSizeV=1.524000000000
-ModuleTextSizeH=1.524000000000
-ModuleTextSizeThickness=0.304800000000
-SolderMaskClearance=0.254000000000
-SolderMaskMinWidth=0.000000000000
-DrawSegmentWidth=0.381000000000
-BoardOutlineThickness=0.381000000000
-ModuleOutlineThickness=0.381000000000
+PadDrill="    0.600000"
+PadDrillOvalY="    0.600000"
+PadSizeH="    1.800860"
+PadSizeV="    1.399540"
+PcbTextSizeV="    2.032000"
+PcbTextSizeH="    1.524000"
+PcbTextThickness="    0.304800"
+ModuleTextSizeV="    1.524000"
+ModuleTextSizeH="    1.524000"
+ModuleTextSizeThickness="    0.304800"
+SolderMaskClearance="    0.254000"
+SolderMaskMinWidth="    0.000000"
+DrawSegmentWidth="    0.381000"
+BoardOutlineThickness="    0.381000"
+ModuleOutlineThickness="    0.381000"
 [pcbnew/libraries]
 LibDir=KiCAD_Libraries/walter/pcbnew;KiCAD_Libraries/Chris;KiCAD_Libraries/modules
 LibName1=sockets
@@ -97,5 +99,4 @@ LibName16=KiCAD_Libraries/modules/borniers
 LibName17=KiCAD_Libraries/modules/opendous
 LibName18=KiCAD_Libraries/modules/RMC
 LibName19=w_smd_dil
-[general]
-version=1
+LibName20=OSHW_large
