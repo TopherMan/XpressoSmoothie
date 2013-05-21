@@ -1,17 +1,18 @@
 Overview
 ========
-This is a plan to make a Smoothie-compatible board that runs off an LPCXpresso 1769, with a more modular design in the spirit of RAMPS. More information about Smoothie can be found at http://smoothieware.org.
+This is a plan to make a RepRap electronics solution capable of running the Smoothie firmware. The board will be built around the LPCXpresso 1769, with a more modular design in the spirit of RAMPS. More information about the RepRap project can be found at http://reprap.org, and more information about Smoothie can be found at http://smoothieware.org.
 
 Features
 --------
 * 120 MHz ARM Cortex-M3 processor, chosen to run the highly efficent and modular Smoothie firmware (https://github.com/arthurwolf/Smoothie).
 * Can be powered by 12V or 24V.
 * 5 Axes, using Pololu A4988-style stepper drivers.
-* 4 Power output MOSFETs, two with fuses for bed and heater protection.
+* 4 Power output MOSFETs, two with fuses for bed and heater over-current protection.
 * 6 endstops and 3 thermistors.
 * Integrated microSD reader.
-* Pins broken out for I2C, ADC, 3 GPIO, and on-board Ethernet chip.
-* Designed with DIY in mind.
+* Pins broken out for I2C, ADC, 3 GPIO, and on-board Ethernet chip for future expansion.
+* Due to the modular nature of Smoothie, the board should also work with mills, laser cutters, and any future modules.
+* Designed with DIY board-making in mind.
 
 Current Status
 --------------
@@ -26,6 +27,7 @@ More Information
 ----------------
 Wiki page coming soon.
 
-Special thanks
---------------
-To Noobman, for significant work towards making the board actually functional, and giving lots of advice on design and layout.
+Authors
+-------
+TopherMan (Chris George) -- Initial design idea and basic layout.
+Noobman -- Significant input on design, and completed nearly all routing.
