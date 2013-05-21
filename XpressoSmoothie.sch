@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/21/2013 4:08:13 AM
+EESchema Schematic File Version 2  date 5/21/2013 6:39:09 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -2251,14 +2251,14 @@ F 3 "" H 5200 1250 60  0001 C CNN
 $EndComp
 Text Notes 7950 700  0    79   ~ 0
 MOSFETS
-Text Notes 6050 2600 0    39   ~ 0
-Output connectors are V+ and GND.
+Text Notes 6100 2550 0    39   ~ 0
+Output connectors are V+ and GND.\nQ1 is bed mosfet to keep high current trace short. \nSolder a thick copper wire from input to Q1 and back.
 Text Notes 1000 3000 0    79   ~ 0
 Enstops and Thermistors
 Text Notes 6550 2950 0    79   ~ 0
 STEPPER DRIVERS
 Text Notes 600  5100 0    39   ~ 0
-Seems most LPC pins are 5v tolerant.
+Seems most LPC pins are 5v tolerant.\nDont abuse :)
 Text GLabel 3550 1750 2    30   Input ~ 0
 VIO3V3
 $Comp
@@ -3209,9 +3209,7 @@ Wire Wire Line
 Wire Wire Line
 	9900 5250 9900 5200
 Wire Notes Line
-	11300 2650 400  2650
-Wire Notes Line
-	5550 400  5550 2650
+	5550 400  5550 2700
 Wire Wire Line
 	2500 1400 2500 1100
 Wire Wire Line
@@ -3342,9 +3340,9 @@ Wire Wire Line
 	1200 6850 1000 6850
 Wire Wire Line
 	1000 6850 800  6700
-Text Notes 3600 5450 0    39   ~ 0
+Text Notes 3550 5400 0    39   ~ 0
 Pololu drivers or compatible footprint: http://www.pololu.com/catalog/category/120
-Text Notes 7450 2600 0    39   ~ 0
+Text Notes 7900 2650 0    39   ~ 0
 MOS drivers TC4452 (SOIC-8-Narrow) or TC4422A (SOIC-8-WIDE), check and adjust pcb footprint if needed.
 $Comp
 L C C24
@@ -3362,7 +3360,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 1000 10850 1000
 Text Notes 3400 7350 0    39   ~ 0
-Capacitors: all smd ceramic caps dielectric X5R or X7R or better
+Capacitors: all smd ceramic caps dielectric X5R or X7R or better\nMosfet output connectors are V+ and GND. Q1 is bed mosfet to keep high current trace short. \nSolder a thick copper wire from input to Q1 and back (both on V+ and gnd) to help with the high current.\nFor DIY purposes increase fill zones parameters.
 Wire Notes Line
 	400  5500 11300 5500
 Wire Notes Line
@@ -3390,4 +3388,6 @@ F 3 "" H 4900 2300 60  0001 C CNN
 	1    4900 2300
 	1    0    0    -1  
 $EndComp
+Wire Notes Line
+	11300 2700 400  2700
 $EndSCHEMATC
