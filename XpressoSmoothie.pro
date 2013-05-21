@@ -1,8 +1,11 @@
-update=5/18/2013 11:54:47 PM
+update=5/21/2013 1:28:25 AM
 version=1
-last_client=pcbnew
-[general]
+last_client=kicad
+[cvpcb]
 version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=KiCAD_Libraries/walter/eesch;KiCAD_Libraries/library
@@ -53,11 +56,7 @@ LibName38=KiCAD_Libraries/library/pololu_a4988x
 LibName39=KiCAD_Libraries/library/RMC
 LibName40=KiCAD_Libraries/library/opendous
 LibName41=KiCAD_Libraries/library/lm1117
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName42=fet_driver
 [pcbnew]
 version=1
 LastNetListRead=XpressoSmoothie.net
@@ -97,3 +96,6 @@ LibName15=KiCAD_Libraries/modules/USBMICRO
 LibName16=KiCAD_Libraries/modules/borniers
 LibName17=KiCAD_Libraries/modules/opendous
 LibName18=KiCAD_Libraries/modules/RMC
+LibName19=w_smd_dil
+[general]
+version=1
