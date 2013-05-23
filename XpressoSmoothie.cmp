@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/21/2013 4:08:27 AM
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 23 May 2013 12:34:40 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -474,6 +474,20 @@ TimeStamp = /51991D45;
 Reference = J27;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
+TimeStamp = /519E49F1;
+Reference = M1;
+ValeurCmp = LOGO_OSHW;
+IdModule  = OSHW_large_silkscreen-back_70mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /519E49E2;
+Reference = M2;
+ValeurCmp = LOGO_OSHW;
+IdModule  = OSHW_logo_2;
 EndCmp
 
 BeginCmp
