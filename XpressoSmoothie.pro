@@ -1,6 +1,6 @@
-update=Tue 21 May 2013 01:48:45 PM EDT
+update=5/23/2013 8:30:07 AM
 version=1
-last_client=pcbnew
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -57,8 +57,6 @@ LibName39=KiCAD_Libraries/library/RMC
 LibName40=KiCAD_Libraries/library/opendous
 LibName41=KiCAD_Libraries/library/lm1117
 LibName42=fet_driver
-[general]
-version=1
 [pcbnew]
 version=1
 LastNetListRead=XpressoSmoothie.net
@@ -100,3 +98,5 @@ LibName17=KiCAD_Libraries/modules/opendous
 LibName18=KiCAD_Libraries/modules/RMC
 LibName19=w_smd_dil
 LibName20=OSHW_large
+[general]
+version=1

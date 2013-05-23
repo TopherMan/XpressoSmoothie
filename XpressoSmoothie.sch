@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/21/2013 6:39:09 AM
+EESchema Schematic File Version 2  date 5/23/2013 8:13:46 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -48,7 +48,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "21 may 2013"
+Date "23 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -2409,17 +2409,11 @@ Wire Wire Line
 	800  7050 800  7100
 Connection ~ 800  7250
 Wire Wire Line
-	550  7100 1150 7100
-Wire Wire Line
 	800  7300 550  7300
 Wire Wire Line
 	800  7250 800  7300
 Wire Wire Line
 	550  7300 550  7100
-Wire Wire Line
-	1200 7150 800  7150
-Wire Wire Line
-	1200 7200 800  7200
 Wire Wire Line
 	900  7350 800  7450
 Wire Wire Line
@@ -3390,4 +3384,18 @@ F 3 "" H 4900 2300 60  0001 C CNN
 $EndComp
 Wire Notes Line
 	11300 2700 400  2700
+Wire Wire Line
+	1200 7200 850  7200
+Wire Wire Line
+	850  7200 800  7250
+Wire Wire Line
+	1200 7150 850  7150
+Wire Wire Line
+	850  7150 800  7200
+Wire Wire Line
+	1150 7100 850  7100
+Wire Wire Line
+	850  7100 800  7150
+Wire Wire Line
+	550  7100 800  7100
 $EndSCHEMATC
