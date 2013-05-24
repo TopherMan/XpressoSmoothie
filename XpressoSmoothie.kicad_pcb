@@ -3,7 +3,7 @@
   (general
     (links 313)
     (no_connects 11)
-    (area 71.564499 53.784499 171.640501 153.860501)
+    (area 56.388 53.217 179.864657 163.2712)
     (thickness 1.6)
     (drawings 18)
     (tracks 1095)
@@ -13,13 +13,13 @@
   )
 
   (page A4)
-  (title_block 
+  (title_block
     (title XpressoSmoothie)
   )
 
   (layers
-    (15 F.Cu signal)
-    (0 B.Cu signal)
+    (15 F.Cu signal hide)
+    (0 B.Cu signal hide)
     (16 B.Adhes user)
     (17 F.Adhes user)
     (18 B.Paste user)
@@ -372,10 +372,10 @@
     (add_net ZMIN)
   )
 
-  (module USB_MICRO_RMC (layer F.Cu) (tedit 519BBE0B) (tstamp 51980765)
+  (module USB_MICRO_RMC (layer F.Cu) (tedit 519F9339) (tstamp 51980765)
     (at 169.545 120.015 180)
     (path /5197E8F8)
-    (fp_text reference J26 (at 0 -7.44982 180) (layer F.SilkS)
+    (fp_text reference J26 (at 0 -7.44982 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.127)))
     )
     (fp_text value USB (at 0 8.15086 180) (layer F.SilkS)
@@ -514,7 +514,7 @@
     )
   )
 
-  (module TO220_VERT_C (layer F.Cu) (tedit 519BBF0A) (tstamp 5198039A)
+  (module TO220_VERT_C (layer F.Cu) (tedit 519F92D1) (tstamp 5198039A)
     (at 92.202 137.795 270)
     (descr "Regulateur TO220 serie LM78xx")
     (tags "TR TO220")
@@ -522,7 +522,7 @@
     (fp_text reference Q1 (at 3.937 0 360) (layer F.SilkS)
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
-    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS)
+    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS) hide
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
     (fp_line (start 1.905 -5.08) (end 2.54 -5.08) (layer F.SilkS) (width 0.381))
@@ -546,7 +546,7 @@
     )
   )
 
-  (module TO220_VERT_C (layer F.Cu) (tedit 519BBF78) (tstamp 519807A2)
+  (module TO220_VERT_C (layer F.Cu) (tedit 519F92CB) (tstamp 519807A2)
     (at 112.395 137.795 270)
     (descr "Regulateur TO220 serie LM78xx")
     (tags "TR TO220")
@@ -554,7 +554,7 @@
     (fp_text reference Q2 (at 3.81 -0.127 360) (layer F.SilkS)
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
-    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS)
+    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS) hide
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
     (fp_line (start 1.905 -5.08) (end 2.54 -5.08) (layer F.SilkS) (width 0.381))
@@ -578,7 +578,7 @@
     )
   )
 
-  (module TO220_VERT_C (layer F.Cu) (tedit 519BBF9C) (tstamp 519807B0)
+  (module TO220_VERT_C (layer F.Cu) (tedit 519F92C6) (tstamp 519807B0)
     (at 128.27 137.795 270)
     (descr "Regulateur TO220 serie LM78xx")
     (tags "TR TO220")
@@ -586,7 +586,7 @@
     (fp_text reference Q3 (at 3.81 0 360) (layer F.SilkS)
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
-    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS)
+    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS) hide
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
     (fp_line (start 1.905 -5.08) (end 2.54 -5.08) (layer F.SilkS) (width 0.381))
@@ -610,7 +610,7 @@
     )
   )
 
-  (module TO220_VERT_C (layer F.Cu) (tedit 519BBFAC) (tstamp 519807BE)
+  (module TO220_VERT_C (layer F.Cu) (tedit 519F9299) (tstamp 519807BE)
     (at 144.145 137.795 270)
     (descr "Regulateur TO220 serie LM78xx")
     (tags "TR TO220")
@@ -618,7 +618,7 @@
     (fp_text reference Q4 (at 3.81 0 360) (layer F.SilkS)
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
-    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS)
+    (fp_text value "IRLB 8743" (at 0.635 -6.35 270) (layer F.SilkS) hide
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
     (fp_line (start 1.905 -5.08) (end 2.54 -5.08) (layer F.SilkS) (width 0.381))
@@ -1474,14 +1474,14 @@
     )
   )
 
-  (module POLOLU (layer F.Cu) (tedit 519BBC29) (tstamp 519809FC)
+  (module POLOLU (layer F.Cu) (tedit 519F93EF) (tstamp 519809FC)
     (at 88.9 63.8175 180)
     (descr "Pololu/Stepstick driver carrier")
     (path /51989F23)
     (fp_text reference U2 (at 0 -10.414 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS)
+    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -9.652 3.048) (end -8.89 1.778) (layer F.SilkS) (width 0.381))
@@ -1567,14 +1567,14 @@
     )
   )
 
-  (module POLOLU (layer F.Cu) (tedit 519BBC0F) (tstamp 519AD252)
+  (module POLOLU (layer F.Cu) (tedit 519F9438) (tstamp 519AD252)
     (at 134.62 63.8175 180)
     (descr "Pololu/Stepstick driver carrier")
     (path /5198A0A5)
     (fp_text reference U4 (at 0 -10.414 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS)
+    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -9.652 3.048) (end -8.89 1.778) (layer F.SilkS) (width 0.381))
@@ -1660,14 +1660,14 @@
     )
   )
 
-  (module POLOLU (layer F.Cu) (tedit 519BBC1B) (tstamp 519AD20C)
+  (module POLOLU (layer F.Cu) (tedit 519F93AD) (tstamp 519AD20C)
     (at 157.48 63.8175 180)
     (descr "Pololu/Stepstick driver carrier")
     (path /5198A196)
     (fp_text reference U5 (at 0 -10.414 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS)
+    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -9.652 3.048) (end -8.89 1.778) (layer F.SilkS) (width 0.381))
@@ -1753,14 +1753,14 @@
     )
   )
 
-  (module POLOLU (layer F.Cu) (tedit 519BBC37) (tstamp 51980AE0)
+  (module POLOLU (layer F.Cu) (tedit 519F941C) (tstamp 51980AE0)
     (at 79.6925 92.3925 270)
     (descr "Pololu/Stepstick driver carrier")
     (path /518FE66A)
     (fp_text reference U1 (at 0 -10.414 270) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value POLOLU_A4988 (at 0.762 -2.286 270) (layer F.SilkS)
+    (fp_text value POLOLU_A4988 (at 0.762 -2.286 270) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -9.652 3.048) (end -8.89 1.778) (layer F.SilkS) (width 0.381))
@@ -1846,14 +1846,14 @@
     )
   )
 
-  (module POLOLU (layer F.Cu) (tedit 519BBC23) (tstamp 51980A68)
+  (module POLOLU (layer F.Cu) (tedit 519F9432) (tstamp 51980A68)
     (at 111.76 63.8175 180)
     (descr "Pololu/Stepstick driver carrier")
     (path /51989FE4)
     (fp_text reference U3 (at 0 -10.414 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS)
+    (fp_text value POLOLU_A4988 (at 0.762 -2.286 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start -9.652 3.048) (end -8.89 1.778) (layer F.SilkS) (width 0.381))
@@ -1939,12 +1939,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519BBCB6) (tstamp 51980A74)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519F93D3) (tstamp 51980A74)
     (at 158.75 57.785 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /5198A184)
-    (fp_text reference J12 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J12 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -1977,12 +1977,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519BBCC6) (tstamp 51986FB7)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519F9414) (tstamp 51986FB7)
     (at 74.93 92.3925 270)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /518FE799)
-    (fp_text reference J1 (at 0 -2.54 270) (layer F.SilkS)
+    (fp_text reference J1 (at 0 -2.54 270) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 270) (layer F.SilkS) hide
@@ -2015,12 +2015,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519BBCA2) (tstamp 51980A8C)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519F93E4) (tstamp 51980A8C)
     (at 115.57 58.1025 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51989FD2)
-    (fp_text reference J7 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J7 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -2091,12 +2091,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519BBCAE) (tstamp 51980AA4)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519F93D9) (tstamp 51980AA4)
     (at 137.16 58.1025 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /5198A093)
-    (fp_text reference J8 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J8 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -2129,12 +2129,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519BBC86) (tstamp 51980AB0)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 519F93F5) (tstamp 51980AB0)
     (at 93.6625 58.1025 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51989F11)
-    (fp_text reference J2 (at 0 -2.54 360) (layer F.SilkS)
+    (fp_text reference J2 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -2607,12 +2607,12 @@
     )
   )
 
-  (module PIN_ARRAY_3X1 (layer F.Cu) (tedit 519BBA84) (tstamp 519823D2)
+  (module PIN_ARRAY_3X1 (layer F.Cu) (tedit 519F9326) (tstamp 519823D2)
     (at 156.21 132.08)
     (descr "Connecteur 3 pins")
     (tags "CONN DEV")
     (path /51972ED2)
-    (fp_text reference J3 (at 0.254 -2.159) (layer F.SilkS)
+    (fp_text reference J3 (at 0.254 -2.159) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1524)))
     )
     (fp_text value HEADER_3 (at 0 -2.159) (layer F.SilkS) hide
@@ -2698,10 +2698,10 @@
     )
   )
 
-  (module LPCXPRESS0_GENERIC (layer F.Cu) (tedit 519BB8B6) (tstamp 519809C1)
+  (module LPCXPRESS0_GENERIC (layer F.Cu) (tedit 519F9334) (tstamp 519809C1)
     (at 167.005 87.63 180)
     (path /519131B7)
-    (fp_text reference J6 (at 5.334 -39.624 180) (layer F.SilkS)
+    (fp_text reference J6 (at 5.334 -39.624 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_text value LPCXPRESSO_GENERIC_HEADER (at 12.954 -36.576 180) (layer F.SilkS) hide
@@ -3555,12 +3555,12 @@
     )
   )
 
-  (module bornier4 (layer F.Cu) (tedit 519BB9F6) (tstamp 519816C9)
+  (module bornier4 (layer F.Cu) (tedit 519F9348) (tstamp 519816C9)
     (at 76.2 133.096 90)
     (descr "Bornier d'alimentation 4 pins")
     (tags DEV)
     (path /51900CCE)
-    (fp_text reference J11 (at 0 -6.35 90) (layer F.SilkS)
+    (fp_text reference J11 (at 0 -6.35 90) (layer F.SilkS) hide
       (effects (font (size 2.6162 1.59766) (thickness 0.3048)))
     )
     (fp_text value Pwr_in (at 0 5.08 90) (layer F.SilkS)
@@ -3594,7 +3594,7 @@
     )
   )
 
-  (module bornier2 (layer F.Cu) (tedit 519BBEC6) (tstamp 51980DAD)
+  (module bornier2 (layer F.Cu) (tedit 519F928C) (tstamp 51980DAD)
     (at 144.145 146.685 180)
     (descr "Bornier d'alimentation 2 pins")
     (tags DEV)
@@ -3602,7 +3602,7 @@
     (fp_text reference J22 (at 0 -5.08 180) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS)
+    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start 5.08 2.54) (end -5.08 2.54) (layer F.SilkS) (width 0.3048))
@@ -3625,7 +3625,7 @@
     )
   )
 
-  (module bornier2 (layer F.Cu) (tedit 519BBEB5) (tstamp 5198038B)
+  (module bornier2 (layer F.Cu) (tedit 519F9272) (tstamp 5198038B)
     (at 92.202 146.685 180)
     (descr "Bornier d'alimentation 2 pins")
     (tags DEV)
@@ -3633,7 +3633,7 @@
     (fp_text reference J19 (at 0 -5.08 180) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS)
+    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start 5.08 2.54) (end -5.08 2.54) (layer F.SilkS) (width 0.3048))
@@ -3656,7 +3656,7 @@
     )
   )
 
-  (module bornier2 (layer F.Cu) (tedit 519BBEBD) (tstamp 51980DC3)
+  (module bornier2 (layer F.Cu) (tedit 519F927B) (tstamp 51980DC3)
     (at 112.395 146.685 180)
     (descr "Bornier d'alimentation 2 pins")
     (tags DEV)
@@ -3664,7 +3664,7 @@
     (fp_text reference J20 (at 0 -5.08 180) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS)
+    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start 5.08 2.54) (end -5.08 2.54) (layer F.SilkS) (width 0.3048))
@@ -3687,7 +3687,7 @@
     )
   )
 
-  (module bornier2 (layer F.Cu) (tedit 519BBEC3) (tstamp 51980DCE)
+  (module bornier2 (layer F.Cu) (tedit 519F9284) (tstamp 51980DCE)
     (at 128.27 146.685 180)
     (descr "Bornier d'alimentation 2 pins")
     (tags DEV)
@@ -3695,7 +3695,7 @@
     (fp_text reference J21 (at 0 -5.08 180) (layer F.SilkS)
       (effects (font (thickness 0.3048)))
     )
-    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS)
+    (fp_text value HEADER_2 (at 0 5.08 180) (layer F.SilkS) hide
       (effects (font (thickness 0.3048)))
     )
     (fp_line (start 5.08 2.54) (end -5.08 2.54) (layer F.SilkS) (width 0.3048))
@@ -3718,12 +3718,12 @@
     )
   )
 
-  (module 1pin   locked (layer F.Cu) (tedit 519BB8ED) (tstamp 5197EC5A)
+  (module 1pin   locked (layer F.Cu) (tedit 519F9223) (tstamp 5197EC5A)
     (at 74.93 150.495)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /5197EDF9)
-    (fp_text reference Hole1 (at 0 -3.048 90) (layer F.SilkS)
+    (fp_text reference Hole1 (at 0 -3.048 90) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.SilkS) hide
@@ -3736,12 +3736,12 @@
     )
   )
 
-  (module 1pin   locked (layer F.Cu) (tedit 519BB8DF) (tstamp 5198DB86)
+  (module 1pin   locked (layer F.Cu) (tedit 519F9216) (tstamp 5198DB86)
     (at 74.93 57.15)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /5197EE17)
-    (fp_text reference Hole2 (at 0 -3.048) (layer F.SilkS)
+    (fp_text reference Hole2 (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.SilkS) hide
@@ -3754,12 +3754,12 @@
     )
   )
 
-  (module 1pin   locked (layer F.Cu) (tedit 519BB8D5) (tstamp 5197EC66)
+  (module 1pin   locked (layer F.Cu) (tedit 519F9209) (tstamp 5197EC66)
     (at 168.275 57.15)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /5197EE1D)
-    (fp_text reference Hole3 (at 0 -3.048) (layer F.SilkS)
+    (fp_text reference Hole3 (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.SilkS) hide
@@ -3772,12 +3772,12 @@
     )
   )
 
-  (module 1pin   locked (layer F.Cu) (tedit 519BB8F5) (tstamp 5197EC6C)
+  (module 1pin   locked (layer F.Cu) (tedit 519F922A) (tstamp 5197EC6C)
     (at 168.275 150.495)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
     (path /5197EE23)
-    (fp_text reference Hole4 (at 0 -3.048) (layer F.SilkS)
+    (fp_text reference Hole4 (at 0 -3.048) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value CONN_1 (at 0 2.794) (layer F.SilkS) hide
@@ -3922,14 +3922,14 @@
     )
   )
 
-  (module PINHEAD1-2 (layer F.Cu) (tedit 519BBA2E) (tstamp 519AB89C)
+  (module PINHEAD1-2 (layer F.Cu) (tedit 519F938B) (tstamp 519AB89C)
     (at 122.555 83.185)
     (path /519825B8)
     (attr virtual)
     (fp_text reference Th2 (at -1.905 -3.81) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.0889)))
     )
-    (fp_text value CONN_2 (at 0 3.81) (layer F.SilkS)
+    (fp_text value CONN_2 (at 0 3.81) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.0889)))
     )
     (fp_line (start 2.54 -1.27) (end -2.54 -1.27) (layer F.SilkS) (width 0.254))
@@ -3947,14 +3947,14 @@
     )
   )
 
-  (module PINHEAD1-2 (layer F.Cu) (tedit 519BBA29) (tstamp 519AB890)
+  (module PINHEAD1-2 (layer F.Cu) (tedit 519F9391) (tstamp 519AB890)
     (at 128.905 83.185)
     (path /519825D1)
     (attr virtual)
     (fp_text reference Th1 (at -1.905 -3.81) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.0889)))
     )
-    (fp_text value CONN_2 (at 0 3.81) (layer F.SilkS)
+    (fp_text value CONN_2 (at 0 3.81) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.0889)))
     )
     (fp_line (start 2.54 -1.27) (end -2.54 -1.27) (layer F.SilkS) (width 0.254))
@@ -3972,14 +3972,14 @@
     )
   )
 
-  (module PINHEAD1-2 (layer F.Cu) (tedit 519BBA25) (tstamp 519AB884)
+  (module PINHEAD1-2 (layer F.Cu) (tedit 519F9397) (tstamp 519AB884)
     (at 135.255 83.185)
     (path /519825D7)
     (attr virtual)
     (fp_text reference Th0 (at -1.905 -3.81) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.0889)))
     )
-    (fp_text value CONN_2 (at 0 3.81) (layer F.SilkS)
+    (fp_text value CONN_2 (at 0 3.81) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.0889)))
     )
     (fp_line (start 2.54 -1.27) (end -2.54 -1.27) (layer F.SilkS) (width 0.254))
@@ -4219,12 +4219,12 @@
     )
   )
 
-  (module TO220_VERT_1117 (layer F.Cu) (tedit 519BBE7D) (tstamp 5198EB7B)
+  (module TO220_VERT_1117 (layer F.Cu) (tedit 519F92B1) (tstamp 5198EB7B)
     (at 159.385 148.59 90)
     (descr "Regulateur TO220 serie LM78xx")
     (tags "TR TO220")
     (path /5198EACF)
-    (fp_text reference U7 (at -3.175 0 180) (layer F.SilkS)
+    (fp_text reference U7 (at -3.175 0 180) (layer F.SilkS) hide
       (effects (font (size 1.524 1.016) (thickness 0.2032)))
     )
     (fp_text value LM7812CT (at 3.302 2.54 180) (layer F.SilkS)
@@ -4795,7 +4795,7 @@
     )
   )
 
-  (module SO8N (layer F.Cu) (tedit 45127296) (tstamp 519807E7)
+  (module SO8N (layer F.Cu) (tedit 519F930E) (tstamp 519807E7)
     (at 126.365 132.715 270)
     (descr "Module CMS SOJ 8 pins large")
     (tags "CMS SOJ")
@@ -4804,7 +4804,7 @@
     (fp_text reference U11 (at 0 -1.27 270) (layer F.SilkS)
       (effects (font (size 1.143 1.016) (thickness 0.127)))
     )
-    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS)
+    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.127)))
     )
     (fp_line (start -2.54 -2.286) (end 2.54 -2.286) (layer F.SilkS) (width 0.127))
@@ -4853,7 +4853,7 @@
     )
   )
 
-  (module SO8N (layer F.Cu) (tedit 45127296) (tstamp 5197FB94)
+  (module SO8N (layer F.Cu) (tedit 519F92FC) (tstamp 5197FB94)
     (at 90.17 132.715 270)
     (descr "Module CMS SOJ 8 pins large")
     (tags "CMS SOJ")
@@ -4862,7 +4862,7 @@
     (fp_text reference U8 (at 0 -1.27 270) (layer F.SilkS)
       (effects (font (size 1.143 1.016) (thickness 0.127)))
     )
-    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS)
+    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.127)))
     )
     (fp_line (start -2.54 -2.286) (end 2.54 -2.286) (layer F.SilkS) (width 0.127))
@@ -4911,7 +4911,7 @@
     )
   )
 
-  (module SO8N (layer F.Cu) (tedit 45127296) (tstamp 51980805)
+  (module SO8N (layer F.Cu) (tedit 519F9317) (tstamp 51980805)
     (at 142.24 132.715 270)
     (descr "Module CMS SOJ 8 pins large")
     (tags "CMS SOJ")
@@ -4920,7 +4920,7 @@
     (fp_text reference U10 (at 0 -1.27 270) (layer F.SilkS)
       (effects (font (size 1.143 1.016) (thickness 0.127)))
     )
-    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS)
+    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.127)))
     )
     (fp_line (start -2.54 -2.286) (end 2.54 -2.286) (layer F.SilkS) (width 0.127))
@@ -4969,7 +4969,7 @@
     )
   )
 
-  (module SO8N (layer F.Cu) (tedit 45127296) (tstamp 519C1DDB)
+  (module SO8N (layer F.Cu) (tedit 519F9305) (tstamp 519C1DDB)
     (at 110.49 132.715 270)
     (descr "Module CMS SOJ 8 pins large")
     (tags "CMS SOJ")
@@ -4978,7 +4978,7 @@
     (fp_text reference U9 (at 0 -1.27 270) (layer F.SilkS)
       (effects (font (size 1.143 1.016) (thickness 0.127)))
     )
-    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS)
+    (fp_text value TC4422A (at 0 1.27 270) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.127)))
     )
     (fp_line (start -2.54 -2.286) (end 2.54 -2.286) (layer F.SilkS) (width 0.127))
