@@ -1,6 +1,6 @@
-update=5/23/2013 8:30:07 AM
+update=Fri 24 May 2013 12:35:28 PM EDT
 version=1
-last_client=kicad
+last_client=pcbnew
 [cvpcb]
 version=1
 NetIExt=net
@@ -57,10 +57,12 @@ LibName39=KiCAD_Libraries/library/RMC
 LibName40=KiCAD_Libraries/library/opendous
 LibName41=KiCAD_Libraries/library/lm1117
 LibName42=fet_driver
+[general]
+version=1
 [pcbnew]
 version=1
 LastNetListRead=XpressoSmoothie.net
-UseCmpFile=1
+UseCmpFile=0
 PadDrill="    0.600000"
 PadDrillOvalY="    0.600000"
 PadSizeH="    1.800860"
@@ -98,5 +100,3 @@ LibName17=KiCAD_Libraries/modules/opendous
 LibName18=KiCAD_Libraries/modules/RMC
 LibName19=w_smd_dil
 LibName20=OSHW_large
-[general]
-version=1
