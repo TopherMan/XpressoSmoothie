@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/chris/gitspace/XpressoSmoothie/XpressoSmoothie.sch)
-    (date "Fri 24 May 2013 12:34:24 PM EDT")
+    (date "Tue 28 May 2013 03:05:17 PM EDT")
     (tool "eeschema (2013-mar-13)-testing"))
   (components
     (comp (ref J6)
@@ -45,7 +45,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5190124B))
     (comp (ref R18)
-      (value 3k3)
+      (value 560)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 51901247))
@@ -199,7 +199,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 51985921))
     (comp (ref R23)
-      (value 3k3)
+      (value 560)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 51985927))
@@ -226,7 +226,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 519859EC))
     (comp (ref R21)
-      (value 3k3)
+      (value 560)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 519859F2))
@@ -253,7 +253,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 51985A3B))
     (comp (ref R19)
-      (value 3k3)
+      (value 560)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 51985A41))
@@ -532,7 +532,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5198EACF))
     (comp (ref R28)
-      (value 3k3)
+      (value 560)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 51990296))
@@ -542,7 +542,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5199029C))
     (comp (ref R29)
-      (value 3k3)
+      (value 560)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 519902B8))
@@ -552,7 +552,7 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 519902BE))
     (comp (ref R30)
-      (value 3k3)
+      (value 56)
       (libsource (lib device) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 519902CD))
@@ -636,9 +636,7 @@
         (fp C1-1))
       (fields
         (field (name Reference) C)
-        (field (name Value) C)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) C))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
@@ -649,9 +647,7 @@
         (fp SM*))
       (fields
         (field (name Reference) C)
-        (field (name Value) CP1)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CP1))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
@@ -662,18 +658,14 @@
         (fp S*))
       (fields
         (field (name Reference) D)
-        (field (name Value) DIODE)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) DIODE))
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name K) (type passive))))
     (libpart (lib device) (part FUSE)
       (fields
         (field (name Reference) F)
-        (field (name Value) FUSE)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) FUSE))
       (pins
         (pin (num 1) (name ~) (type input))
         (pin (num 2) (name ~) (type input))))
@@ -688,9 +680,7 @@
         (fp LEDV))
       (fields
         (field (name Reference) D)
-        (field (name Value) LED)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) LED))
       (pins
         (pin (num 1) (name A) (type passive))
         (pin (num 2) (name K) (type passive))))
@@ -704,9 +694,7 @@
         (fp SM1206))
       (fields
         (field (name Reference) R)
-        (field (name Value) R)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) R))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
@@ -714,9 +702,7 @@
       (description "Push Button")
       (fields
         (field (name Reference) SW)
-        (field (name Value) SW_PUSH)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) SW_PUSH))
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
@@ -724,27 +710,21 @@
       (description "1 pin")
       (fields
         (field (name Reference) P)
-        (field (name Value) CONN_1)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CONN_1))
       (pins
         (pin (num 1) (name 1) (type passive))))
     (libpart (lib conn) (part CONN_2)
       (description "Symbole general de connecteur")
       (fields
         (field (name Reference) P)
-        (field (name Value) CONN_2)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) CONN_2))
       (pins
         (pin (num 1) (name P1) (type passive))
         (pin (num 2) (name PM) (type passive))))
     (libpart (lib conn) (part USB)
       (fields
         (field (name Reference) J)
-        (field (name Value) USB)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) USB))
       (pins
         (pin (num 1) (name Vbus) (type power_out))
         (pin (num 2) (name D-) (type BiDi))
@@ -760,8 +740,7 @@
       (fields
         (field (name Reference) U)
         (field (name Value) LM317T)
-        (field (name Footprint) TO-220)
-        (field (name Datasheet) ~))
+        (field (name Footprint) TO-220))
       (pins
         (pin (num 1) (name ADJ) (type input))
         (pin (num 2) (name OUT) (type power_out))
@@ -774,8 +753,7 @@
       (fields
         (field (name Reference) U)
         (field (name Value) LM7805CT)
-        (field (name Footprint) TO-220)
-        (field (name Datasheet) ~))
+        (field (name Footprint) TO-220))
       (pins
         (pin (num 1) (name IN) (type input))
         (pin (num 2) (name GND) (type power_in))
@@ -844,37 +822,16 @@
       (fields
         (field (name Reference) M)
         (field (name Value) LOGO_OSHW)
-        (field (name Footprint) OSHW_logo_2)
-        (field (name Datasheet) ~)))
+        (field (name Footprint) OSHW_logo_2)))
     (libpart (lib RMC) (part MOSFET_N_RMC)
       (description "Power MOSFET")
       (fields
         (field (name Reference) Q)
-        (field (name Value) MOSFET_N_RMC)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) MOSFET_N_RMC))
       (pins
         (pin (num D) (name ~) (type input))
         (pin (num G) (name ~) (type input))
         (pin (num S) (name ~) (type input))))
-    (libpart (lib fet_driver) (part TC4422A)
-      (footprints
-        (fp SOIC)
-        (fp DIP))
-      (fields
-        (field (name Reference) U)
-        (field (name Value) TC4422A)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name VDD) (type input))
-        (pin (num 2) (name IN) (type input))
-        (pin (num 3) (name DIS) (type NotConnected))
-        (pin (num 4) (name GND) (type input))
-        (pin (num 5) (name GND) (type input))
-        (pin (num 6) (name OUT) (type passive))
-        (pin (num 7) (name OUT) (type output))
-        (pin (num 8) (name VDD) (type input))))
     (libpart (lib opendous) (part CONN_microSD)
       (fields
         (field (name Reference) U)
@@ -890,12 +847,26 @@
         (pin (num 8) (name DAT1/IRQ) (type BiDi))
         (pin (num 9) (name CD2) (type passive))
         (pin (num 10) (name CD) (type passive))))
+    (libpart (lib fet_driver) (part TC4422A)
+      (footprints
+        (fp SOIC)
+        (fp DIP))
+      (fields
+        (field (name Reference) U)
+        (field (name Value) TC4422A))
+      (pins
+        (pin (num 1) (name VDD) (type input))
+        (pin (num 2) (name IN) (type input))
+        (pin (num 3) (name DIS) (type NotConnected))
+        (pin (num 4) (name GND) (type input))
+        (pin (num 5) (name GND) (type input))
+        (pin (num 6) (name OUT) (type passive))
+        (pin (num 7) (name OUT) (type output))
+        (pin (num 8) (name VDD) (type input))))
     (libpart (lib XpressoSmoothie-cache) (part LPCXpresso_Generic_Header)
       (fields
         (field (name Reference) J)
-        (field (name Value) LPCXpresso_Generic_Header)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
+        (field (name Value) LPCXpresso_Generic_Header))
       (pins
         (pin (num 1) (name GRND) (type passive))
         (pin (num 2) (name VIN) (type passive))
@@ -966,10 +937,10 @@
       (uri KiCAD_Libraries/library/RMC.lib))
     (library (logical opendous)
       (uri KiCAD_Libraries/library/opendous.lib))
-    (library (logical fet_driver)
-      (uri KiCAD_Libraries/library/fet_driver.lib))
     (library (logical XpressoSmoothie-cache)
-      (uri /home/chris/gitspace/XpressoSmoothie/XpressoSmoothie-cache.lib)))
+      (uri /home/chris/gitspace/XpressoSmoothie/XpressoSmoothie-cache.lib))
+    (library (logical fet_driver)
+      (uri KiCAD_Libraries/library/fet_driver.lib)))
   (nets
     (net (code 1) (name "")
       (node (ref U4) (pin 2))
