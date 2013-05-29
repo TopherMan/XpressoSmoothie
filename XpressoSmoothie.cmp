@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/27/2013 10:38:05 PM
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 28 May 2013 09:22:38 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -477,6 +477,13 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
+TimeStamp = /51A55C9B;
+Reference = J28;
+ValeurCmp = MICROSD-MOLEX;
+IdModule  = microsd-molex-47309;
+EndCmp
+
+BeginCmp
 TimeStamp = /519E49F1;
 Reference = M1;
 ValeurCmp = LOGO_OSHW;
@@ -633,28 +640,28 @@ EndCmp
 BeginCmp
 TimeStamp = /51901247;
 Reference = R18;
-ValeurCmp = 3k3;
+ValeurCmp = 560;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /51985A41;
 Reference = R19;
-ValeurCmp = 3k3;
+ValeurCmp = 560;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /519859F2;
 Reference = R21;
-ValeurCmp = 3k3;
+ValeurCmp = 560;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /51985927;
 Reference = R23;
-ValeurCmp = 3k3;
+ValeurCmp = 560;
 IdModule  = SM0805;
 EndCmp
 
@@ -675,21 +682,21 @@ EndCmp
 BeginCmp
 TimeStamp = /51990296;
 Reference = R28;
-ValeurCmp = 3k3;
+ValeurCmp = 560;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /519902B8;
 Reference = R29;
-ValeurCmp = 3k3;
+ValeurCmp = 560;
 IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /519902CD;
 Reference = R30;
-ValeurCmp = 3k3;
+ValeurCmp = 56;
 IdModule  = SM0805;
 EndCmp
 
@@ -761,13 +768,6 @@ TimeStamp = /5198A196;
 Reference = U5;
 ValeurCmp = POLOLU_A4988;
 IdModule  = POLOLU;
-EndCmp
-
-BeginCmp
-TimeStamp = /51928A47;
-Reference = U6;
-ValeurCmp = CONN_MICROSD;
-IdModule  = TRANSFLASH_MICROSD;
 EndCmp
 
 BeginCmp

@@ -1,11 +1,55 @@
-update=Fri 24 May 2013 12:35:28 PM EDT
+update=Tue 28 May 2013 09:15:19 PM EDT
 version=1
-last_client=pcbnew
+last_client=eeschema
+[general]
+version=1
 [cvpcb]
 version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[pcbnew]
+version=1
+LastNetListRead=XpressoSmoothie.net
+UseCmpFile=1
+PadDrill="    0.600000"
+PadDrillOvalY="    0.600000"
+PadSizeH="    1.800860"
+PadSizeV="    1.399540"
+PcbTextSizeV="    2.032000"
+PcbTextSizeH="    1.524000"
+PcbTextThickness="    0.304800"
+ModuleTextSizeV="    1.524000"
+ModuleTextSizeH="    1.524000"
+ModuleTextSizeThickness="    0.304800"
+SolderMaskClearance="    0.254000"
+SolderMaskMinWidth="    0.000000"
+DrawSegmentWidth="    0.381000"
+BoardOutlineThickness="    0.381000"
+ModuleOutlineThickness="    0.381000"
+[pcbnew/libraries]
+LibDir=KiCAD_Libraries/walter/pcbnew;KiCAD_Libraries/Chris;KiCAD_Libraries/modules
+LibName1=sockets
+LibName2=connect
+LibName3=discret
+LibName4=pin_array
+LibName5=divers
+LibName6=libcms
+LibName7=display
+LibName8=led
+LibName9=dip_sockets
+LibName10=pga_sockets
+LibName11=valves
+LibName12=KiCAD_Libraries/walter/pcbnew/w_smd_cap
+LibName13=KiCAD_Libraries/walter/pcbnew/w_capacitors
+LibName14=KiCAD_Libraries/Chris/custom_footprints
+LibName15=KiCAD_Libraries/modules/USBMICRO
+LibName16=KiCAD_Libraries/modules/borniers
+LibName17=KiCAD_Libraries/modules/opendous
+LibName18=KiCAD_Libraries/modules/RMC
+LibName19=w_smd_dil
+LibName20=OSHW_large
+LibName21=microsd-molex-47309
 [eeschema]
 version=1
 LibDir=KiCAD_Libraries/walter/eesch;KiCAD_Libraries/library
@@ -57,46 +101,4 @@ LibName39=KiCAD_Libraries/library/RMC
 LibName40=KiCAD_Libraries/library/opendous
 LibName41=KiCAD_Libraries/library/lm1117
 LibName42=fet_driver
-[general]
-version=1
-[pcbnew]
-version=1
-LastNetListRead=XpressoSmoothie.net
-UseCmpFile=0
-PadDrill="    0.600000"
-PadDrillOvalY="    0.600000"
-PadSizeH="    1.800860"
-PadSizeV="    1.399540"
-PcbTextSizeV="    2.032000"
-PcbTextSizeH="    1.524000"
-PcbTextThickness="    0.304800"
-ModuleTextSizeV="    1.524000"
-ModuleTextSizeH="    1.524000"
-ModuleTextSizeThickness="    0.304800"
-SolderMaskClearance="    0.254000"
-SolderMaskMinWidth="    0.000000"
-DrawSegmentWidth="    0.381000"
-BoardOutlineThickness="    0.381000"
-ModuleOutlineThickness="    0.381000"
-[pcbnew/libraries]
-LibDir=KiCAD_Libraries/walter/pcbnew;KiCAD_Libraries/Chris;KiCAD_Libraries/modules
-LibName1=sockets
-LibName2=connect
-LibName3=discret
-LibName4=pin_array
-LibName5=divers
-LibName6=libcms
-LibName7=display
-LibName8=led
-LibName9=dip_sockets
-LibName10=pga_sockets
-LibName11=valves
-LibName12=KiCAD_Libraries/walter/pcbnew/w_smd_cap
-LibName13=KiCAD_Libraries/walter/pcbnew/w_capacitors
-LibName14=KiCAD_Libraries/Chris/custom_footprints
-LibName15=KiCAD_Libraries/modules/USBMICRO
-LibName16=KiCAD_Libraries/modules/borniers
-LibName17=KiCAD_Libraries/modules/opendous
-LibName18=KiCAD_Libraries/modules/RMC
-LibName19=w_smd_dil
-LibName20=OSHW_large
+LibName43=microsd-molex
