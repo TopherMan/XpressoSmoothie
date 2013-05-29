@@ -1,14 +1,13 @@
-EESchema-LIBRARY Version 2.3  Date: Wed 29 May 2013 05:14:15 AM GMT
+EESchema-LIBRARY Version 2.3  Date: Tue 28 May 2013 09:50:09 PM EDT
 #encoding utf-8
 #
 # microsd-molex
-# URL: http://kicadcloud.com/schematicSymbol/4341
 #
 DEF microsd-molex J 0 40 Y Y 1 F N
 F0 "J" -400 500 60 H V C CNN
 F1 "microsd-molex" 0 -650 60 H V C CNN
-F2 "~" -250 -100 60 H V C CNN
-F3 "~" -250 -100 60 H V C CNN
+F2 "" -250 -100 60 H V C CNN
+F3 "" -250 -100 60 H V C CNN
 DRAW
 T 0 -150 400 39 0 1 1 SDmod_-_SPI~mod  Normal 0 C C
 S -450 450 450 -550 1 1 0 N
@@ -20,8 +19,8 @@ X CLK_-_SCLK 5 -750 -50 300 R 39 39 1 1 I
 X GND 6 750 -250 300 L 50 50 1 1 I
 X DAT0/D0_-_MISO 7 -750 -150 300 R 39 39 1 1 I
 X DAT1/IRQ_-_NC/IRQ 8 -550 -250 100 R 39 39 1 1 I
-X POL ~ 650 -500 200 L 50 50 1 1 I
 X GND GND 750 -350 300 L 50 50 1 1 I
+X POL POL 650 -500 200 L 50 50 1 1 I
 X DET DET -650 -500 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
