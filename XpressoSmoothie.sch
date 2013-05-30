@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/29/2013 9:09:54 AM
+EESchema Schematic File Version 2  date 5/30/2013 8:11:19 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -36,12 +36,12 @@ LIBS:w_logic
 LIBS:w_microcontrollers
 LIBS:w_opto
 LIBS:w_rtx
-LIBS:pololu_a4988x
-LIBS:RMC
-LIBS:opendous
-LIBS:lm1117
 LIBS:fet_driver
 LIBS:microsd-molex
+LIBS:lm1117
+LIBS:opendous
+LIBS:pololu_a4988x
+LIBS:RMC
 LIBS:XpressoSmoothie-cache
 EELAYER 27 0
 EELAYER END
