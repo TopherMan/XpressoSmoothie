@@ -16,7 +16,9 @@ Features
 
 Current Status
 --------------
-Board layout is nearly complete. After all pins and connections are verified, a BOM and Digikey (or similar) parts list will be made.
+Board layout is complete. A suggested BOM is included, including a Digikey-compatible version.
+
+An mbed-compatible version is in the works.
 
 To Use
 ------
@@ -25,7 +27,7 @@ Flashing the bootloader and getting Smoothie on the LPCXpresso can be found at h
 
 More Information
 ----------------
-Wiki page coming soon.
+Wiki page skeleton at http://reprap.org/wiki/Xpresso_Smoothie.
 
 Authors
 -------
