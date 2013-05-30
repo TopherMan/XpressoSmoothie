@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/30/2013 11:42:01 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/31/2013 12:29:05 AM
 
 BeginCmp
 TimeStamp = /51911758;
@@ -372,10 +372,10 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A7A659;
+TimeStamp = /51A7C943;
 Reference = J13;
-ValeurCmp = HEADER_5;
-IdModule  = PIN_ARRAY_5x1;
+ValeurCmp = HEADER_4X2;
+IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp
@@ -484,15 +484,15 @@ IdModule  = microsd-molex-47309;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A7BEF0;
-Reference = J29;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+TimeStamp = /51A7D1D1;
+Reference = JP1;
+ValeurCmp = JUMPER-2;
+IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
 TimeStamp = /51A7A651;
-Reference = JP1;
+Reference = JP2;
 ValeurCmp = JUMPER-2;
 IdModule  = PIN_ARRAY_2X1;
 EndCmp

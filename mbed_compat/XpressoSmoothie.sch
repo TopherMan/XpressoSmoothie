@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/30/2013 11:41:10 PM
+EESchema Schematic File Version 2  date 5/31/2013 12:28:31 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -222,13 +222,13 @@ Text GLabel 2900 6850 2    30   Input ~ 0
 X-DIR
 Text GLabel 800  7050 0    30   Input ~ 0
 X-EN
-Text GLabel 2900 7050 2    30   Input ~ 0
-POWER4
 Text GLabel 2900 6700 2    30   Input ~ 0
-POWER3
+POWER4
 Text GLabel 2900 6750 2    30   Input ~ 0
-POWER2
+POWER3
 Text GLabel 2900 6800 2    30   Input ~ 0
+POWER2
+Text GLabel 2900 7050 2    30   Input ~ 0
 POWER1
 Text GLabel 10750 1250 1    30   Input ~ 0
 POWER4
@@ -3362,78 +3362,90 @@ Wire Wire Line
 	7700 6250 7700 6200
 Wire Wire Line
 	7350 6150 7350 6100
-Text Notes 5600 6850 0    39   ~ 0
- MBED settings:\n- for endstops use expansion pins 1,2,3, with gnd\n- put jumper on JP1 common enable (xy+a-enable)\n- put jumper on J13 to have P0.26 drive mosfet 4\n
+Text Notes 5600 6950 0    39   ~ 0
+ MBED settings:\n- for endstops use expansion pins 1,2,3, with gnd\n- put jumper on common enable (xy+a-enable)\n- put jumper on to have P0.26 drive mosfet 1 bed\n
 Text Notes 7350 6550 0    79   ~ 0
 Ethernet
-Text GLabel 6200 6400 0    30   Input ~ 0
-POWER4
 $Comp
-L JUMPER-2 JP1
+L JUMPER-2 JP2
 U 1 1 51A7A651
-P 6400 6600
-F 0 "JP1" H 6400 6525 30  0000 C CNN
-F 1 "JUMPER-2" H 6400 6600 30  0001 C CNN
-F 2 "" H 6400 6600 60  0000 C CNN
-F 3 "" H 6400 6600 60  0000 C CNN
-F 4 "common_enanle" H 6400 6650 28  0000 C CNN "Explanation"
-	1    6400 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L HEADER_5 J13
-U 1 1 51A7A659
-P 6500 6200
-F 0 "J13" H 6500 6500 60  0000 C CNN
-F 1 "HEADER_5" V 6650 6150 28  0000 C CNN
-F 2 "" H 6500 6200 60  0000 C CNN
-F 3 "" H 6500 6200 60  0000 C CNN
-F 4 "Expansion" V 6550 6200 39  0000 C CNN "Explanation"
-	1    6500 6200
+P 6400 6750
+F 0 "JP2" H 6400 6675 30  0000 C CNN
+F 1 "JUMPER-2" H 6400 6750 30  0001 C CNN
+F 2 "" H 6400 6750 60  0000 C CNN
+F 3 "" H 6400 6750 60  0000 C CNN
+F 4 "common_enanle" H 6400 6800 28  0000 C CNN "Explanation"
+	1    6400 6750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6200 6400 6400 6400
-Wire Wire Line
-	6900 6000 6900 6400
-Connection ~ 6900 6100
-Connection ~ 6900 6200
+	6800 6000 6800 6400
+Connection ~ 6800 6100
+Connection ~ 6800 6200
 $Comp
 L GND #PWR076
 U 1 1 51A7B1AF
-P 6900 6400
-F 0 "#PWR076" H 6900 6400 30  0001 C CNN
-F 1 "GND" H 6900 6330 30  0001 C CNN
-F 2 "" H 6900 6400 60  0001 C CNN
-F 3 "" H 6900 6400 60  0001 C CNN
-	1    6900 6400
+P 6800 6400
+F 0 "#PWR076" H 6800 6400 30  0001 C CNN
+F 1 "GND" H 6800 6330 30  0001 C CNN
+F 2 "" H 6800 6400 60  0001 C CNN
+F 3 "" H 6800 6400 60  0001 C CNN
+	1    6800 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 6200 6600 0    30   Input ~ 0
+Text GLabel 6200 6750 0    30   Input ~ 0
 Y-EN
-Text GLabel 6200 6650 0    30   Input ~ 0
+Text GLabel 6200 6800 0    30   Input ~ 0
 X-EN
-Text GLabel 6600 6600 2    30   Input ~ 0
+Text GLabel 6600 6750 2    30   Input ~ 0
 A-EN
 Wire Wire Line
-	6200 6650 6200 6600
+	6200 6800 6200 6750
 Wire Wire Line
-	6200 6600 6300 6600
+	6200 6750 6300 6750
 Wire Wire Line
-	6600 6600 6500 6600
-Connection ~ 6200 6600
-Connection ~ 6200 6650
+	6600 6750 6500 6750
+Connection ~ 6200 6750
+Connection ~ 6200 6800
+Connection ~ 6800 6300
+Text GLabel 6600 6550 2    30   Input ~ 0
+POWER1
 $Comp
-L HEADER_4 J29
-U 1 1 51A7BEF0
-P 6800 6150
-F 0 "J29" H 6850 6400 60  0000 C CNN
-F 1 "HEADER_4" V 6950 6150 28  0000 C CNN
-F 2 "" H 6800 6150 60  0001 C CNN
-F 3 "" H 6800 6150 60  0001 C CNN
-F 4 "gnd" V 6850 6150 39  0000 C CNN "Explanation"
-	1    6800 6150
-	-1   0    0    -1  
+L HEADER_4X2 J13
+U 1 1 51A7C943
+P 6550 6150
+F 0 "J13" H 6550 6400 60  0000 C CNN
+F 1 "HEADER_4X2" H 6550 5900 28  0000 C CNN
+F 2 "" H 6550 6150 60  0000 C CNN
+F 3 "" H 6550 6150 60  0000 C CNN
+F 4 "Expansion" V 6550 6150 39  0000 C CNN "Explanation"
+	1    6550 6150
+	1    0    0    -1  
 $EndComp
-Connection ~ 6900 6300
+Wire Wire Line
+	6700 6000 6800 6000
+Wire Wire Line
+	6700 6100 6800 6100
+Wire Wire Line
+	6700 6200 6800 6200
+Wire Wire Line
+	6700 6300 6800 6300
+$Comp
+L JUMPER-2 JP1
+U 1 1 51A7D1D1
+P 6400 6550
+F 0 "JP1" H 6400 6475 30  0000 C CNN
+F 1 "JUMPER-2" H 6400 6550 30  0001 C CNN
+F 2 "" H 6400 6550 60  0000 C CNN
+F 3 "" H 6400 6550 60  0000 C CNN
+F 4 "common_enanle" H 6400 6600 28  0000 C CNN "Explanation"
+	1    6400 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 6550 6200 6550
+Wire Wire Line
+	6600 6550 6500 6550
+Text GLabel 6200 6550 0    30   Input ~ 0
+18_P0.26AOUT
 $EndSCHEMATC
