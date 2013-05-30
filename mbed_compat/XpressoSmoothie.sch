@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/29/2013 9:09:54 AM
+EESchema Schematic File Version 2  date 5/30/2013 10:33:30 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -29,6 +29,12 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:fet_driver
+LIBS:microsd-molex
+LIBS:lm1117
+LIBS:opendous
+LIBS:pololu_a4988x
+LIBS:RMC
 LIBS:w_analog
 LIBS:w_connectors
 LIBS:w_device
@@ -36,12 +42,6 @@ LIBS:w_logic
 LIBS:w_microcontrollers
 LIBS:w_opto
 LIBS:w_rtx
-LIBS:pololu_a4988x
-LIBS:RMC
-LIBS:opendous
-LIBS:lm1117
-LIBS:fet_driver
-LIBS:microsd-molex
 LIBS:XpressoSmoothie-cache
 EELAYER 27 0
 EELAYER END
@@ -49,7 +49,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "29 may 2013"
+Date "30 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -85,41 +85,42 @@ Text GLabel 2450 6600 2    30   Input ~ 0
 SCL
 Text GLabel 2500 6550 2    30   Input ~ 0
 SDA
-Text GLabel 6850 6100 0    30   Input ~ 0
+Text GLabel 7400 5900 0    30   Input ~ 0
 SCL
-Text GLabel 6850 6200 0    30   Input ~ 0
+Text GLabel 7400 6000 0    30   Input ~ 0
 SDA
 $Comp
 L GND #PWR01
 U 1 1 5194D3C0
-P 6900 6400
-F 0 "#PWR01" H 6900 6400 30  0001 C CNN
-F 1 "GND" H 6900 6330 30  0001 C CNN
-F 2 "" H 6900 6400 60  0001 C CNN
-F 3 "" H 6900 6400 60  0001 C CNN
-	1    6900 6400
+P 7350 6150
+F 0 "#PWR01" H 7350 6150 30  0001 C CNN
+F 1 "GND" H 7350 6080 30  0001 C CNN
+F 2 "" H 7350 6150 60  0001 C CNN
+F 3 "" H 7350 6150 60  0001 C CNN
+	1    7350 6150
 	-1   0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR02
 U 1 1 5194D3BC
-P 7000 6500
-F 0 "#PWR02" H 7000 6600 30  0001 C CNN
-F 1 "VCC" H 7000 6600 30  0000 C CNN
-F 2 "" H 7000 6500 60  0001 C CNN
-F 3 "" H 7000 6500 60  0001 C CNN
-	1    7000 6500
+P 7500 6250
+F 0 "#PWR02" H 7500 6350 30  0001 C CNN
+F 1 "VCC" H 7500 6350 30  0000 C CNN
+F 2 "" H 7500 6250 60  0001 C CNN
+F 3 "" H 7500 6250 60  0001 C CNN
+	1    7500 6250
 	-1   0    0    -1  
 $EndComp
 $Comp
 L HEADER_4 J15
 U 1 1 5194D38D
-P 7250 6250
-F 0 "J15" H 7250 6500 60  0000 C CNN
-F 1 "HEADER_4" V 7400 6250 60  0000 C CNN
-F 2 "" H 7250 6250 60  0001 C CNN
-F 3 "" H 7250 6250 60  0001 C CNN
-	1    7250 6250
+P 7800 6050
+F 0 "J15" H 7850 5800 60  0000 C CNN
+F 1 "HEADER_4" V 7950 6050 28  0000 C CNN
+F 2 "" H 7800 6050 60  0001 C CNN
+F 3 "" H 7800 6050 60  0001 C CNN
+F 4 "I2C" V 7850 6050 39  0000 C CNN "Explanation"
+	1    7800 6050
 	1    0    0    1   
 $EndComp
 $Comp
@@ -149,23 +150,23 @@ CS
 $Comp
 L GND #PWR03
 U 1 1 51925E12
-P 7600 6900
-F 0 "#PWR03" H 7600 6900 30  0001 C CNN
-F 1 "GND" H 7600 6830 30  0001 C CNN
-F 2 "" H 7600 6900 60  0001 C CNN
-F 3 "" H 7600 6900 60  0001 C CNN
-	1    7600 6900
+P 8200 6850
+F 0 "#PWR03" H 8200 6850 30  0001 C CNN
+F 1 "GND" H 8200 6780 30  0001 C CNN
+F 2 "" H 8200 6850 60  0001 C CNN
+F 3 "" H 8200 6850 60  0001 C CNN
+	1    8200 6850
 	1    0    0    -1  
 $EndComp
 $Comp
 L +5V #PWR04
 U 1 1 51925E07
-P 7600 6500
-F 0 "#PWR04" H 7600 6590 20  0001 C CNN
-F 1 "+5V" H 7600 6590 30  0000 C CNN
-F 2 "" H 7600 6500 60  0001 C CNN
-F 3 "" H 7600 6500 60  0001 C CNN
-	1    7600 6500
+P 8200 6450
+F 0 "#PWR04" H 8200 6540 20  0001 C CNN
+F 1 "+5V" H 8200 6540 30  0000 C CNN
+F 2 "" H 8200 6450 60  0001 C CNN
+F 3 "" H 8200 6450 60  0001 C CNN
+	1    8200 6450
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -179,17 +180,17 @@ F 3 "" H 3500 3700 60  0001 C CNN
 	1    3500 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 6950 2    30   Input ~ 0
-ZMIN
 Text GLabel 2900 7250 2    30   Input ~ 0
+ZMIN
+Text GLabel 800  7150 0    30   Input ~ 0
 ZMAX
-Text GLabel 2900 7000 2    30   Input ~ 0
-YMIN
 Text GLabel 2900 7200 2    30   Input ~ 0
+YMIN
+Text GLabel 800  7200 0    30   Input ~ 0
 YMAX
-Text GLabel 2900 7050 2    30   Input ~ 0
-XMIN
 Text GLabel 2900 7150 2    30   Input ~ 0
+XMIN
+Text GLabel 800  7250 0    30   Input ~ 0
 XMAX
 Text GLabel 800  7450 0    30   Input ~ 0
 B-EN
@@ -197,31 +198,31 @@ Text GLabel 800  7400 0    30   Input ~ 0
 B-STEP
 Text GLabel 800  7350 0    30   Input ~ 0
 B-DIR
-Text GLabel 800  6400 0    30   Input ~ 0
+Text GLabel 800  6350 0    30   Input ~ 0
 A-DIR
-Text GLabel 800  6450 0    30   Input ~ 0
+Text GLabel 800  6400 0    30   Input ~ 0
 A-STEP
-Text GLabel 800  6500 0    30   Input ~ 0
+Text GLabel 800  6450 0    30   Input ~ 0
 A-EN
-Text GLabel 800  6700 0    30   Input ~ 0
-Z-EN
-Text GLabel 800  6650 0    30   Input ~ 0
-Z-STEP
 Text GLabel 800  6600 0    30   Input ~ 0
+Z-EN
+Text GLabel 800  6550 0    30   Input ~ 0
+Z-STEP
+Text GLabel 800  6500 0    30   Input ~ 0
 Z-DIR
-Text GLabel 800  7050 0    30   Input ~ 0
-Y-EN
 Text GLabel 800  7000 0    30   Input ~ 0
+Y-EN
+Text GLabel 800  6900 0    30   Input ~ 0
 Y-STEP
-Text GLabel 800  6950 0    30   Input ~ 0
+Text GLabel 800  6850 0    30   Input ~ 0
 Y-DIR
-Text GLabel 800  7200 0    30   Input ~ 0
+Text GLabel 2900 6900 2    30   Input ~ 0
 X-STEP
-Text GLabel 800  7150 0    30   Input ~ 0
+Text GLabel 2900 6850 2    30   Input ~ 0
 X-DIR
-Text GLabel 800  7250 0    30   Input ~ 0
+Text GLabel 800  7050 0    30   Input ~ 0
 X-EN
-Text GLabel 2900 6650 2    30   Input ~ 0
+Text GLabel 2900 7050 2    30   Input ~ 0
 POWER4
 Text GLabel 2900 6700 2    30   Input ~ 0
 POWER3
@@ -525,41 +526,41 @@ Text GLabel 2450 7300 2    30   Input ~ 0
 PLAY/PAUSE
 Text GLabel 1100 6100 0    30   Input ~ 0
 RESET
-Text GLabel 9150 6350 0    30   Input ~ 0
+Text GLabel 9800 6300 0    30   Input ~ 0
 PLAY/PAUSE
-Text GLabel 9100 6000 0    30   Input ~ 0
+Text GLabel 9750 5950 0    30   Input ~ 0
 RESET
 $Comp
 L GND #PWR07
 U 1 1 518FF959
-P 10000 6600
-F 0 "#PWR07" H 10000 6600 30  0001 C CNN
-F 1 "GND" H 10000 6530 30  0001 C CNN
-F 2 "" H 10000 6600 60  0001 C CNN
-F 3 "" H 10000 6600 60  0001 C CNN
-	1    10000 6600
+P 10650 6400
+F 0 "#PWR07" H 10650 6400 30  0001 C CNN
+F 1 "GND" H 10650 6330 30  0001 C CNN
+F 2 "" H 10650 6400 60  0001 C CNN
+F 3 "" H 10650 6400 60  0001 C CNN
+	1    10650 6400
 	1    0    0    -1  
 $EndComp
 $Comp
 L SW_PUSH SW2
 U 1 1 518FF94F
-P 9600 6350
-F 0 "SW2" H 9750 6460 50  0000 C CNN
-F 1 "SW_PUSH" H 9600 6270 50  0000 C CNN
-F 2 "" H 9600 6350 60  0001 C CNN
-F 3 "" H 9600 6350 60  0001 C CNN
-	1    9600 6350
+P 10250 6300
+F 0 "SW2" H 10400 6410 50  0000 C CNN
+F 1 "SW_PUSH" H 10250 6220 50  0000 C CNN
+F 2 "" H 10250 6300 60  0001 C CNN
+F 3 "" H 10250 6300 60  0001 C CNN
+	1    10250 6300
 	1    0    0    -1  
 $EndComp
 $Comp
 L SW_PUSH SW1
 U 1 1 518FF94A
-P 9600 6000
-F 0 "SW1" H 9750 6110 50  0000 C CNN
-F 1 "SW_PUSH" H 9600 5920 50  0000 C CNN
-F 2 "" H 9600 6000 60  0001 C CNN
-F 3 "" H 9600 6000 60  0001 C CNN
-	1    9600 6000
+P 10250 5950
+F 0 "SW1" H 10400 6060 50  0000 C CNN
+F 1 "SW_PUSH" H 10250 5870 50  0000 C CNN
+F 2 "" H 10250 5950 60  0001 C CNN
+F 3 "" H 10250 5950 60  0001 C CNN
+	1    10250 5950
 	1    0    0    -1  
 $EndComp
 Text GLabel 1150 6250 0    30   Input ~ 0
@@ -598,9 +599,9 @@ Text GLabel 3800 6450 0    60   Input ~ 0
 SCK
 Text GLabel 3800 6550 0    60   Input ~ 0
 MISO
-Text GLabel 8450 6750 2    30   Input ~ 0
+Text GLabel 9050 6700 2    30   Input ~ 0
 USB-D-
-Text GLabel 8450 6600 2    30   Input ~ 0
+Text GLabel 9050 6550 2    30   Input ~ 0
 USB-D+
 Text GLabel 2450 6400 2    30   Input ~ 0
 USB-D+
@@ -966,12 +967,12 @@ $EndComp
 $Comp
 L GND #PWR037
 U 1 1 51983269
-P 8350 6900
-F 0 "#PWR037" H 8350 6900 30  0001 C CNN
-F 1 "GND" H 8350 6830 30  0001 C CNN
-F 2 "" H 8350 6900 60  0001 C CNN
-F 3 "" H 8350 6900 60  0001 C CNN
-	1    8350 6900
+P 8950 6850
+F 0 "#PWR037" H 8950 6850 30  0001 C CNN
+F 1 "GND" H 8950 6780 30  0001 C CNN
+F 2 "" H 8950 6850 60  0001 C CNN
+F 3 "" H 8950 6850 60  0001 C CNN
+	1    8950 6850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1849,7 +1850,7 @@ F 3 "~" H 2900 1900 60  0000 C CNN
 	1    2900 1900
 	1    0    0    -1  
 $EndComp
-Text GLabel 3800 6900 0    30   Input ~ 0
+Text GLabel 3900 6900 0    30   Input ~ 0
 SD_card_detect
 $Comp
 L C C22
@@ -1886,7 +1887,7 @@ F 3 "" H 1200 2050 60  0001 C CNN
 	1    1200 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 850  6300 0    30   Input ~ 0
+Text GLabel 2800 7100 2    30   Input ~ 0
 SD_card_detect
 $Comp
 L HEADER_3 J3
@@ -1916,12 +1917,12 @@ $EndComp
 $Comp
 L USB J26
 U 1 1 5197E8F8
-P 8000 6400
-F 0 "J26" H 7950 6800 60  0000 C CNN
-F 1 "USB" V 7750 6550 60  0000 C CNN
-F 2 "" H 8000 6400 60  0000 C CNN
-F 3 "" H 8000 6400 60  0000 C CNN
-	1    8000 6400
+P 8600 6350
+F 0 "J26" H 8550 6750 60  0000 C CNN
+F 1 "USB" V 8350 6500 60  0000 C CNN
+F 2 "" H 8600 6350 60  0000 C CNN
+F 3 "" H 8600 6350 60  0000 C CNN
+	1    8600 6350
 	1    0    0    -1  
 $EndComp
 Text GLabel 6800 1000 1    39   Input ~ 8
@@ -1935,51 +1936,51 @@ Vgates
 $Comp
 L CONN_1 Hole1
 U 1 1 5197EDF9
-P 10500 6000
-F 0 "Hole1" H 10580 6000 40  0000 L CNN
-F 1 "CONN_1" H 10500 6055 30  0001 C CNN
-F 2 "" H 10500 6000 60  0000 C CNN
-F 3 "" H 10500 6000 60  0000 C CNN
-	1    10500 6000
+P 10950 6000
+F 0 "Hole1" H 11030 6000 40  0000 L CNN
+F 1 "CONN_1" H 10950 6055 30  0001 C CNN
+F 2 "" H 10950 6000 60  0000 C CNN
+F 3 "" H 10950 6000 60  0000 C CNN
+	1    10950 6000
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_1 Hole2
 U 1 1 5197EE17
-P 10500 6100
-F 0 "Hole2" H 10580 6100 40  0000 L CNN
-F 1 "CONN_1" H 10500 6155 30  0001 C CNN
-F 2 "" H 10500 6100 60  0000 C CNN
-F 3 "" H 10500 6100 60  0000 C CNN
-	1    10500 6100
+P 10950 6100
+F 0 "Hole2" H 11030 6100 40  0000 L CNN
+F 1 "CONN_1" H 10950 6155 30  0001 C CNN
+F 2 "" H 10950 6100 60  0000 C CNN
+F 3 "" H 10950 6100 60  0000 C CNN
+	1    10950 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_1 Hole3
 U 1 1 5197EE1D
-P 10500 6200
-F 0 "Hole3" H 10580 6200 40  0000 L CNN
-F 1 "CONN_1" H 10500 6255 30  0001 C CNN
-F 2 "" H 10500 6200 60  0000 C CNN
-F 3 "" H 10500 6200 60  0000 C CNN
-	1    10500 6200
+P 10950 6200
+F 0 "Hole3" H 11030 6200 40  0000 L CNN
+F 1 "CONN_1" H 10950 6255 30  0001 C CNN
+F 2 "" H 10950 6200 60  0000 C CNN
+F 3 "" H 10950 6200 60  0000 C CNN
+	1    10950 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L CONN_1 Hole4
 U 1 1 5197EE23
-P 10500 6300
-F 0 "Hole4" H 10580 6300 40  0000 L CNN
-F 1 "CONN_1" H 10500 6355 30  0001 C CNN
-F 2 "" H 10500 6300 60  0000 C CNN
-F 3 "" H 10500 6300 60  0000 C CNN
-	1    10500 6300
+P 10950 6300
+F 0 "Hole4" H 11030 6300 40  0000 L CNN
+F 1 "CONN_1" H 10950 6355 30  0001 C CNN
+F 2 "" H 10950 6300 60  0000 C CNN
+F 3 "" H 10950 6300 60  0000 C CNN
+	1    10950 6300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 10350 6000
-NoConn ~ 10350 6100
-NoConn ~ 10350 6200
-NoConn ~ 10350 6300
+NoConn ~ 10800 6000
+NoConn ~ 10800 6100
+NoConn ~ 10800 6200
+NoConn ~ 10800 6300
 $Comp
 L CONN_2 Th2
 U 1 1 519825B8
@@ -2243,18 +2244,6 @@ Text Notes 600  5100 0    39   ~ 0
 Seems most LPC pins are 5v tolerant.\nDont abuse :)
 Text GLabel 3550 1750 2    30   Input ~ 0
 VIO3V3
-$Comp
-L HEADER_4 J13
-U 1 1 51991996
-P 6500 6250
-F 0 "J13" V 6550 6000 60  0000 C CNN
-F 1 "HEADER_4" V 6650 6250 28  0000 C CNN
-F 2 "" H 6500 6250 60  0001 C CNN
-F 3 "" H 6500 6250 60  0001 C CNN
-F 4 "Expansion" V 6550 6250 39  0000 C CNN "Explanation"
-	1    6500 6250
-	1    0    0    1   
-$EndComp
 Text GLabel 850  6800 0    30   Input ~ 0
 18_P0.26AOUT
 Text GLabel 2900 6450 2    30   Input ~ 0
@@ -2263,34 +2252,34 @@ Text GLabel 2900 6500 2    30   Input ~ 0
 39_P0.5CAN
 Text GLabel 2900 6550 2    30   Input ~ 0
 42_P2.0PWM
-Text GLabel 6200 6400 0    30   Input ~ 0
-18_P0.26AOUT
-Text GLabel 6200 6100 0    30   Input ~ 0
-38_P0.4CAN
-Text GLabel 6200 6200 0    30   Input ~ 0
-39_P0.5CAN
 Text GLabel 6200 6300 0    30   Input ~ 0
+18_P0.26AOUT
+Text GLabel 6200 6000 0    30   Input ~ 0
+38_P0.4CAN
+Text GLabel 6200 6100 0    30   Input ~ 0
+39_P0.5CAN
+Text GLabel 6200 6200 0    30   Input ~ 0
 42_P2.0PWM
 Text Notes 4050 5750 0    79   ~ 0
 SD card
-Text Notes 6950 5800 0    79   ~ 0
+Text Notes 7500 5750 0    79   ~ 0
 I2C
-Text Notes 5950 5800 0    79   ~ 0
+Text Notes 6000 5750 0    79   ~ 0
 Expansion
-Text Notes 7850 5800 0    79   ~ 0
+Text Notes 8450 5750 0    79   ~ 0
 USB
-Text Notes 9800 5800 0    79   ~ 0
+Text Notes 9700 5750 0    79   ~ 0
 Miscellaneous
 $Comp
 L HEADER_4 J27
 U 1 1 51991D45
-P 6500 6850
-F 0 "J27" V 6550 6600 60  0000 C CNN
-F 1 "HEADER_4" V 6650 6850 28  0000 C CNN
-F 2 "" H 6500 6850 60  0001 C CNN
-F 3 "" H 6500 6850 60  0001 C CNN
-F 4 "Ethernet" V 6550 6850 39  0000 C CNN "Explanation"
-	1    6500 6850
+P 7800 6850
+F 0 "J27" H 7850 6600 60  0000 C CNN
+F 1 "HEADER_4" V 7950 6850 28  0000 C CNN
+F 2 "" H 7800 6850 60  0001 C CNN
+F 3 "" H 7800 6850 60  0001 C CNN
+F 4 "Ethernet" V 7850 6850 39  0000 C CNN "Explanation"
+	1    7800 6850
 	1    0    0    1   
 $EndComp
 Text GLabel 2900 6000 2    30   Input ~ 0
@@ -2301,13 +2290,13 @@ Text GLabel 2900 6200 2    30   Input ~ 0
 34_TD-
 Text GLabel 2900 6300 2    30   Input ~ 0
 35_TD+
-Text GLabel 6200 6700 0    30   Input ~ 0
+Text GLabel 7500 6700 0    30   Input ~ 0
 32_RD-
-Text GLabel 6200 6800 0    30   Input ~ 0
+Text GLabel 7500 6800 0    30   Input ~ 0
 33_RD+
-Text GLabel 6200 6900 0    30   Input ~ 0
+Text GLabel 7500 6900 0    30   Input ~ 0
 34_TD-
-Text GLabel 6200 7000 0    30   Input ~ 0
+Text GLabel 7500 7000 0    30   Input ~ 0
 35_TD+
 $Comp
 L TC4422A U10
@@ -2386,16 +2375,75 @@ F 3 "" H 9200 1250 60  0001 C CNN
 	1    9200 1250
 	1    0    0    -1  
 $EndComp
-Connection ~ 800  7100
-Wire Wire Line
-	800  7050 800  7100
-Connection ~ 800  7250
-Wire Wire Line
-	800  7300 550  7300
-Wire Wire Line
-	800  7250 800  7300
-Wire Wire Line
-	550  7300 550  7100
+Text Notes 3550 5400 0    39   ~ 0
+Pololu drivers or compatible footprint: http://www.pololu.com/catalog/category/120
+Text Notes 7900 2650 0    39   ~ 0
+MOS drivers TC4452 (SOIC-8-Narrow) or TC4422A (SOIC-8-WIDE), check and adjust pcb footprint if needed.
+$Comp
+L C C24
+U 1 1 519AB24B
+P 10550 1250
+F 0 "C24" H 10550 1350 50  0000 L CNN
+F 1 "1u/50v" H 10550 1150 50  0000 L CNN
+F 2 "" H 10550 1250 60  0001 C CNN
+F 3 "" H 10550 1250 60  0001 C CNN
+	1    10550 1250
+	1    0    0    -1  
+$EndComp
+Text Notes 3400 7350 0    39   ~ 0
+Capacitors: all smd ceramic caps dielectric X5R or X7R or better\nMosfet output connectors are V+ and GND. Q1 is bed mosfet to keep high current trace short. \nSolder a thick copper wire from input to Q1 and back (both on V+ and gnd) to help with the high current.\nFor DIY purposes increase fill zones parameters.
+Text Notes 1300 5800 0    79   ~ 0
+LPCXpresso 1769
+Text Notes 650  2350 0    39   ~ 0
+Vin:  12V to  28V\nThe two input connector voltages must\ncome from same psu (same gnd),\nbut may have different values.
+Text Notes 4250 2500 0    39   ~ 0
+Vin_Hi_curr does not have led indicator
+Text Notes 2450 2450 0    39   ~ 0
+Regulators have different pin numbering\nIf Vin is 12V then Vgates are 12V-2Vdroput= 10V
+$Comp
+L GNDPWR #PWR075
+U 1 1 519AC28E
+P 4900 2300
+F 0 "#PWR075" H 4900 2350 40  0001 C CNN
+F 1 "GNDPWR" H 4900 2220 40  0000 C CNN
+F 2 "" H 4900 2300 60  0001 C CNN
+F 3 "" H 4900 2300 60  0001 C CNN
+	1    4900 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO_OSHW M2
+U 1 1 519E49E2
+P 9900 6850
+F 0 "M2" H 9900 7000 60  0000 C CNN
+F 1 "LOGO_OSHW" H 9900 6750 60  0000 C CNN
+F 2 "OSHW_logo_10" H 9800 6900 60  0000 C CNN
+F 3 "~" H 9900 6850 60  0000 C CNN
+	1    9900 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LOGO_OSHW M1
+U 1 1 519E49F1
+P 10750 6850
+F 0 "M1" H 10750 7000 60  0000 C CNN
+F 1 "LOGO_OSHW" H 10750 6750 60  0000 C CNN
+F 2 "OSHW_logo_large" H 10650 6900 60  0000 C CNN
+F 3 "~" H 10750 6850 60  0000 C CNN
+	1    10750 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L MICROSD-MOLEX J28
+U 1 1 51A55C9B
+P 4600 6400
+F 0 "J28" H 4200 6900 60  0000 C CNN
+F 1 "MICROSD-MOLEX" H 4600 5750 60  0000 C CNN
+F 2 "" H 4350 6300 60  0000 C CNN
+F 3 "" H 4350 6300 60  0000 C CNN
+	1    4600 6400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	900  7350 800  7450
 Wire Wire Line
@@ -2483,13 +2531,13 @@ Connection ~ 6500 2250
 Wire Wire Line
 	6500 1450 6500 2300
 Wire Wire Line
-	6400 7000 6200 7000
+	7700 7000 7500 7000
 Wire Wire Line
-	6400 6900 6200 6900
+	7700 6900 7500 6900
 Wire Wire Line
-	6400 6800 6200 6800
+	7700 6800 7500 6800
 Wire Wire Line
-	6400 6700 6200 6700
+	7700 6700 7500 6700
 Wire Wire Line
 	2750 6150 2900 6000
 Wire Wire Line
@@ -2507,61 +2555,19 @@ Wire Wire Line
 Wire Notes Line
 	3300 2650 3300 7850
 Wire Wire Line
-	6200 6400 6400 6400
-Wire Wire Line
 	6200 6300 6400 6300
 Wire Wire Line
 	6200 6200 6400 6200
 Wire Wire Line
 	6200 6100 6400 6100
 Wire Wire Line
-	2800 6650 2900 6550
-Wire Wire Line
-	2450 6650 2800 6650
+	6200 6000 6400 6000
 Wire Wire Line
 	2400 6500 2900 6500
 Wire Wire Line
 	2900 6450 2450 6450
 Wire Wire Line
 	850  6800 1150 6800
-Wire Wire Line
-	2850 7100 2900 7050
-Wire Wire Line
-	2400 7100 2850 7100
-Wire Wire Line
-	2850 7050 2900 7000
-Wire Wire Line
-	2450 7050 2850 7050
-Wire Wire Line
-	2850 6900 2900 6950
-Wire Wire Line
-	2400 6900 2850 6900
-Wire Wire Line
-	2850 6700 2900 6650
-Wire Wire Line
-	2400 6700 2850 6700
-Wire Wire Line
-	2850 6750 2900 6700
-Wire Wire Line
-	2450 6750 2850 6750
-Wire Wire Line
-	2850 6800 2900 6750
-Wire Wire Line
-	2400 6800 2850 6800
-Wire Wire Line
-	2850 6850 2900 6800
-Wire Wire Line
-	2450 6850 2850 6850
-Wire Wire Line
-	2450 7150 2900 7150
-Wire Wire Line
-	2400 7200 2900 7200
-Wire Wire Line
-	2450 7250 2900 7250
-Wire Wire Line
-	900  6350 850  6300
-Wire Wire Line
-	1200 6350 900  6350
 Wire Wire Line
 	1200 5950 1050 5950
 Wire Wire Line
@@ -2624,23 +2630,23 @@ Wire Wire Line
 Wire Wire Line
 	2450 6600 2400 6600
 Wire Wire Line
-	6850 6100 7150 6100
+	7400 5900 7700 5900
 Wire Wire Line
 	1100 6300 1150 6300
 Wire Wire Line
 	3800 6450 3850 6450
 Wire Wire Line
-	8350 6900 8350 6850
+	8950 6850 8950 6800
 Wire Wire Line
-	8350 6600 8450 6600
+	8950 6550 9050 6550
 Wire Wire Line
-	10000 6000 10000 6600
+	10650 5950 10650 6400
 Wire Wire Line
 	1100 6100 1150 6100
 Wire Wire Line
-	9150 6350 9300 6350
+	9800 6300 9950 6300
 Wire Wire Line
-	10000 6000 9900 6000
+	10650 5950 10550 5950
 Wire Wire Line
 	1150 6200 1100 6200
 Wire Wire Line
@@ -2681,16 +2687,16 @@ Wire Wire Line
 Wire Wire Line
 	1150 6250 1200 6250
 Wire Wire Line
-	9900 6350 10000 6350
-Connection ~ 10000 6350
+	10550 6300 10650 6300
+Connection ~ 10650 6300
 Wire Wire Line
-	9300 6000 9100 6000
+	9950 5950 9750 5950
 Wire Wire Line
 	2450 7300 2400 7300
 Wire Wire Line
 	1000 3400 900  3400
 Wire Wire Line
-	8450 6750 8350 6750
+	9050 6700 8950 6700
 Wire Wire Line
 	3800 6200 3850 6200
 Wire Wire Line
@@ -2698,7 +2704,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 2450 10000 2250
 Wire Wire Line
-	6850 6200 7150 6200
+	7400 6000 7700 6000
 Wire Wire Line
 	2450 6550 2500 6550
 Wire Wire Line
@@ -2809,8 +2815,8 @@ Wire Wire Line
 Wire Wire Line
 	1450 4050 1550 4050
 Wire Wire Line
-	7600 6750 7600 6900
-Connection ~ 7600 6850
+	8200 6700 8200 6850
+Connection ~ 8200 6800
 Wire Wire Line
 	10000 750  10000 1450
 Wire Wire Line
@@ -2894,13 +2900,7 @@ Wire Wire Line
 	6300 1400 6300 1350
 Connection ~ 5950 850 
 Wire Wire Line
-	6900 6400 6900 6300
-Wire Wire Line
-	6900 6300 7150 6300
-Wire Wire Line
-	7150 6400 7150 6500
-Wire Wire Line
-	7150 6500 7000 6500
+	7350 6100 7700 6100
 Wire Wire Line
 	4150 3500 4150 3400
 Wire Wire Line
@@ -3207,7 +3207,7 @@ Wire Wire Line
 Wire Wire Line
 	10550 1450 10550 2300
 Wire Wire Line
-	7600 6600 7600 6500
+	8200 6550 8200 6450
 Wire Wire Line
 	1200 1550 1200 1600
 Connection ~ 1200 1600
@@ -3265,134 +3265,25 @@ Wire Wire Line
 Wire Wire Line
 	2000 4450 2000 4700
 Wire Wire Line
-	800  7000 850  7050
-Wire Wire Line
-	850  7050 1200 7050
-Wire Wire Line
-	1150 6900 850  6900
-Wire Wire Line
-	850  6900 800  6950
-Wire Wire Line
-	800  6400 1150 6400
-Wire Wire Line
-	800  6450 1200 6450
-Wire Wire Line
-	800  6500 1150 6500
-Wire Wire Line
-	1200 6550 900  6550
-Wire Wire Line
-	900  6550 800  6600
-Wire Wire Line
-	1150 6600 900  6600
-Wire Wire Line
-	900  6600 800  6650
-Wire Wire Line
-	1200 6850 1000 6850
-Wire Wire Line
-	1000 6850 800  6700
-Text Notes 3550 5400 0    39   ~ 0
-Pololu drivers or compatible footprint: http://www.pololu.com/catalog/category/120
-Text Notes 7900 2650 0    39   ~ 0
-MOS drivers TC4452 (SOIC-8-Narrow) or TC4422A (SOIC-8-WIDE), check and adjust pcb footprint if needed.
-$Comp
-L C C24
-U 1 1 519AB24B
-P 10550 1250
-F 0 "C24" H 10550 1350 50  0000 L CNN
-F 1 "1u/50v" H 10550 1150 50  0000 L CNN
-F 2 "" H 10550 1250 60  0001 C CNN
-F 3 "" H 10550 1250 60  0001 C CNN
-	1    10550 1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	10550 1050 10550 1000
 Wire Wire Line
 	10550 1000 10850 1000
-Text Notes 3400 7350 0    39   ~ 0
-Capacitors: all smd ceramic caps dielectric X5R or X7R or better\nMosfet output connectors are V+ and GND. Q1 is bed mosfet to keep high current trace short. \nSolder a thick copper wire from input to Q1 and back (both on V+ and gnd) to help with the high current.\nFor DIY purposes increase fill zones parameters.
 Wire Notes Line
 	400  5500 11300 5500
 Wire Notes Line
 	7000 7850 7000 7200
 Wire Notes Line
 	7000 7200 3300 7200
-Text Notes 1300 5800 0    79   ~ 0
-LPCXpresso 1769
-Text Notes 650  2350 0    39   ~ 0
-Vin:  12V to  28V\nThe two input connector voltages must\ncome from same psu (same gnd),\nbut may have different values.
-Text Notes 4250 2500 0    39   ~ 0
-Vin_Hi_curr does not have led indicator
 Wire Wire Line
 	4900 1700 4900 1750
-Text Notes 2450 2450 0    39   ~ 0
-Regulators have different pin numbering\nIf Vin is 12V then Vgates are 12V-2Vdroput= 10V
-$Comp
-L GNDPWR #PWR075
-U 1 1 519AC28E
-P 4900 2300
-F 0 "#PWR075" H 4900 2350 40  0001 C CNN
-F 1 "GNDPWR" H 4900 2220 40  0000 C CNN
-F 2 "" H 4900 2300 60  0001 C CNN
-F 3 "" H 4900 2300 60  0001 C CNN
-	1    4900 2300
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	11300 2700 400  2700
 Wire Wire Line
-	1200 7200 850  7200
-Wire Wire Line
-	850  7200 800  7250
-Wire Wire Line
-	1200 7150 850  7150
-Wire Wire Line
-	850  7150 800  7200
-Wire Wire Line
-	1150 7100 850  7100
-Wire Wire Line
-	850  7100 800  7150
-Wire Wire Line
-	550  7100 800  7100
-$Comp
-L LOGO_OSHW M2
-U 1 1 519E49E2
-P 9350 6900
-F 0 "M2" H 9350 7050 60  0000 C CNN
-F 1 "LOGO_OSHW" H 9350 6800 60  0000 C CNN
-F 2 "OSHW_logo_10" H 9250 6950 60  0000 C CNN
-F 3 "~" H 9350 6900 60  0000 C CNN
-	1    9350 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L LOGO_OSHW M1
-U 1 1 519E49F1
-P 10550 6850
-F 0 "M1" H 10550 7000 60  0000 C CNN
-F 1 "LOGO_OSHW" H 10550 6750 60  0000 C CNN
-F 2 "OSHW_logo_large" H 10450 6900 60  0000 C CNN
-F 3 "~" H 10550 6850 60  0000 C CNN
-	1    10550 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L MICROSD-MOLEX J28
-U 1 1 51A55C9B
-P 4600 6400
-F 0 "J28" H 4200 6900 60  0000 C CNN
-F 1 "MICROSD-MOLEX" H 4600 5750 60  0000 C CNN
-F 2 "" H 4350 6300 60  0000 C CNN
-F 3 "" H 4350 6300 60  0000 C CNN
-	1    4600 6400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3800 6550 3850 6550
 Wire Wire Line
-	3800 6900 3950 6900
+	3900 6900 3950 6900
 Wire Wire Line
-	5450 6150 5450 5900
+	5450 5900 5450 6150
 Wire Wire Line
 	5350 6050 5450 6050
 Connection ~ 5450 6050
@@ -3407,4 +3298,141 @@ Connection ~ 5450 6750
 Wire Wire Line
 	5250 6900 5450 6900
 Connection ~ 5450 6900
+Wire Wire Line
+	2450 6650 2800 6650
+Wire Wire Line
+	2800 6650 2900 6550
+Wire Wire Line
+	1200 7050 800  7050
+Wire Wire Line
+	800  7050 800  7000
+Wire Wire Line
+	2900 6700 2400 6700
+Wire Wire Line
+	2900 6750 2450 6750
+Wire Wire Line
+	2900 6800 2400 6800
+Wire Wire Line
+	2900 6850 2450 6850
+Wire Wire Line
+	2900 6900 2400 6900
+Wire Wire Line
+	800  6350 1200 6350
+Wire Wire Line
+	800  6400 1150 6400
+Wire Wire Line
+	800  6450 1200 6450
+Wire Wire Line
+	800  6500 1150 6500
+Wire Wire Line
+	800  6550 1200 6550
+Wire Wire Line
+	800  6600 1150 6600
+Wire Wire Line
+	800  6850 1200 6850
+Wire Wire Line
+	800  6900 1150 6900
+Connection ~ 800  7050
+Connection ~ 800  7000
+Wire Wire Line
+	1150 7100 900  7100
+Wire Wire Line
+	900  7100 800  7150
+Wire Wire Line
+	1200 7150 900  7150
+Wire Wire Line
+	900  7150 800  7200
+Wire Wire Line
+	1200 7200 900  7200
+Wire Wire Line
+	900  7200 800  7250
+Wire Wire Line
+	2450 7050 2900 7050
+Wire Wire Line
+	2400 7100 2800 7100
+Wire Wire Line
+	2450 7150 2900 7150
+Wire Wire Line
+	2400 7200 2900 7200
+Wire Wire Line
+	2450 7250 2900 7250
+Wire Wire Line
+	7500 6250 7700 6250
+Wire Wire Line
+	7700 6250 7700 6200
+Wire Wire Line
+	7350 6150 7350 6100
+Text Notes 5600 6850 0    39   ~ 0
+ MBED settings:\n- for endstops use expansion pins 1,2,3, with gnd\n- put jumper on JP1 common enable (xy+a-enable)\n- put jumper on J13 to have P0.26 drive mosfet 4\n
+Text Notes 7350 6550 0    79   ~ 0
+Ethernet
+Text GLabel 6200 6400 0    30   Input ~ 0
+POWER4
+$Comp
+L JUMPER-2 JP1
+U 1 1 51A7A651
+P 6400 6600
+F 0 "JP1" H 6400 6525 30  0000 C CNN
+F 1 "JUMPER-2" H 6400 6600 30  0001 C CNN
+F 2 "" H 6400 6600 60  0000 C CNN
+F 3 "" H 6400 6600 60  0000 C CNN
+F 4 "common_enanle" H 6400 6650 28  0000 C CNN "Explanation"
+	1    6400 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L HEADER_5 J13
+U 1 1 51A7A659
+P 6500 6200
+F 0 "J13" H 6500 6500 60  0000 C CNN
+F 1 "HEADER_5" V 6650 6150 28  0000 C CNN
+F 2 "" H 6500 6200 60  0000 C CNN
+F 3 "" H 6500 6200 60  0000 C CNN
+F 4 "Expansion" V 6550 6200 39  0000 C CNN "Explanation"
+	1    6500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 6400 6400 6400
+$Comp
+L HEADER_3 J29
+U 1 1 51A7AB26
+P 6850 6100
+F 0 "J29" H 6850 6300 60  0000 C CNN
+F 1 "HEADER_3" V 7000 6150 28  0000 C CNN
+F 2 "" H 6850 6100 60  0001 C CNN
+F 3 "" H 6850 6100 60  0001 C CNN
+F 4 "gnd" V 6900 6100 39  0000 C CNN "Explanation"
+	1    6850 6100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 6000 6950 6300
+Connection ~ 6950 6100
+Connection ~ 6950 6200
+$Comp
+L GND #PWR076
+U 1 1 51A7B1AF
+P 6950 6300
+F 0 "#PWR076" H 6950 6300 30  0001 C CNN
+F 1 "GND" H 6950 6230 30  0001 C CNN
+F 2 "" H 6950 6300 60  0001 C CNN
+F 3 "" H 6950 6300 60  0001 C CNN
+	1    6950 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 6600 0    30   Input ~ 0
+Y-EN
+Text GLabel 6200 6650 0    30   Input ~ 0
+X-EN
+Text GLabel 6600 6600 2    30   Input ~ 0
+A-EN
+Wire Wire Line
+	6200 6650 6200 6600
+Wire Wire Line
+	6200 6600 6300 6600
+Wire Wire Line
+	6600 6600 6500 6600
+Connection ~ 6200 6600
+Connection ~ 6200 6650
 $EndSCHEMATC
