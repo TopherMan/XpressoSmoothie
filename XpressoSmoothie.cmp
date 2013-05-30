@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/29/2013 9:10:04 AM
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 30 May 2013 01:16:39 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -466,7 +466,7 @@ BeginCmp
 TimeStamp = /5197E8F8;
 Reference = J26;
 ValeurCmp = USB;
-IdModule  = USB_MICRO_RMC;
+IdModule  = USB_MICRO_RMC_noedge;
 EndCmp
 
 BeginCmp
