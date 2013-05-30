@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/30/2013 10:33:30 PM
+EESchema Schematic File Version 2  date 5/30/2013 11:41:10 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -3394,31 +3394,19 @@ F 4 "Expansion" V 6550 6200 39  0000 C CNN "Explanation"
 $EndComp
 Wire Wire Line
 	6200 6400 6400 6400
-$Comp
-L HEADER_3 J29
-U 1 1 51A7AB26
-P 6850 6100
-F 0 "J29" H 6850 6300 60  0000 C CNN
-F 1 "HEADER_3" V 7000 6150 28  0000 C CNN
-F 2 "" H 6850 6100 60  0001 C CNN
-F 3 "" H 6850 6100 60  0001 C CNN
-F 4 "gnd" V 6900 6100 39  0000 C CNN "Explanation"
-	1    6850 6100
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	6950 6000 6950 6300
-Connection ~ 6950 6100
-Connection ~ 6950 6200
+	6900 6000 6900 6400
+Connection ~ 6900 6100
+Connection ~ 6900 6200
 $Comp
 L GND #PWR076
 U 1 1 51A7B1AF
-P 6950 6300
-F 0 "#PWR076" H 6950 6300 30  0001 C CNN
-F 1 "GND" H 6950 6230 30  0001 C CNN
-F 2 "" H 6950 6300 60  0001 C CNN
-F 3 "" H 6950 6300 60  0001 C CNN
-	1    6950 6300
+P 6900 6400
+F 0 "#PWR076" H 6900 6400 30  0001 C CNN
+F 1 "GND" H 6900 6330 30  0001 C CNN
+F 2 "" H 6900 6400 60  0001 C CNN
+F 3 "" H 6900 6400 60  0001 C CNN
+	1    6900 6400
 	1    0    0    -1  
 $EndComp
 Text GLabel 6200 6600 0    30   Input ~ 0
@@ -3435,4 +3423,17 @@ Wire Wire Line
 	6600 6600 6500 6600
 Connection ~ 6200 6600
 Connection ~ 6200 6650
+$Comp
+L HEADER_4 J29
+U 1 1 51A7BEF0
+P 6800 6150
+F 0 "J29" H 6850 6400 60  0000 C CNN
+F 1 "HEADER_4" V 6950 6150 28  0000 C CNN
+F 2 "" H 6800 6150 60  0001 C CNN
+F 3 "" H 6800 6150 60  0001 C CNN
+F 4 "gnd" V 6850 6150 39  0000 C CNN "Explanation"
+	1    6800 6150
+	-1   0    0    -1  
+$EndComp
+Connection ~ 6900 6300
 $EndSCHEMATC
