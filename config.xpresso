@@ -26,21 +26,21 @@
 ##base_stepping_frequency                      100000           # Base frequency for stepping, higher gives smoother movement
 
 # Stepper module pins ( ports, and pin numbers, appending "!" to the number will invert a pin )
-alpha_step_pin                               0.22             # Pin for alpha stepper step signal
-alpha_dir_pin                                0.21             # Pin for alpha stepper direction
-alpha_en_pin                                 0.3              # Pin for alpha enable pin
+alpha_step_pin                               2.5              # Pin for alpha stepper step signal
+alpha_dir_pin                                2.4              # Pin for alpha stepper direction
+alpha_en_pin                                 0.2              # Pin for alpha enable pin
 # alpha_current                                1.5              # X stepper motor current NOT USED IN XPRESSOSMOOTHIE
 ##x_axis_max_speed                             30000            # mm/min
 
-beta_step_pin                                0.2              # Pin for beta stepper step signal
-beta_dir_pin                                 1.31             # Pin for beta stepper direction
-beta_en_pin                                  0.3              # Pin for beta enable
+beta_step_pin                                1.31             # Pin for beta stepper step signal
+beta_dir_pin                                 1.30             # Pin for beta stepper direction
+beta_en_pin                                  0.2              # Pin for beta enable
 # beta_current                                 1.5              # Y stepper motor current NOT USED IN XPRESSOSMOOTHIE
 ##y_axis_max_speed                             30000            # mm/min
 
-gamma_step_pin                               0.16             # Pin for gamma stepper step signal
-gamma_dir_pin                                0.15             # Pin for gamma stepper direction
-gamma_en_pin                                 1.30             # Pin for gamma enable
+gamma_step_pin                               0.15             # Pin for gamma stepper step signal
+gamma_dir_pin                                0.17             # Pin for gamma stepper direction
+gamma_en_pin                                 0.16             # Pin for gamma enable
 # gamma_current                                1.5              # Z stepper motor current NOT USED IN XPRESSOSMOOTHIE
 ##z_axis_max_speed                             300              # mm/min
 
@@ -55,9 +55,9 @@ extruder_module_enable                       true             # Whether to activ
 ##extruder_acceleration                        50               # Acceleration for the stepper motor, as of 0.6, arbitrary ratio
 ##extruder_max_speed                           1000             # mm^3/s
 
-extruder_step_pin                            0.18              # Pin for extruder step signal
-extruder_dir_pin                             0.1              # Pin for extruder dir signal
-extruder_en_pin                              0.17             # Pin for extruder enable signal
+extruder_step_pin                            0.1              # Pin for extruder step signal
+extruder_dir_pin                             0.0             # Pin for extruder dir signal
+extruder_en_pin                              0.18             # Pin for extruder enable signal
 #delta_current                                1.5              # Extruder stepper motor current
 
 # Laser module configuration
@@ -74,7 +74,7 @@ temperature_control.hotend.heater_pin        2.3              # Pin that control
 
 ##temperature_control.bed.enable               true             #
 temperature_control.bed.thermistor_pin       0.24             #
-temperature_control.bed.heater_pin           2.4              #
+temperature_control.bed.heater_pin           2.6              #
 ##temperature_control.bed.thermistor           Honeywell100K    # see src/modules/tools/temperaturecontrol/TemperatureControl.cpp:64 for a list of valid thermistor names
 ##temperature_control.bed.set_m_code           140              #
 ##temperature_control.bed.set_and_wait_m_code  190              #
@@ -96,18 +96,18 @@ switch.misc.output_pin                       2.1              #
 
 # Endstops
 ##endstops_enable                              true             # the endstop module is enabled by default and can be disabled here
-alpha_min_endstop                            2.7^             #
-alpha_max_endstop                            2.8^             #
+alpha_min_endstop                            2.8^             #
+alpha_max_endstop                            0.22^            #
 ##alpha_homing_direction                       home_to_min      # or set to home_to_max and set alpha_max
 ##alpha_min                                    0                # this gets loaded after homing when home_to_min is set
 ##alpha_max                                    200              # this gets loaded after homing when home_to_max is set
-beta_min_endstop                             2.6^             #
-beta_max_endstop                             2.10^            #
+beta_min_endstop                             2.10^            #
+beta_max_endstop                             0.21^            #
 ##beta_homing_direction                        home_to_min      #
 ##beta_min                                     0                #
 ##beta_max                                     200              #
-gamma_min_endstop                            2.5^             #
-gamma_max_endstop                            2.11^            #
+gamma_min_endstop                            2.11^            #
+gamma_max_endstop                            0.2^             #
 ##gamma_homing_direction                       home_to_min      #
 ##gamma_min                                    0                #
 ##gamma_max                                    200              #
