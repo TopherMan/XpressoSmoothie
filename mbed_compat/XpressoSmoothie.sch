@@ -3448,36 +3448,24 @@ Wire Wire Line
 $Comp
 L JUMPER-2 JP3
 U 1 1 51A7E41E
-P 4500 650
-F 0 "JP3" H 4500 575 30  0000 C CNN
-F 1 "JUMPER-2" H 4500 650 30  0001 C CNN
-F 2 "" H 4500 650 60  0000 C CNN
-F 3 "" H 4500 650 60  0000 C CNN
-F 4 "LPCXpresso power" H 4500 700 60  0000 C CNN "Explanation"
-	1    4500 650 
-	1    0    0    -1  
-$EndComp
-$Comp
-L JUMPER-2 JP4
-U 1 1 51A7E437
-P 4500 900
-F 0 "JP4" H 4500 825 30  0000 C CNN
-F 1 "JUMPER-2" H 4500 900 30  0001 C CNN
-F 2 "" H 4500 900 60  0000 C CNN
-F 3 "" H 4500 900 60  0000 C CNN
-F 4 "mbed power" H 4500 950 60  0000 C CNN "Explanation"
-	1    4500 900 
+P 4500 750
+F 0 "JP3" H 4500 675 30  0000 C CNN
+F 1 "JUMPER-2" H 4500 750 30  0001 C CNN
+F 2 "" H 4500 750 60  0000 C CNN
+F 3 "" H 4500 750 60  0000 C CNN
+F 4 "LPCXpresso power" H 4500 800 60  0000 C CNN "Explanation"
+	1    4500 750 
 	1    0    0    -1  
 $EndComp
 $Comp
 L VCC #PWR1
 U 1 1 51A7E464
-P 4050 600
-F 0 "#PWR1" H 4050 700 30  0001 C CNN
-F 1 "VCC" H 4050 700 30  0000 C CNN
-F 2 "" H 4050 600 60  0000 C CNN
-F 3 "" H 4050 600 60  0000 C CNN
-	1    4050 600 
+P 4050 700
+F 0 "#PWR1" H 4050 800 30  0001 C CNN
+F 1 "VCC" H 4050 800 30  0000 C CNN
+F 2 "" H 4050 700 60  0000 C CNN
+F 3 "" H 4050 700 60  0000 C CNN
+	1    4050 700 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -3491,24 +3479,16 @@ F 3 "" H 700 5950 60  0000 C CNN
 	1    700  5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 4850 650  2    30   Input ~ 0
+Text GLabel 4850 750  2    30   Input ~ 0
 3V3IN
-Text GLabel 4850 900  2    30   Input ~ 0
-5VIN
 Wire Wire Line
-	4050 650  4400 650 
+	4050 750  4400 750 
 Wire Wire Line
-	4600 650  4850 650 
-Wire Wire Line
-	4850 900  4600 900 
-Wire Wire Line
-	4400 900  4100 900 
-Wire Wire Line
-	4100 900  4100 800 
+	4600 750  4850 750 
 Text Notes 5050 650  0    30   ~ 0
-NOTE: LPCXpresso \nneeds 3v3 in to the \nVIO line. Mbed needs\n 4.5V-9.0V on the \nVIN line.
+NOTE: LPCXpresso \nneeds 3v3 in to the \nVIO line. This pin is\nVOUT-only on mbed.\nThis jumper will power\nthe LPCXpresso
 Wire Wire Line
-	4050 650  4050 600 
+	4050 750  4050 700 
 Wire Wire Line
 	700  6000 700  5950
 $EndSCHEMATC
