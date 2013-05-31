@@ -2241,8 +2241,6 @@ Text Notes 6550 2950 0    79   ~ 0
 STEPPER DRIVERS
 Text Notes 600  5100 0    39   ~ 0
 Seems most LPC pins are 5v tolerant.\nDont abuse :)
-Text GLabel 3550 1750 2    30   Input ~ 0
-VIO3V3
 Text GLabel 850  6800 0    30   Input ~ 0
 18_P0.26AOUT
 Text GLabel 2900 6450 2    30   Input ~ 0
@@ -2571,8 +2569,6 @@ Wire Wire Line
 	1200 5950 1050 5950
 Wire Wire Line
 	2450 7350 2450 7400
-Wire Wire Line
-	3450 1750 3550 1750
 Wire Wire Line
 	5200 1250 5200 1300
 Wire Wire Line
