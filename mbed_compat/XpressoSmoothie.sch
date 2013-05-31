@@ -3443,10 +3443,8 @@ Wire Wire Line
 	6600 6550 6500 6550
 Text GLabel 6200 6550 0    30   Input ~ 0
 18_P0.26AOUT
-Text GLabel 950  6000 0    30   Input ~ 0
-5VIN
 Wire Wire Line
-	1150 6000 950  6000
+	700  6000 1150 6000
 $Comp
 L JUMPER-2 JP3
 U 1 1 51A7E41E
@@ -3485,12 +3483,12 @@ $EndComp
 $Comp
 L +5V #PWR2
 U 1 1 51A7E473
-P 4100 800
-F 0 "#PWR2" H 4100 890 20  0001 C CNN
-F 1 "+5V" H 4100 890 30  0000 C CNN
-F 2 "" H 4100 800 60  0000 C CNN
-F 3 "" H 4100 800 60  0000 C CNN
-	1    4100 800 
+P 700 5950
+F 0 "#PWR2" H 700 6040 20  0001 C CNN
+F 1 "+5V" H 700 6040 30  0000 C CNN
+F 2 "" H 700 5950 60  0000 C CNN
+F 3 "" H 700 5950 60  0000 C CNN
+	1    700  5950
 	1    0    0    -1  
 $EndComp
 Text GLabel 4850 650  2    30   Input ~ 0
@@ -3511,4 +3509,6 @@ Text Notes 5050 650  0    30   ~ 0
 NOTE: LPCXpresso \nneeds 3v3 in to the \nVIO line. Mbed needs\n 4.5V-9.0V on the \nVIN line.
 Wire Wire Line
 	4050 650  4050 600 
+Wire Wire Line
+	700  6000 700  5950
 $EndSCHEMATC
