@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/31/2013 12:44:14 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/31/2013 2:25:13 PM
 
 BeginCmp
 TimeStamp = /51911758;
@@ -393,24 +393,24 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FFF1C;
+TimeStamp = /51A87853;
 Reference = J16;
-ValeurCmp = HEADER_3;
-IdModule  = PIN_ARRAY_3X1;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FFF1E;
+TimeStamp = /51A8E783;
 Reference = J17;
-ValeurCmp = HEADER_3;
-IdModule  = PIN_ARRAY_3X1;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FFF20;
+TimeStamp = /51A8E7B1;
 Reference = J18;
-ValeurCmp = HEADER_3;
-IdModule  = PIN_ARRAY_3X1;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
@@ -442,24 +442,24 @@ IdModule  = bornier2;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FFF25;
+TimeStamp = /51A8E7DF;
 Reference = J23;
-ValeurCmp = HEADER_3;
-IdModule  = PIN_ARRAY_3X1;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FFF26;
+TimeStamp = /51A8E80D;
 Reference = J24;
-ValeurCmp = HEADER_3;
-IdModule  = PIN_ARRAY_3X1;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /518FFF2A;
+TimeStamp = /51A8E83B;
 Reference = J25;
-ValeurCmp = HEADER_3;
-IdModule  = PIN_ARRAY_3X1;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
@@ -516,13 +516,6 @@ TimeStamp = /51A81C9E;
 Reference = JP5;
 ValeurCmp = JUMPER-2;
 IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A89E0F;
-Reference = JP6;
-ValeurCmp = JUMPER-3;
-IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
@@ -815,7 +808,7 @@ EndCmp
 BeginCmp
 TimeStamp = /5198EACF;
 Reference = U7;
-ValeurCmp = LM7812CT;
+ValeurCmp = LM7809CT;
 IdModule  = TO220_VERT_1117;
 EndCmp
 

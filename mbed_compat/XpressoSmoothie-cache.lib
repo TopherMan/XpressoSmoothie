@@ -1,4 +1,4 @@
-EESchema-LIBRARY Version 2.3  Date: 5/31/2013 12:44:09 PM
+EESchema-LIBRARY Version 2.3  Date: 5/31/2013 2:25:00 PM
 #encoding utf-8
 #
 # +3.3VP
@@ -258,24 +258,6 @@ C 25 0 10 0 1 2 N
 P 5 0 1 5  -30 -20  -30 -30  30 -30  30 -20  30 -20 N
 X A 1 -100 0 65 R 50 50 1 1 P
 X B 2 100 0 65 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Jumper-3
-#
-DEF ~Jumper-3 JP 0 0 N N 1 F N
-F0 "JP" 0 -60 30 H V C CNN
-F1 "Jumper-3" 0 0 30 H I C CNN
-F2 "~" 0 0 60 H V C CNN
-F3 "~" 0 0 60 H V C CNN
-DRAW
-C -40 0 10 0 1 2 N
-C 0 0 10 0 1 2 N
-C 40 0 10 0 1 2 N
-P 5 0 1 5  -10 -20  -10 -30  50 -30  50 -20  50 -20 N
-X A 1 -100 0 50 R 50 50 1 1 P
-X B 2 0 50 40 D 50 50 1 1 I
-X C 3 100 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
