@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 6/1/2013 12:22:37 PM
+EESchema Schematic File Version 2
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -43,7 +43,7 @@ LIBS:opendous
 LIBS:pololu_a4988x
 LIBS:RMC
 LIBS:XpressoSmoothie-cache
-EELAYER 27 0
+EELAYER 24 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1546,7 +1546,7 @@ F 0 "J3" V 2350 2350 60  0000 C CNN
 F 1 "HEADER_3" V 2350 2150 28  0000 C CNN
 F 2 "" H 2300 2150 60  0001 C CNN
 F 3 "" H 2300 2150 60  0001 C CNN
-F 4 "select lpc supply" V 2450 2150 39  0000 C CNN "Explanation"
+F 4 "select mcu supply" V 2450 2150 39  0000 C CNN "Explanation"
 	1    2300 2150
 	0    -1   1    0   
 $EndComp
@@ -2111,18 +2111,18 @@ Text GLabel 6200 6550 0    30   Input ~ 0
 $Comp
 L JUMPER-2 JP3
 U 1 1 51A7E41E
-P 4450 700
-F 0 "JP3" H 4450 625 30  0000 C CNN
-F 1 "JUMPER-2" H 4450 700 30  0001 C CNN
-F 2 "" H 4450 700 60  0000 C CNN
-F 3 "" H 4450 700 60  0000 C CNN
-F 4 "LPCXpresso_3V3IN" H 4450 750 60  0000 C CNN "Explanation"
-	1    4450 700 
+P 4450 800
+F 0 "JP3" H 4450 725 30  0000 C CNN
+F 1 "JUMPER-2" H 4450 800 30  0001 C CNN
+F 2 "" H 4450 800 60  0000 C CNN
+F 3 "" H 4450 800 60  0000 C CNN
+F 4 "LPCXpresso_3V3IN" H 4450 850 60  0000 C CNN "Explanation"
+	1    4450 800 
 	-1   0    0    1   
 $EndComp
-Text GLabel 4800 700  2    30   Input ~ 0
+Text GLabel 4800 800  2    30   Input ~ 0
 3V3IN
-Text Notes 3900 850  0    30   ~ 0
+Text Notes 3900 950  0    30   ~ 0
 Set this jumper to supply 3.3v into pin 28 (VIO).\nLPCXpresso needs 3v3 into the VIO line. This pin is VOUT on mbed. 
 $Comp
 L +5V #PWR048
@@ -2136,54 +2136,25 @@ F 3 "" H 2750 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L JUMPER-2 JP4
-U 1 1 51A81A20
-P 4500 1050
-F 0 "JP4" H 4500 975 30  0000 C CNN
-F 1 "JUMPER-2" H 4500 1050 30  0001 C CNN
-F 2 "" H 4500 1050 60  0000 C CNN
-F 3 "" H 4500 1050 60  0000 C CNN
-F 4 "vbat" H 4500 1100 60  0000 C CNN "Explanation"
-	1    4500 1050
-	-1   0    0    1   
-$EndComp
-Text GLabel 900  6050 0    30   Input ~ 0
-VBAT
-Text Notes 3950 1200 0    30   ~ 0
-Set this jumper to supply 3.3v into the pin 3 (VBAT).
-$Comp
 L JUMPER-2 JP5
 U 1 1 51A81C9E
-P 4500 1350
-F 0 "JP5" H 4500 1275 30  0000 C CNN
-F 1 "JUMPER-2" H 4500 1350 30  0001 C CNN
-F 2 "" H 4500 1350 60  0000 C CNN
-F 3 "" H 4500 1350 60  0000 C CNN
-F 4 "vin" H 4500 1400 60  0000 C CNN "Explanation"
-	1    4500 1350
+P 4500 1200
+F 0 "JP5" H 4500 1125 30  0000 C CNN
+F 1 "JUMPER-2" H 4500 1200 30  0001 C CNN
+F 2 "" H 4500 1200 60  0000 C CNN
+F 3 "" H 4500 1200 60  0000 C CNN
+F 4 "vin" H 4500 1250 60  0000 C CNN "Explanation"
+	1    4500 1200
 	-1   0    0    1   
 $EndComp
-Text Notes 3950 1500 0    30   ~ 0
-Set this jumper to supply Vgates into the pin 2 (VIN).\nThis requires vgates regulator = LM7809 (VIN=4,5-9Vmax)
-Text GLabel 4800 1050 2    30   Input ~ 0
-VBAT
+Text Notes 3950 1350 0    30   ~ 0
+Set this jumper to supply Vgates into the pin 2 (VIN on mbed).\nThis requires vgates regulator = LM7809 (VIN=4,5-9Vmax)
 Text GLabel 900  6000 0    30   Input ~ 0
 VIN
-Text GLabel 4800 1350 2    30   Input ~ 0
+Text GLabel 4800 1200 2    30   Input ~ 0
 VIN
-Text GLabel 4200 1350 0    39   Input ~ 8
+Text GLabel 4200 1200 0    39   Input ~ 8
 Vgates
-$Comp
-L +3.3VP #PWR049
-U 1 1 51A85B1F
-P 3400 1750
-F 0 "#PWR049" H 3450 1780 20  0001 C CNN
-F 1 "+3.3VP" H 3400 1840 30  0000 C CNN
-F 2 "" H 3400 1750 60  0000 C CNN
-F 3 "" H 3400 1750 60  0000 C CNN
-	1    3400 1750
-	1    0    0    -1  
-$EndComp
 $Comp
 L +3.3VP #PWR050
 U 1 1 51A85B25
@@ -2196,25 +2167,14 @@ F 3 "" H 3300 1750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3VP #PWR051
-U 1 1 51A85B2B
-P 4200 1050
-F 0 "#PWR051" H 4250 1080 20  0001 C CNN
-F 1 "+3.3VP" H 4200 1140 30  0000 C CNN
-F 2 "" H 4200 1050 60  0000 C CNN
-F 3 "" H 4200 1050 60  0000 C CNN
-	1    4200 1050
-	1    0    0    -1  
-$EndComp
-$Comp
 L +3.3VP #PWR052
 U 1 1 51A85B31
-P 4200 700
-F 0 "#PWR052" H 4250 730 20  0001 C CNN
-F 1 "+3.3VP" H 4200 790 30  0000 C CNN
-F 2 "" H 4200 700 60  0000 C CNN
-F 3 "" H 4200 700 60  0000 C CNN
-	1    4200 700 
+P 4200 800
+F 0 "#PWR052" H 4250 830 20  0001 C CNN
+F 1 "+3.3VP" H 4200 890 30  0000 C CNN
+F 2 "" H 4200 800 60  0000 C CNN
+F 3 "" H 4200 800 60  0000 C CNN
+	1    4200 800 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2598,23 +2558,17 @@ Wire Wire Line
 Wire Wire Line
 	2950 4650 2950 4400
 Wire Wire Line
-	4200 1350 4400 1350
+	4200 1200 4400 1200
 Wire Wire Line
-	4800 1350 4600 1350
+	4800 1200 4600 1200
 Wire Wire Line
 	1150 6000 900  6000
 Wire Wire Line
-	4800 1050 4600 1050
-Wire Wire Line
-	4200 1050 4400 1050
-Wire Wire Line
-	900  6050 1200 6050
-Wire Wire Line
 	2400 6000 2750 6000
 Wire Wire Line
-	4550 700  4800 700 
+	4550 800  4800 800 
 Wire Wire Line
-	4200 700  4350 700 
+	4200 800  4350 800 
 Wire Wire Line
 	6600 6550 6500 6550
 Wire Wire Line
@@ -3852,4 +3806,5 @@ F 3 "" H 800 5000 60  0000 C CNN
 	1    800  5000
 	-1   0    0    -1  
 $EndComp
+NoConn ~ 1200 6050
 $EndSCHEMATC
