@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 6/1/2013 3:21:41 PM
+EESchema Schematic File Version 2  date 6/1/2013 6:05:36 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -183,24 +183,24 @@ Signal1
 $Comp
 L R R1
 U 1 1 51A9CCEC
-P 5050 2250
-F 0 "R1" V 5130 2250 50  0000 C CNN
-F 1 "100" V 5050 2250 50  0000 C CNN
-F 2 "" H 5050 2250 60  0001 C CNN
-F 3 "" H 5050 2250 60  0001 C CNN
-	1    5050 2250
-	-1   0    0    1   
+P 4450 2000
+F 0 "R1" V 4530 2000 50  0000 C CNN
+F 1 "100" V 4450 2000 50  0000 C CNN
+F 2 "" H 4450 2000 60  0001 C CNN
+F 3 "" H 4450 2000 60  0001 C CNN
+	1    4450 2000
+	0    1    1    0   
 $EndComp
 $Comp
 L LED D1
 U 1 1 51A9CD0F
-P 5050 2750
-F 0 "D1" H 5050 2850 50  0000 C CNN
-F 1 "green" H 5050 2650 50  0000 C CNN
-F 2 "" H 5050 2750 60  0001 C CNN
-F 3 "" H 5050 2750 60  0001 C CNN
-F 4 "indicator" H 5050 2900 39  0001 C CNN "Explanation"
-	1    5050 2750
+P 4800 2200
+F 0 "D1" H 4800 2300 50  0000 C CNN
+F 1 "green" H 4800 2100 50  0000 C CNN
+F 2 "" H 4800 2200 60  0001 C CNN
+F 3 "" H 4800 2200 60  0001 C CNN
+F 4 "indicator" H 4800 2350 39  0001 C CNN "Explanation"
+	1    4800 2200
 	0    1    1    0   
 $EndComp
 Text Notes 1100 1800 0    79   ~ 0
@@ -249,11 +249,6 @@ Wire Wire Line
 	3700 2550 3800 2550
 Wire Wire Line
 	4450 2750 4500 2750
-Wire Wire Line
-	4800 2550 5050 2550
-Wire Wire Line
-	5050 2550 5050 2500
-Connection ~ 5050 2550
 Wire Notes Line
 	450  1100 11300 1100
 Wire Wire Line
@@ -261,8 +256,6 @@ Wire Wire Line
 Connection ~ 2450 2000
 Connection ~ 3700 2000
 Connection ~ 1350 2100
-Wire Wire Line
-	2150 2000 5050 2000
 Wire Wire Line
 	1500 2300 1250 2300
 Wire Wire Line
@@ -289,11 +282,7 @@ $EndComp
 Wire Wire Line
 	2150 2100 2150 2000
 Wire Wire Line
-	2150 3000 5050 3000
-Wire Wire Line
 	4800 3000 4800 2950
-Wire Wire Line
-	5050 3000 5050 2950
 Connection ~ 4800 3000
 Connection ~ 2450 3000
 Text GLabel 2150 3000 0    30   Input ~ 0
@@ -374,24 +363,24 @@ Signal2
 $Comp
 L R R2
 U 1 1 51AA0660
-P 5050 3750
-F 0 "R2" V 5130 3750 50  0000 C CNN
-F 1 "100" V 5050 3750 50  0000 C CNN
-F 2 "" H 5050 3750 60  0001 C CNN
-F 3 "" H 5050 3750 60  0001 C CNN
-	1    5050 3750
-	-1   0    0    1   
+P 4450 3500
+F 0 "R2" V 4530 3500 50  0000 C CNN
+F 1 "100" V 4450 3500 50  0000 C CNN
+F 2 "" H 4450 3500 60  0001 C CNN
+F 3 "" H 4450 3500 60  0001 C CNN
+	1    4450 3500
+	0    1    1    0   
 $EndComp
 $Comp
 L LED D2
 U 1 1 51AA0667
-P 5050 4250
-F 0 "D2" H 5050 4350 50  0000 C CNN
-F 1 "green" H 5050 4150 50  0000 C CNN
-F 2 "" H 5050 4250 60  0001 C CNN
-F 3 "" H 5050 4250 60  0001 C CNN
-F 4 "indicator" H 5050 4400 39  0001 C CNN "Explanation"
-	1    5050 4250
+P 4800 3700
+F 0 "D2" H 4800 3800 50  0000 C CNN
+F 1 "green" H 4800 3600 50  0000 C CNN
+F 2 "" H 4800 3700 60  0001 C CNN
+F 3 "" H 4800 3700 60  0001 C CNN
+F 4 "indicator" H 4800 3850 39  0001 C CNN "Explanation"
+	1    4800 3700
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -405,17 +394,10 @@ Wire Wire Line
 Wire Wire Line
 	4450 4250 4500 4250
 Wire Wire Line
-	4800 4050 5050 4050
-Wire Wire Line
-	5050 4050 5050 4000
-Connection ~ 5050 4050
-Wire Wire Line
 	1250 3700 1500 3700
 Connection ~ 2450 3500
 Connection ~ 3700 3500
 Connection ~ 1350 3600
-Wire Wire Line
-	2150 3500 5050 3500
 Wire Wire Line
 	1500 3800 1250 3800
 Wire Wire Line
@@ -442,11 +424,7 @@ $EndComp
 Wire Wire Line
 	2150 3600 2150 3500
 Wire Wire Line
-	2150 4500 5050 4500
-Wire Wire Line
 	4800 4500 4800 4450
-Wire Wire Line
-	5050 4500 5050 4450
 Connection ~ 4800 4500
 Connection ~ 2450 4500
 Text GLabel 2150 4500 0    30   Input ~ 0
@@ -533,24 +511,24 @@ Signal3
 $Comp
 L R R3
 U 1 1 51AA0910
-P 5050 5250
-F 0 "R3" V 5130 5250 50  0000 C CNN
-F 1 "100" V 5050 5250 50  0000 C CNN
-F 2 "" H 5050 5250 60  0001 C CNN
-F 3 "" H 5050 5250 60  0001 C CNN
-	1    5050 5250
-	-1   0    0    1   
+P 4450 5000
+F 0 "R3" V 4530 5000 50  0000 C CNN
+F 1 "100" V 4450 5000 50  0000 C CNN
+F 2 "" H 4450 5000 60  0001 C CNN
+F 3 "" H 4450 5000 60  0001 C CNN
+	1    4450 5000
+	0    1    1    0   
 $EndComp
 $Comp
 L LED D3
 U 1 1 51AA0917
-P 5050 5750
-F 0 "D3" H 5050 5850 50  0000 C CNN
-F 1 "green" H 5050 5650 50  0000 C CNN
-F 2 "" H 5050 5750 60  0001 C CNN
-F 3 "" H 5050 5750 60  0001 C CNN
-F 4 "indicator" H 5050 5900 39  0001 C CNN "Explanation"
-	1    5050 5750
+P 4800 5200
+F 0 "D3" H 4800 5300 50  0000 C CNN
+F 1 "green" H 4800 5100 50  0000 C CNN
+F 2 "" H 4800 5200 60  0001 C CNN
+F 3 "" H 4800 5200 60  0001 C CNN
+F 4 "indicator" H 4800 5350 39  0001 C CNN "Explanation"
+	1    4800 5200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -564,17 +542,10 @@ Wire Wire Line
 Wire Wire Line
 	4450 5750 4500 5750
 Wire Wire Line
-	4800 5550 5050 5550
-Wire Wire Line
-	5050 5550 5050 5500
-Connection ~ 5050 5550
-Wire Wire Line
 	1250 5200 1500 5200
 Connection ~ 2450 5000
 Connection ~ 3700 5000
 Connection ~ 1350 5100
-Wire Wire Line
-	2150 5000 5050 5000
 Wire Wire Line
 	1500 5300 1250 5300
 Wire Wire Line
@@ -601,11 +572,7 @@ $EndComp
 Wire Wire Line
 	2150 5100 2150 5000
 Wire Wire Line
-	2150 6000 5050 6000
-Wire Wire Line
 	4800 6000 4800 5950
-Wire Wire Line
-	5050 6000 5050 5950
 Connection ~ 4800 6000
 Connection ~ 2450 6000
 Text GLabel 2150 6000 0    30   Input ~ 0
@@ -613,4 +580,28 @@ GND_3
 Wire Wire Line
 	3700 5850 3700 6000
 Connection ~ 3700 6000
+Wire Wire Line
+	2150 3000 4800 3000
+Wire Wire Line
+	4800 2550 4800 2400
+Wire Wire Line
+	4800 2000 4700 2000
+Wire Wire Line
+	2150 2000 4200 2000
+Wire Wire Line
+	4700 3500 4800 3500
+Wire Wire Line
+	2150 3500 4200 3500
+Wire Wire Line
+	4800 4050 4800 3900
+Wire Wire Line
+	4800 4500 2150 4500
+Wire Wire Line
+	4800 5000 4700 5000
+Wire Wire Line
+	4800 5400 4800 5550
+Wire Wire Line
+	2150 5000 4200 5000
+Wire Wire Line
+	4800 6000 2150 6000
 $EndSCHEMATC

@@ -1,8 +1,6 @@
-update=5/31/2013 12:37:20 PM
+update=6/1/2013 6:10:36 PM
 version=1
-last_client=pcbnew
-[general]
-version=1
+last_client=kicad
 [eeschema]
 version=1
 LibDir=../KiCAD_Libraries/walter/eesch;../KiCAD_Libraries/library
@@ -102,3 +100,5 @@ LibName18=borniers
 LibName19=opendous
 LibName20=RMC
 LibName21=USBMICRO
+[general]
+version=1
