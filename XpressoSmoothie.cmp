@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 5/31/2013 2:25:13 PM
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 6/1/2013 12:22:45 PM
 
 BeginCmp
 TimeStamp = /51911758;
@@ -400,7 +400,7 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A8E783;
+TimeStamp = /51A9B821;
 Reference = J17;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
@@ -442,7 +442,7 @@ IdModule  = bornier2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A8E7DF;
+TimeStamp = /51A9B828;
 Reference = J23;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
@@ -456,7 +456,7 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A8E83B;
+TimeStamp = /51A9B82F;
 Reference = J25;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
@@ -481,6 +481,27 @@ TimeStamp = /51A55C9B;
 Reference = J28;
 ValeurCmp = MICROSD-MOLEX;
 IdModule  = microsd-molex-47309;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9B7EF;
+Reference = J172;
+ValeurCmp = HEADER_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9B8DD;
+Reference = J232;
+ValeurCmp = HEADER_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9B8EE;
+Reference = J252;
+ValeurCmp = HEADER_2;
+IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
@@ -732,6 +753,48 @@ BeginCmp
 TimeStamp = /519902CD;
 Reference = R30;
 ValeurCmp = 100;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9B41A;
+Reference = RL_diode1;
+ValeurCmp = 100R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9E70A;
+Reference = RL_diode2;
+ValeurCmp = 100R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9E749;
+Reference = RL_diode3;
+ValeurCmp = 100R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9B439;
+Reference = Rp_rcv1;
+ValeurCmp = 1k5;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9E710;
+Reference = Rp_rcv2;
+ValeurCmp = 1k5;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A9E74F;
+Reference = Rp_rcv3;
+ValeurCmp = 1k5;
 IdModule  = SM0805;
 EndCmp
 
