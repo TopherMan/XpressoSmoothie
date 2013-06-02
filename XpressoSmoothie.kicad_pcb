@@ -5,7 +5,7 @@
     (no_connects 12)
     (area 56.388 52.51262 179.864657 163.2712)
     (thickness 1.6)
-    (drawings 31)
+    (drawings 36)
     (tracks 1193)
     (zones 0)
     (modules 130)
@@ -18,8 +18,8 @@
   )
 
   (layers
-    (15 F.Cu signal hide)
-    (0 B.Cu signal)
+    (15 F.Cu signal)
+    (0 B.Cu signal hide)
     (16 B.Adhes user)
     (17 F.Adhes user)
     (18 B.Paste user)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.889)
+    (last_trace_width 0.635)
     (user_trace_width 0.35)
     (user_trace_width 0.889)
     (user_trace_width 1.27)
@@ -69,7 +69,7 @@
     (pad_drill 0.6)
     (pad_to_mask_clearance 0.254)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFB3F)
+    (visible_elements 7FFFFA3F)
     (pcbplotparams
       (layerselection 15761409)
       (usegerberextensions true)
@@ -5018,12 +5018,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A7A9DD)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8E60) (tstamp 51AB8EA0)
     (at 115.2525 124.7775 180)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A7D1D1)
-    (fp_text reference JP1 (at 0 -1.905 180) (layer F.SilkS)
+    (fp_text reference JP1 (at 0 -1.905 180) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value JUMPER-2 (at 0 -1.905 180) (layer F.SilkS) hide
@@ -5048,12 +5048,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A7C4D8)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8D08) (tstamp 51A7C4D8)
     (at 147.0025 82.55)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A7A651)
-    (fp_text reference JP2 (at 0 -1.905) (layer F.SilkS)
+    (fp_text reference JP2 (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value JUMPER-2 (at 0 -1.905) (layer F.SilkS) hide
@@ -5078,12 +5078,12 @@
     )
   )
 
-  (module pin_array_4x2 (layer F.Cu) (tedit 3FAB90E6) (tstamp 519917E3)
+  (module pin_array_4x2 (layer F.Cu) (tedit 51AB8E3D) (tstamp 51AB8E95)
     (at 129.54 126.365 180)
     (descr "Double rangee de contacts 2 x 4 pins")
     (tags CONN)
     (path /51A7C943)
-    (fp_text reference J13 (at 0 -3.81 180) (layer F.SilkS)
+    (fp_text reference J13 (at 0 -3.81 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4X2 (at 0 3.81 180) (layer F.SilkS) hide
@@ -5132,12 +5132,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A7E77E)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8DC1) (tstamp 51A7E77E)
     (at 161.29 121.285)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A7E41E)
-    (fp_text reference JP3 (at 0 -1.905) (layer F.SilkS)
+    (fp_text reference JP3 (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value JUMPER-2 (at 0 -1.905) (layer F.SilkS) hide
@@ -5162,12 +5162,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A8209B)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8D21) (tstamp 51A8209B)
     (at 162.2425 89.535)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A81C9E)
-    (fp_text reference JP5 (at 0 -1.905) (layer F.SilkS)
+    (fp_text reference JP5 (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value JUMPER-2 (at 0 -1.905) (layer F.SilkS) hide
@@ -5192,12 +5192,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 4C10F42E) (tstamp 51980B10)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 51AB8F96) (tstamp 51AB8FA7)
     (at 89.2175 125.095 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51A87853)
-    (fp_text reference J16 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J16 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -5230,12 +5230,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 4C10F42E) (tstamp 51980B28)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 51AB8FB4) (tstamp 51980B28)
     (at 89.2175 109.855 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51A8E7B1)
-    (fp_text reference J18 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J18 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -5268,12 +5268,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 4C10F42E) (tstamp 51990A7B)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 51AB8FA5) (tstamp 51990A7B)
     (at 89.2175 117.475 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51A8E80D)
-    (fp_text reference J24 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J24 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -5498,12 +5498,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A9B2A9)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8FCD) (tstamp 51A9B2A9)
     (at 81.5975 106.045)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A9B7EF)
-    (fp_text reference J172 (at 0 -1.905) (layer F.SilkS)
+    (fp_text reference J172 (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value HEADER_2 (at 0 -1.905) (layer F.SilkS) hide
@@ -5528,12 +5528,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A9B2B3)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8FD4) (tstamp 51A9B2B3)
     (at 81.5975 113.665)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A9B8DD)
-    (fp_text reference J232 (at 0 -1.905) (layer F.SilkS)
+    (fp_text reference J232 (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value HEADER_2 (at 0 -1.905) (layer F.SilkS) hide
@@ -5558,12 +5558,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51A9B2BD)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8FDA) (tstamp 51A9B2BD)
     (at 81.5975 121.285)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51A9B8EE)
-    (fp_text reference J252 (at 0 -1.905) (layer F.SilkS)
+    (fp_text reference J252 (at 0 -1.905) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value HEADER_2 (at 0 -1.905) (layer F.SilkS) hide
@@ -5588,12 +5588,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 4C10F42E) (tstamp 51980B1C)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 51AB8FBE) (tstamp 51980B1C)
     (at 89.2175 106.045 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51A9B821)
-    (fp_text reference J17 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J17 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -5626,12 +5626,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 4C10F42E) (tstamp 51980B34)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 51AB8FA1) (tstamp 51980B34)
     (at 89.2175 121.285 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51A9B828)
-    (fp_text reference J23 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J23 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -5664,12 +5664,12 @@
     )
   )
 
-  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 4C10F42E) (tstamp 51980B4C)
+  (module PIN_ARRAY_4x1 (layer F.Cu) (tedit 51AB8FAF) (tstamp 51980B4C)
     (at 89.2175 113.665 180)
     (descr "Double rangee de contacts 2 x 5 pins")
     (tags CONN)
     (path /51A9B82F)
-    (fp_text reference J25 (at 0 -2.54 180) (layer F.SilkS)
+    (fp_text reference J25 (at 0 -2.54 180) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.2032)))
     )
     (fp_text value HEADER_4 (at 0 2.54 180) (layer F.SilkS) hide
@@ -5702,12 +5702,12 @@
     )
   )
 
-  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 4565C520) (tstamp 51AB8B29)
+  (module PIN_ARRAY_2X1 (layer F.Cu) (tedit 51AB8DB9) (tstamp 51AB8B29)
     (at 161.29 123.825 180)
     (descr "Connecteurs 2 pins")
     (tags "CONN DEV")
     (path /51AB894A)
-    (fp_text reference JP4 (at 0 -1.905 180) (layer F.SilkS)
+    (fp_text reference JP4 (at 0 -1.905 180) (layer F.SilkS) hide
       (effects (font (size 0.762 0.762) (thickness 0.1524)))
     )
     (fp_text value JUMPER-2 (at 0 -1.905 180) (layer F.SilkS) hide
@@ -5793,6 +5793,21 @@
     )
   )
 
+  (gr_text "Vgates to Vin" (at 155.321 89.408) (layer F.SilkS)
+    (effects (font (size 1.016 0.762) (thickness 0.1524)))
+  )
+  (gr_text "mbed common\nenable X Y A" (at 145.669 84.582) (layer F.SilkS)
+    (effects (font (size 1.016 0.762) (thickness 0.1524)))
+  )
+  (gr_text "mbed Power 1\nConnect" (at 115.316 126.873) (layer F.SilkS)
+    (effects (font (size 1.016 0.762) (thickness 0.1524)))
+  )
+  (gr_text "5V from USB" (at 162.179 125.857) (layer F.SilkS)
+    (effects (font (size 1.016 0.762) (thickness 0.1524)))
+  )
+  (gr_text "3.3v To MCU" (at 161.29 119.126) (layer F.SilkS)
+    (effects (font (size 1.016 0.762) (thickness 0.1524)))
+  )
   (gr_text MISC (at 144.145 152.019) (layer F.SilkS)
     (effects (font (size 2.032 1.524) (thickness 0.3048)))
   )
@@ -5811,7 +5826,7 @@
   (gr_text I2C (at 142.24 123.19) (layer F.SilkS)
     (effects (font (size 1.016 0.762) (thickness 0.1524)))
   )
-  (gr_text EXPANSION (at 130.81 123.19) (layer F.SilkS)
+  (gr_text EXPANSION (at 130.81 123.19) (layer F.SilkS) (tstamp 51AB8EF8)
     (effects (font (size 1.016 0.762) (thickness 0.1524)))
   )
   (gr_text ZMIN (at 82.2325 124.1425) (layer F.SilkS)
