@@ -167,15 +167,15 @@ F 3 "" H 3500 3700 60  0001 C CNN
 	1    3500 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 7250 2    30   Input ~ 0
-ZMIN
-Text GLabel 800  7150 0    30   Input ~ 0
-ZMAX
-Text GLabel 800  7200 0    30   Input ~ 0
-YMIN
-Text GLabel 2900 7200 2    30   Input ~ 0
-YMAX
 Text GLabel 2900 7150 2    30   Input ~ 0
+ZMIN
+Text GLabel 2900 7200 2    30   Input ~ 0
+ZMAX
+Text GLabel 2900 7250 2    30   Input ~ 0
+YMIN
+Text GLabel 800  7150 0    30   Input ~ 0
+YMAX
+Text GLabel 800  7200 0    30   Input ~ 0
 XMIN
 Text GLabel 800  7250 0    30   Input ~ 0
 XMAX
@@ -342,9 +342,9 @@ F 3 "" H 3550 1300 60  0001 C CNN
 	1    3550 1300
 	1    0    0    -1  
 $EndComp
-Text GLabel 1950 4700 2    30   Input ~ 0
+Text GLabel 1950 3400 2    30   Input ~ 0
 ZMIN
-Text GLabel 1950 4050 2    30   Input ~ 0
+Text GLabel 1950 4700 2    30   Input ~ 0
 YMIN
 Text GLabel 1150 6750 0    30   Input ~ 0
 THERM2
@@ -2376,7 +2376,7 @@ F 3 "" H 1900 3500 60  0001 C CNN
 	1    1900 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1950 3400 2    30   Input ~ 0
+Text GLabel 1950 4050 2    30   Input ~ 0
 XMIN
 $Comp
 L HEADER_4 J18
@@ -2424,9 +2424,9 @@ F 3 "" H 2050 3700 60  0000 C CNN
 	1    2050 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 1050 4550 2    30   Input ~ 0
-ZMAX
 Text GLabel 1050 3900 2    30   Input ~ 0
+ZMAX
+Text GLabel 1050 4550 2    30   Input ~ 0
 YMAX
 $Comp
 L GND #PWR070
