@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source C:/Users/D/Documents/GitHub/XpressoSmoothie/optoendstop/XpressoSmoothieOpto.sch)
-    (date "6/1/2013 6:05:38 PM")
+    (date "6/2/2013 3:41:31 PM")
     (tool "eeschema (2013-05-16 BZR 4016)-stable"))
   (components
     (comp (ref Hole1)
