@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 6/1/2013 12:22:45 PM
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Sun 02 Jun 2013 02:00:09 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -466,7 +466,7 @@ BeginCmp
 TimeStamp = /5197E8F8;
 Reference = J26;
 ValeurCmp = USB;
-IdModule  = USB_MICRO_RMC;
+IdModule  = USB_MICRO_RMC_noedge;
 EndCmp
 
 BeginCmp
@@ -526,7 +526,7 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A81A20;
+TimeStamp = /51AB894A;
 Reference = JP4;
 ValeurCmp = JUMPER-2;
 IdModule  = PIN_ARRAY_2X1;
