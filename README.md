@@ -4,7 +4,7 @@ This is a plan to make a RepRap electronics solution capable of running the Smoo
 
 Features
 --------
-* 120 MHz ARM Cortex-M3 processor, chosen to run the highly efficent and modular Smoothie firmware (https://github.com/arthurwolf/Smoothie).
+* 120 MHz (or 96 MHz with mbed) ARM Cortex-M3 processor, chosen to run the highly efficent and modular Smoothie firmware (https://github.com/arthurwolf/Smoothie).
 * Compatible with either the LPCXpresso 1769 or the open-source mbed 1768 with only a few minor tweaks.
 * Can be powered by 12V or 24V.
 * 5 Axes, using Pololu A4988-style stepper drivers. 4 with mbed.
@@ -18,6 +18,10 @@ Features
 Current Status
 --------------
 Board layout is nearly complete. After all pins and connections are verified, a BOM and Digikey (or similar) parts list will be made.
+
+Opto Endstops
+-------------
+XpressoSmoothie comes with on-board electronics for three opto endstops. Additionally, Noobman is finalizing designs for a small seperate opto board.
 
 To Use
 ------
