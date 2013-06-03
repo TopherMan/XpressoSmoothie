@@ -1,6 +1,13 @@
-update=6/1/2013 6:10:36 PM
+update=6/3/2013 6:43:07 PM
 version=1
-last_client=kicad
+last_client=pcbnew
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=../KiCAD_Libraries/walter/eesch;../KiCAD_Libraries/library
@@ -53,19 +60,15 @@ LibName40=w_logic
 LibName41=w_microcontrollers
 LibName42=w_opto
 LibName43=w_rtx
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName44=optoendstops
 [pcbnew]
 version=1
-LastNetListRead=XpressoSmoothie.net
+LastNetListRead=XpressoSmoothieOpto.net
 UseCmpFile=1
-PadDrill=0.600000000000
-PadDrillOvalY=0.600000000000
-PadSizeH=1.800860000000
-PadSizeV=1.399540000000
+PadDrill=0.500000000000
+PadDrillOvalY=0.500000000000
+PadSizeH=0.599440000000
+PadSizeV=1.000760000000
 PcbTextSizeV=2.032000000000
 PcbTextSizeH=1.524000000000
 PcbTextThickness=0.304800000000
@@ -76,9 +79,9 @@ SolderMaskClearance=0.254000000000
 SolderMaskMinWidth=0.000000000000
 DrawSegmentWidth=0.381000000000
 BoardOutlineThickness=0.381000000000
-ModuleOutlineThickness=0.381000000000
+ModuleOutlineThickness=0.100000000000
 [pcbnew/libraries]
-LibDir=../KiCAD_Libraries/Chris;../KiCAD_Libraries/modules;../KiCAD_Libraries/walter/pcbnew
+LibDir=../KiCAD_Libraries/Chris;../KiCAD_Libraries/modules;../KiCAD_Libraries/walter/pcbnew;../KiCAD_Libraries/library
 LibName1=sockets
 LibName2=connect
 LibName3=discret
@@ -100,5 +103,6 @@ LibName18=borniers
 LibName19=opendous
 LibName20=RMC
 LibName21=USBMICRO
-[general]
-version=1
+LibName22=contrib/Transistor_TO-92-FET_RevB
+LibName23=optoendstops
+LibName24=microsd_attend_molex
