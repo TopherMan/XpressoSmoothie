@@ -23,6 +23,10 @@ Opto Endstops
 -------------
 XpressoSmoothie comes with on-board electronics for three opto endstops. Additionally, Noobman is finalizing designs for a small seperate opto board.
 
+Bill of Materials
+-----------------
+Two bill of material files are included. BOM.ods lists the individual components and their corresponding Digikey part numbers. BOM_Digikey.xls is formatted for uploading directly to Digikey. There are three columns available, one for the complete range of parts, one for everything except opto circuitry (though the difference is only 6 resistors), and one without opto circuitry or headers, so you can use big cheap strips of breakaway headers.
+
 To Use
 ------
 Assembly instructions will be made with the alpha board.
