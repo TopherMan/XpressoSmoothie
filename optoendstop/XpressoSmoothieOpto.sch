@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 6/4/2013 4:22:04 AM
+EESchema Schematic File Version 2  date 6/4/2013 4:47:08 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -255,7 +255,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2550 5400 2500
 Wire Wire Line
-	2900 2000 4800 2000
+	2700 2000 4800 2000
 Wire Wire Line
 	5300 2000 5400 2000
 Wire Wire Line
@@ -268,23 +268,6 @@ Wire Wire Line
 	4800 2550 4800 2750
 Wire Wire Line
 	4800 2750 5100 2750
-$Comp
-L JUMPER-3 JP1
-U 1 1 51AD3A26
-P 2850 2100
-F 0 "JP1" H 2850 2000 30  0000 C CNN
-F 1 "JUMPER-3" H 2850 2100 30  0001 C CNN
-F 2 "" H 2850 2100 60  0000 C CNN
-F 3 "" H 2850 2100 60  0000 C CNN
-	1    2850 2100
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	2700 2000 2850 2000
-Wire Wire Line
-	2700 2200 2850 2200
-Wire Wire Line
-	2900 2100 2900 2000
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 51AA03C1
@@ -319,17 +302,8 @@ Wire Wire Line
 	850  2100 1500 2100
 Text GLabel 2700 2000 0    30   Input ~ 0
 3.3V
-Text GLabel 2700 2200 0    30   Input ~ 0
-5V
 Text GLabel 2700 3000 0    30   Input ~ 0
 GND
 Connection ~ 1250 2100
 Connection ~ 1250 2000
-Wire Wire Line
-	2800 2100 2900 2100
-Wire Wire Line
-	2800 2100 2800 2000
-Connection ~ 2800 2000
-Text Notes 2600 1950 0    39   ~ 0
-hardwired with 3.3v
 $EndSCHEMATC
