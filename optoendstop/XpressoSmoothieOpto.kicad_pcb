@@ -6,7 +6,7 @@
     (area 56.388 53.436334 171.640501 163.2712)
     (thickness 1.6)
     (drawings 14)
-    (tracks 92)
+    (tracks 91)
     (zones 0)
     (modules 13)
     (nets 7)
@@ -45,7 +45,7 @@
     (user_trace_width 2.54)
     (user_trace_width 3)
     (user_trace_width 3.81)
-    (trace_clearance 0.2)
+    (trace_clearance 0.4)
     (zone_clearance 0.635)
     (zone_45_only yes)
     (trace_min 0.35)
@@ -107,7 +107,7 @@
   (net 6 Signal1)
 
   (net_class Default "This is the default net class."
-    (clearance 0.2)
+    (clearance 0.4)
     (trace_width 0.635)
     (via_dia 1.27)
     (via_drill 0.635)
@@ -190,7 +190,7 @@
     )
   )
 
-  (module OSHW_logo_2 (layer F.Cu) (tedit 4FB9109F) (tstamp 51AD3EE4)
+  (module OSHW_logo_2 (layer F.Cu) (tedit 4FB9109F) (tstamp 51AD5F9C)
     (at 100.33 85.725)
     (path /519E49E2)
     (fp_text reference M2 (at 0 5.90296) (layer F.SilkS) hide
@@ -825,7 +825,6 @@
   (segment (start 86.995 70.485) (end 86.995 69.85) (width 0.635) (layer F.Cu) (net 6))
   (segment (start 86.995 69.85) (end 84.455 67.31) (width 0.635) (layer F.Cu) (net 6) (tstamp 51AD3BBE))
   (segment (start 84.455 67.31) (end 84.455 66.675) (width 0.635) (layer F.Cu) (net 6) (tstamp 51AD3BBF))
-  (segment (start 83.566 71.755) (end 84.455 71.755) (width 0.635) (layer F.Cu) (net 6))
   (segment (start 76.835 69.215) (end 79.375 66.675) (width 0.635) (layer F.Cu) (net 6) (tstamp 51AD3BA6))
   (segment (start 79.375 66.675) (end 79.375 66.04) (width 0.635) (layer F.Cu) (net 6) (tstamp 51AD3BA9))
   (segment (start 79.375 66.04) (end 80.3275 65.0875) (width 0.635) (layer F.Cu) (net 6) (tstamp 51AD3BAC))
