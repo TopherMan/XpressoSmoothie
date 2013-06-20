@@ -17,7 +17,7 @@ Features
 
 Current Status
 ==============
-Board layout is nearly complete. After all pins and connections are verified, a BOM and Digikey (or similar) parts list will be made.
+The first batch of boards have arrived and are undergoing testing. So far the test board distributes power properly and communicates with USB and SD card correctly.
 
 Opto Endstops
 =============
@@ -64,5 +64,5 @@ Wiki page at http://reprap.org/wiki/Xpresso_Smoothie.
 
 Authors
 =======
-TopherMan (Chris George) -- Initial design idea and basic layout.
+TopherMan (Chris George) -- Initial design idea and basic layout, as well as testing and assembly.
 Noobman -- Significant input on design, and completed nearly all routing.
