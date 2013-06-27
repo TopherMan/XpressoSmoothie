@@ -58,17 +58,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LPCXPRESSO_GENERIC_HEADER J6
-U 1 1 519131B7
-P 1800 6600
-F 0 "J6" H 1800 7350 60  0000 C CNN
-F 1 "LPCXPRESSO_GENERIC_HEADER" H 1800 5550 60  0000 C CNN
-F 2 "" H 1800 6600 60  0001 C CNN
-F 3 "" H 1800 6600 60  0001 C CNN
-	1    1800 6600
-	1    0    0    -1  
-$EndComp
-$Comp
 L DIODE D7
 U 1 1 519652D7
 P 10150 1250
@@ -79,9 +68,9 @@ F 3 "" H 10150 1250 60  0001 C CNN
 	1    10150 1250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2450 6600 2    30   Input ~ 0
+Text GLabel 2450 6450 2    30   Input ~ 0
 SCL
-Text GLabel 2500 6550 2    30   Input ~ 0
+Text GLabel 2500 6400 2    30   Input ~ 0
 SDA
 Text GLabel 7400 5900 0    30   Input ~ 0
 SCL
@@ -132,7 +121,7 @@ F 3 "" H 3300 1300 60  0001 C CNN
 	1    3300 1300
 	1    0    0    -1  
 $EndComp
-Text GLabel 1100 6300 0    30   Input ~ 0
+Text GLabel 1100 6150 0    30   Input ~ 0
 CS
 $Comp
 L GND #PWR02
@@ -167,55 +156,55 @@ F 3 "" H 3500 3700 60  0001 C CNN
 	1    3500 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 7150 2    30   Input ~ 0
+Text GLabel 2900 7000 2    30   Input ~ 0
 ZMIN
-Text GLabel 2900 7200 2    30   Input ~ 0
+Text GLabel 350  7150 0    30   Input ~ 0
 ZMAX
-Text GLabel 2900 7250 2    30   Input ~ 0
+Text GLabel 2900 7100 2    30   Input ~ 0
 YMIN
-Text GLabel 800  7150 0    30   Input ~ 0
+Text GLabel 350  7050 0    30   Input ~ 0
 YMAX
-Text GLabel 800  7200 0    30   Input ~ 0
-XMIN
-Text GLabel 800  7250 0    30   Input ~ 0
-XMAX
-Text GLabel 800  7450 0    30   Input ~ 0
-B-EN
-Text GLabel 800  7400 0    30   Input ~ 0
-B-STEP
-Text GLabel 800  7350 0    30   Input ~ 0
-B-DIR
-Text GLabel 800  6350 0    30   Input ~ 0
-A-DIR
-Text GLabel 800  6400 0    30   Input ~ 0
-A-STEP
-Text GLabel 800  6450 0    30   Input ~ 0
-A-EN
-Text GLabel 800  6600 0    30   Input ~ 0
-Z-EN
-Text GLabel 800  6550 0    30   Input ~ 0
-Z-STEP
-Text GLabel 800  6500 0    30   Input ~ 0
-Z-DIR
-Text GLabel 800  7000 0    30   Input ~ 0
-Y-EN
-Text GLabel 800  6900 0    30   Input ~ 0
-Y-STEP
-Text GLabel 800  6850 0    30   Input ~ 0
-Y-DIR
-Text GLabel 2900 6900 2    30   Input ~ 0
-X-STEP
-Text GLabel 2900 6850 2    30   Input ~ 0
-X-DIR
 Text GLabel 800  7050 0    30   Input ~ 0
-X-EN
-Text GLabel 2900 6700 2    30   Input ~ 0
-POWER4
+XMIN
+Text GLabel 800  7100 0    30   Input ~ 0
+XMAX
+Text GLabel 800  7300 0    30   Input ~ 0
+B-EN
+Text GLabel 800  7250 0    30   Input ~ 0
+B-STEP
+Text GLabel 800  7200 0    30   Input ~ 0
+B-DIR
+Text GLabel 800  6200 0    30   Input ~ 0
+A-DIR
+Text GLabel 800  6250 0    30   Input ~ 0
+A-STEP
+Text GLabel 800  6300 0    30   Input ~ 0
+A-EN
+Text GLabel 800  6450 0    30   Input ~ 0
+Z-EN
+Text GLabel 800  6400 0    30   Input ~ 0
+Z-STEP
+Text GLabel 800  6350 0    30   Input ~ 0
+Z-DIR
+Text GLabel 350  6900 0    30   Input ~ 0
+Y-EN
+Text GLabel 800  6750 0    30   Input ~ 0
+Y-STEP
+Text GLabel 800  6700 0    30   Input ~ 0
+Y-DIR
 Text GLabel 2900 6750 2    30   Input ~ 0
+X-STEP
+Text GLabel 2900 6700 2    30   Input ~ 0
+X-DIR
+Text GLabel 350  6950 0    30   Input ~ 0
+X-EN
+Text GLabel 2900 6550 2    30   Input ~ 0
+POWER4
+Text GLabel 2900 6600 2    30   Input ~ 0
 POWER3
-Text GLabel 2900 6800 2    30   Input ~ 0
+Text GLabel 2900 6650 2    30   Input ~ 0
 POWER2
-Text GLabel 2900 7050 2    30   Input ~ 0
+Text GLabel 2900 6900 2    30   Input ~ 0
 POWER1
 Text GLabel 10750 1250 1    30   Input ~ 0
 POWER4
@@ -346,11 +335,11 @@ Text GLabel 1950 3400 2    30   Input ~ 0
 ZMIN
 Text GLabel 1950 4700 2    30   Input ~ 0
 YMIN
-Text GLabel 1150 6750 0    30   Input ~ 0
+Text GLabel 1150 6600 0    30   Input ~ 0
 THERM2
-Text GLabel 1100 6700 0    30   Input ~ 0
+Text GLabel 1100 6550 0    30   Input ~ 0
 THERM1
-Text GLabel 1150 6650 0    30   Input ~ 0
+Text GLabel 1150 6500 0    30   Input ~ 0
 THERM0
 $Comp
 L C C9
@@ -424,9 +413,9 @@ Text GLabel 2800 3450 1    30   Input ~ 0
 THERM1
 Text GLabel 3150 3450 1    30   Input ~ 0
 THERM0
-Text GLabel 2450 7300 2    30   Input ~ 0
+Text GLabel 2450 7150 2    30   Input ~ 0
 PLAY/PAUSE
-Text GLabel 1100 6100 0    30   Input ~ 0
+Text GLabel 1100 5950 0    30   Input ~ 0
 RESET
 Text GLabel 9800 6300 0    30   Input ~ 0
 PLAY/PAUSE
@@ -465,11 +454,11 @@ F 3 "" H 10250 5950 60  0001 C CNN
 	1    10250 5950
 	1    0    0    -1  
 $EndComp
-Text GLabel 1150 6250 0    30   Input ~ 0
+Text GLabel 1150 6100 0    30   Input ~ 0
 SCK
-Text GLabel 1100 6200 0    30   Input ~ 0
+Text GLabel 1100 6050 0    30   Input ~ 0
 MISO
-Text GLabel 1150 6150 0    30   Input ~ 0
+Text GLabel 1150 6000 0    30   Input ~ 0
 MOSI
 $Comp
 L GND #PWR06
@@ -494,9 +483,9 @@ Text GLabel 9050 6700 2    30   Input ~ 0
 USB-D-
 Text GLabel 9050 6550 2    30   Input ~ 0
 USB-D+
-Text GLabel 2450 6400 2    30   Input ~ 0
+Text GLabel 2450 6250 2    30   Input ~ 0
 USB-D+
-Text GLabel 2500 6350 2    30   Input ~ 0
+Text GLabel 2500 6200 2    30   Input ~ 0
 USB-D-
 $Comp
 L R R1
@@ -564,23 +553,23 @@ $EndComp
 $Comp
 L GND #PWR09
 U 1 1 518FE6CB
-P 2450 7400
-F 0 "#PWR09" H 2450 7400 30  0001 C CNN
-F 1 "GND" H 2450 7330 30  0001 C CNN
-F 2 "" H 2450 7400 60  0001 C CNN
-F 3 "" H 2450 7400 60  0001 C CNN
-	1    2450 7400
+P 2450 7250
+F 0 "#PWR09" H 2450 7250 30  0001 C CNN
+F 1 "GND" H 2450 7180 30  0001 C CNN
+F 2 "" H 2450 7250 60  0001 C CNN
+F 3 "" H 2450 7250 60  0001 C CNN
+	1    2450 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR010
 U 1 1 518FE6A2
-P 1050 5950
-F 0 "#PWR010" H 1050 5950 30  0001 C CNN
-F 1 "GND" H 1050 5880 30  0001 C CNN
-F 2 "" H 1050 5950 60  0001 C CNN
-F 3 "" H 1050 5950 60  0001 C CNN
-	1    1050 5950
+P 1050 5800
+F 0 "#PWR010" H 1050 5800 30  0001 C CNN
+F 1 "GND" H 1050 5730 30  0001 C CNN
+F 2 "" H 1050 5800 60  0001 C CNN
+F 3 "" H 1050 5800 60  0001 C CNN
+	1    1050 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1536,7 +1525,7 @@ F 3 "" H 1150 2050 60  0001 C CNN
 	1    1150 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 7100 2    30   Input ~ 0
+Text GLabel 2800 6950 2    30   Input ~ 0
 SD_card_detect
 $Comp
 L HEADER_3 J3
@@ -1550,7 +1539,7 @@ F 4 "select mcu supply" V 2450 2150 39  0000 C CNN "Explanation"
 	1    2300 2150
 	0    -1   1    0   
 $EndComp
-Text GLabel 2500 5950 2    30   Input ~ 0
+Text GLabel 2500 5800 2    30   Input ~ 0
 3V3IN
 $Comp
 L +5V #PWR043
@@ -1847,13 +1836,13 @@ Text Notes 6550 2950 0    79   ~ 0
 STEPPER DRIVERS
 Text Notes 550  5250 0    39   ~ 0
 Seems most LPC pins are 5v tolerant, but dont abuse :)\nDirect connect short Rp_rcv pin to Signal (ex XMAX).\nRL_diode=(VCC-VF)/IF\nRp_rcv=(VCC-VCEsat)/(IC(on)*50%)\n\n
-Text GLabel 850  6800 0    30   Input ~ 0
+Text GLabel 850  6650 0    30   Input ~ 0
 18_P0.26AOUT
-Text GLabel 2900 6450 2    30   Input ~ 0
+Text GLabel 2900 6300 2    30   Input ~ 0
 38_P0.4CAN
-Text GLabel 2900 6500 2    30   Input ~ 0
+Text GLabel 2900 6350 2    30   Input ~ 0
 39_P0.5CAN
-Text GLabel 2900 6550 2    30   Input ~ 0
+Text GLabel 2900 6400 2    30   Input ~ 0
 42_P2.0PWM
 Text GLabel 6200 6300 0    30   Input ~ 0
 18_P0.26AOUT
@@ -1885,13 +1874,13 @@ F 4 "Ethernet" V 7850 6850 39  0000 C CNN "Explanation"
 	1    7800 6850
 	1    0    0    1   
 $EndComp
-Text GLabel 2900 6000 2    30   Input ~ 0
+Text GLabel 2900 5850 2    30   Input ~ 0
 32_RD-
-Text GLabel 2900 6100 2    30   Input ~ 0
+Text GLabel 2900 5950 2    30   Input ~ 0
 33_RD+
-Text GLabel 2900 6200 2    30   Input ~ 0
+Text GLabel 2900 6050 2    30   Input ~ 0
 34_TD-
-Text GLabel 2900 6300 2    30   Input ~ 0
+Text GLabel 2900 6150 2    30   Input ~ 0
 35_TD+
 Text GLabel 7500 6700 0    30   Input ~ 0
 32_RD-
@@ -1995,7 +1984,7 @@ F 3 "" H 10550 1250 60  0001 C CNN
 $EndComp
 Text Notes 3400 7350 0    39   ~ 0
 Components: all smd ceramic caps dielectric X5R or X7R or better, leds: 20mA.\nMosfet output connectors are V+ and GND. Q1 is bed mosfet to keep high current trace short. \nSolder a thick copper wire from input to Q1 and back (both on V+ and gnd) to help with the high current.\nFor DIY purposes increase fill zones parameters.
-Text Notes 1300 5800 0    79   ~ 0
+Text Notes 1300 5650 0    79   ~ 0
 LPCXpresso 1769
 Text Notes 600  2400 0    39   ~ 0
 Power in:  12V to  28V\nThe two input connector voltages must\ncome from same psu (same gnd),\nthough may have different values.
@@ -2127,12 +2116,12 @@ Set this jumper to supply 3.3v into pin 28 (VIO).\nLPCXpresso needs 3v3 into the
 $Comp
 L +5V #PWR048
 U 1 1 51A81469
-P 2750 6000
-F 0 "#PWR048" H 2750 6090 20  0001 C CNN
-F 1 "+5V" H 2750 6090 30  0000 C CNN
-F 2 "" H 2750 6000 60  0000 C CNN
-F 3 "" H 2750 6000 60  0000 C CNN
-	1    2750 6000
+P 2750 5850
+F 0 "#PWR048" H 2750 5940 20  0001 C CNN
+F 1 "+5V" H 2750 5940 30  0000 C CNN
+F 2 "" H 2750 5850 60  0000 C CNN
+F 3 "" H 2750 5850 60  0000 C CNN
+	1    2750 5850
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2149,7 +2138,7 @@ F 4 "vin" H 4500 1250 60  0000 C CNN "Explanation"
 $EndComp
 Text Notes 3950 1350 0    30   ~ 0
 Set this jumper to supply Vgates into the pin 2 (VIN on mbed).\nThis requires vgates regulator = LM7809 (VIN=4,5-9Vmax)
-Text GLabel 900  6000 0    30   Input ~ 0
+Text GLabel 900  5850 0    30   Input ~ 0
 VIN
 Text GLabel 4800 1200 2    30   Input ~ 0
 VIN
@@ -2562,9 +2551,9 @@ Wire Wire Line
 Wire Wire Line
 	4800 1200 4600 1200
 Wire Wire Line
-	1150 6000 900  6000
+	1150 5850 900  5850
 Wire Wire Line
-	2400 6000 2750 6000
+	2400 5850 2750 5850
 Wire Wire Line
 	4550 800  4800 800 
 Wire Wire Line
@@ -2601,63 +2590,51 @@ Wire Wire Line
 Wire Wire Line
 	7500 6250 7700 6250
 Wire Wire Line
-	2450 7250 2900 7250
+	2450 7100 2900 7100
 Wire Wire Line
-	2400 7200 2900 7200
+	2450 7000 2900 7000
 Wire Wire Line
-	2450 7150 2900 7150
+	2400 6950 2800 6950
 Wire Wire Line
-	2400 7100 2800 7100
+	2450 6900 2900 6900
 Wire Wire Line
-	2450 7050 2900 7050
+	900  7050 800  7100
 Wire Wire Line
-	900  7200 800  7250
+	1200 7050 900  7050
 Wire Wire Line
-	1200 7200 900  7200
+	900  7000 800  7050
 Wire Wire Line
-	900  7150 800  7200
+	1200 7000 900  7000
 Wire Wire Line
-	1200 7150 900  7150
+	800  6750 1150 6750
 Wire Wire Line
-	900  7100 800  7150
+	800  6700 1200 6700
 Wire Wire Line
-	1150 7100 900  7100
-Connection ~ 800  7000
-Connection ~ 800  7050
+	800  6450 1150 6450
 Wire Wire Line
-	800  6900 1150 6900
+	800  6400 1200 6400
 Wire Wire Line
-	800  6850 1200 6850
+	800  6350 1150 6350
 Wire Wire Line
-	800  6600 1150 6600
+	800  6300 1200 6300
 Wire Wire Line
-	800  6550 1200 6550
+	800  6250 1150 6250
 Wire Wire Line
-	800  6500 1150 6500
+	800  6200 1200 6200
 Wire Wire Line
-	800  6450 1200 6450
+	2900 6750 2400 6750
 Wire Wire Line
-	800  6400 1150 6400
+	2900 6700 2450 6700
 Wire Wire Line
-	800  6350 1200 6350
+	2900 6650 2400 6650
 Wire Wire Line
-	2900 6900 2400 6900
+	2900 6600 2450 6600
 Wire Wire Line
-	2900 6850 2450 6850
+	2900 6550 2400 6550
 Wire Wire Line
-	2900 6800 2400 6800
+	2800 6500 2900 6400
 Wire Wire Line
-	2900 6750 2450 6750
-Wire Wire Line
-	2900 6700 2400 6700
-Wire Wire Line
-	800  7050 800  7000
-Wire Wire Line
-	1200 7050 800  7050
-Wire Wire Line
-	2800 6650 2900 6550
-Wire Wire Line
-	2450 6650 2800 6650
+	2450 6500 2800 6500
 Connection ~ 5450 6900
 Wire Wire Line
 	5450 6900 5250 6900
@@ -2729,7 +2706,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 2000 2400 2050
 Wire Wire Line
-	2450 5950 2500 5950
+	2450 5800 2500 5800
 Wire Wire Line
 	1150 2050 1150 2100
 Connection ~ 1150 2100
@@ -3202,9 +3179,9 @@ Wire Wire Line
 Wire Wire Line
 	800  1600 800  1550
 Wire Wire Line
-	1150 6700 1100 6700
+	1150 6550 1100 6550
 Wire Wire Line
-	2450 6550 2500 6550
+	2450 6400 2500 6400
 Wire Wire Line
 	7400 6000 7700 6000
 Wire Wire Line
@@ -3216,18 +3193,18 @@ Wire Wire Line
 Wire Wire Line
 	9050 6700 8950 6700
 Wire Wire Line
-	2450 7300 2400 7300
+	2450 7150 2400 7150
 Wire Wire Line
 	9950 5950 9750 5950
 Connection ~ 10650 6300
 Wire Wire Line
 	10550 6300 10650 6300
 Wire Wire Line
-	1150 6250 1200 6250
+	1150 6100 1200 6100
 Wire Wire Line
-	1150 6150 1200 6150
+	1150 6000 1200 6000
 Wire Wire Line
-	2500 6350 2450 6350
+	2500 6200 2450 6200
 Wire Wire Line
 	4050 4800 4050 4700
 Wire Wire Line
@@ -3258,15 +3235,15 @@ Wire Wire Line
 Wire Wire Line
 	4750 4700 4750 4800
 Wire Wire Line
-	2450 6400 2400 6400
+	2450 6250 2400 6250
 Wire Wire Line
-	1150 6200 1100 6200
+	1150 6050 1100 6050
 Wire Wire Line
 	10650 5950 10550 5950
 Wire Wire Line
 	9800 6300 9950 6300
 Wire Wire Line
-	1100 6100 1150 6100
+	1100 5950 1150 5950
 Wire Wire Line
 	10650 5950 10650 6400
 Wire Wire Line
@@ -3276,15 +3253,15 @@ Wire Wire Line
 Wire Wire Line
 	3800 6450 3850 6450
 Wire Wire Line
-	1100 6300 1150 6300
+	1100 6150 1150 6150
 Wire Wire Line
 	7400 5900 7700 5900
 Wire Wire Line
-	2450 6600 2400 6600
+	2450 6450 2400 6450
 Wire Wire Line
-	1150 6750 1200 6750
+	1150 6600 1200 6600
 Wire Wire Line
-	1150 6650 1200 6650
+	1150 6500 1200 6500
 Wire Wire Line
 	2200 2000 2200 2050
 Connection ~ 1700 1200
@@ -3335,15 +3312,15 @@ Wire Wire Line
 Wire Wire Line
 	4150 1800 4200 1800
 Wire Wire Line
-	2450 7350 2450 7400
+	2450 7200 2450 7250
 Wire Wire Line
-	1200 5950 1050 5950
+	1200 5800 1050 5800
 Wire Wire Line
-	850  6800 1150 6800
+	850  6650 1150 6650
 Wire Wire Line
-	2900 6450 2450 6450
+	2900 6300 2450 6300
 Wire Wire Line
-	2400 6500 2900 6500
+	2400 6350 2900 6350
 Wire Wire Line
 	6200 6000 6400 6000
 Wire Wire Line
@@ -3355,19 +3332,19 @@ Wire Wire Line
 Wire Notes Line
 	3300 2650 3300 7850
 Wire Wire Line
-	2400 6300 2900 6300
+	2400 6150 2900 6150
 Wire Wire Line
-	2450 6250 2850 6250
+	2450 6100 2850 6100
 Wire Wire Line
-	2850 6250 2900 6200
+	2850 6100 2900 6050
 Wire Wire Line
-	2400 6200 2800 6200
+	2400 6050 2800 6050
 Wire Wire Line
-	2800 6200 2900 6100
+	2800 6050 2900 5950
 Wire Wire Line
-	2450 6150 2750 6150
+	2450 6000 2750 6000
 Wire Wire Line
-	2750 6150 2900 6000
+	2750 6000 2900 5850
 Wire Wire Line
 	7700 6700 7500 6700
 Wire Wire Line
@@ -3451,17 +3428,17 @@ Connection ~ 9500 2250
 Connection ~ 8150 2250
 Connection ~ 6800 2250
 Wire Wire Line
-	1150 7250 900  7250
+	1150 7100 900  7100
 Wire Wire Line
-	900  7250 800  7350
+	900  7100 800  7200
 Wire Wire Line
-	1200 7300 900  7300
+	1200 7150 900  7150
 Wire Wire Line
-	900  7300 800  7400
+	900  7150 800  7250
 Wire Wire Line
-	1150 7350 900  7350
+	1150 7200 900  7200
 Wire Wire Line
-	900  7350 800  7450
+	900  7200 800  7300
 Wire Wire Line
 	1800 3600 2000 3600
 Wire Wire Line
@@ -3806,7 +3783,7 @@ F 3 "" H 800 5000 60  0000 C CNN
 	1    800  5000
 	-1   0    0    -1  
 $EndComp
-NoConn ~ 1200 6050
+NoConn ~ 1200 5900
 $Comp
 L JUMPER-2 JP4
 U 1 1 51AB894A
@@ -3820,4 +3797,27 @@ F 3 "" H 8200 6350 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	8200 6250 8200 6100
+Text GLabel 1050 6900 0    30   Output ~ 0
+TX0
+Text GLabel 1050 6950 0    30   Input ~ 0
+RX0
+Wire Wire Line
+	1050 6900 1200 6900
+Wire Wire Line
+	1150 6950 1050 6950
+Text GLabel 2500 7050 2    30   Input ~ 0
+Bootloader
+Wire Wire Line
+	2400 7050 2500 7050
+$Comp
+L LPCXPRESSO_GENERIC_HEADER J6
+U 1 1 519131B7
+P 1800 6450
+F 0 "J6" H 1800 7200 60  0000 C CNN
+F 1 "LPCXPRESSO_GENERIC_HEADER" H 1850 5250 60  0000 C CNN
+F 2 "" H 1800 6450 60  0001 C CNN
+F 3 "" H 1800 6450 60  0001 C CNN
+	1    1800 6450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
