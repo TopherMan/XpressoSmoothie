@@ -174,9 +174,9 @@ Text GLabel 800  7250 0    30   Input ~ 0
 B-STEP
 Text GLabel 800  7200 0    30   Input ~ 0
 B-DIR
-Text GLabel 800  6200 0    30   Input ~ 0
+Text GLabel 350  6750 0    30   Input ~ 0
 A-DIR
-Text GLabel 800  6250 0    30   Input ~ 0
+Text GLabel 350  6800 0    30   Input ~ 0
 A-STEP
 Text GLabel 800  6300 0    30   Input ~ 0
 A-EN
@@ -2618,10 +2618,6 @@ Wire Wire Line
 Wire Wire Line
 	800  6300 1200 6300
 Wire Wire Line
-	800  6250 1150 6250
-Wire Wire Line
-	800  6200 1200 6200
-Wire Wire Line
 	2900 6750 2400 6750
 Wire Wire Line
 	2900 6700 2450 6700
@@ -3814,10 +3810,12 @@ L LPCXPRESSO_GENERIC_HEADER J6
 U 1 1 519131B7
 P 1800 6450
 F 0 "J6" H 1800 7200 60  0000 C CNN
-F 1 "LPCXPRESSO_GENERIC_HEADER" H 1850 5250 60  0000 C CNN
+F 1 "LPCXPRESSO_GENERIC_HEADER" H 1800 5300 60  0000 C CNN
 F 2 "" H 1800 6450 60  0001 C CNN
 F 3 "" H 1800 6450 60  0001 C CNN
 	1    1800 6450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1200 6200
+NoConn ~ 1150 6250
 $EndSCHEMATC
