@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Thu 20 Jun 2013 12:03:45 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 09 Jul 2013 01:26:48 PM EDT
 
 BeginCmp
 TimeStamp = /51911758;
@@ -484,6 +484,13 @@ IdModule  = microsd-molex-47309;
 EndCmp
 
 BeginCmp
+TimeStamp = /51DC5631;
+Reference = J29;
+ValeurCmp = HEADER_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
 TimeStamp = /51A9B7EF;
 Reference = J172;
 ValeurCmp = HEADER_2;
@@ -535,6 +542,34 @@ EndCmp
 BeginCmp
 TimeStamp = /51A81C9E;
 Reference = JP5;
+ValeurCmp = JUMPER-2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DC68BB;
+Reference = JP6;
+ValeurCmp = JUMPER-2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DC868F;
+Reference = JP7;
+ValeurCmp = JUMPER-2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DC81B8;
+Reference = JP8;
+ValeurCmp = JUMPER-2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DC8423;
+Reference = JP9;
 ValeurCmp = JUMPER-2;
 IdModule  = PIN_ARRAY_2X1;
 EndCmp
@@ -808,6 +843,13 @@ EndCmp
 BeginCmp
 TimeStamp = /518FF94F;
 Reference = SW2;
+ValeurCmp = SW_PUSH;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DC7888;
+Reference = SW3;
 ValeurCmp = SW_PUSH;
 IdModule  = SW_PUSH_SMALL;
 EndCmp
