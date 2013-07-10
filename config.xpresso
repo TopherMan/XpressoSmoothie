@@ -1,3 +1,4 @@
+##########NEEDS TO BE UPDATED############
 # This is an example config file for running Smoothie on the XpressoSmoothie board.
 # Pin numbers will all be correct, but many step/unit and speed numbers will depend on your robot.
 # All lines beginning with '##' need to be set by user and un-commented before loading into Smoothie.

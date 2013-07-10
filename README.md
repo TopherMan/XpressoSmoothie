@@ -17,13 +17,13 @@ Features
 
 Current Status
 ==============
-The first batch of boards have arrived and are undergoing testing. So far the test board distributes power properly and communicates with USB and SD card correctly.
+Revision 0 boards had issues due to pins being assigned to ports hard-coded to other purposes in Smoothie. Revision 1 is tentatively complete and going to be tested for proper pin assignment.
 
 Opto Endstops
 =============
 XpressoSmoothie comes with on-board electronics for three opto endstops. Additionally, Noobman is finalizing designs for a small seperate opto board.
 
-Jumpers
+Jumpers--NEED TO BE UPDATED
 =======
 Xpresso Smoothie can be run by either an LPCXpresso board or an mbed board. A few jumpers need to be set properly for the board to run depending on which microcontroller is used.
 
