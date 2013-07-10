@@ -186,7 +186,7 @@ Text GLabel 800  6700 0    30   Input ~ 0
 Z-STEP
 Text GLabel 800  6450 0    30   Input ~ 0
 Z-DIR
-Text GLabel 1100 7150 0    30   Input ~ 0
+Text GLabel 1100 7100 0    30   Input ~ 0
 Y-EN
 Text GLabel 1100 7050 0    30   Input ~ 0
 Y-STEP
@@ -196,7 +196,7 @@ Text GLabel 2900 6750 2    30   Input ~ 0
 X-STEP
 Text GLabel 2900 6700 2    30   Input ~ 0
 X-DIR
-Text GLabel 1100 7100 0    30   Input ~ 0
+Text GLabel 1100 7150 0    30   Input ~ 0
 X-EN
 Text GLabel 2900 6550 2    30   Input ~ 0
 POWER4
