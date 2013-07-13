@@ -89,7 +89,7 @@ switch.fan.output_pin                        2.2              #
 ##switch.misc.enable                           true             #
 ##switch.misc.input_on_command                 M42              #
 ##switch.misc.input_off_command                M43              #
-switch.misc.output_pin                       2.1              #
+##switch.misc.output_pin                       2.1              #
 
 # Switch module for spindle control
 ##switch.spindle.enable                        false            #
