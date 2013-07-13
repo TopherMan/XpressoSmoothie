@@ -23,12 +23,13 @@ Opto Endstops
 =============
 XpressoSmoothie comes with on-board electronics for three opto endstops. Additionally, Noobman is finalizing designs for a small seperate opto board.
 
-Jumpers--NEED TO BE UPDATED
+Jumpers
 =======
 Xpresso Smoothie can be run by either an LPCXpresso board or an mbed board. A few jumpers need to be set properly for the board to run depending on which microcontroller is used.
 
 LPCXpresso
 ----------
+* Set jumper "LPCXpresso Therm2 Connect"
 * Set jumper "3.3v to MCU"
 * Set jumper "5V from USB"
 * Set power jumper to either "PSU" or "USB" to power microcrontroller from either the power supply or the USB.
@@ -36,15 +37,19 @@ LPCXpresso
 
 Mbed using mbed's USB
 ---------------------
+* Set both jumpers labeled "mbed enable XYA"
+* Set jumper "mbed Y-DIR"
+* Set jumper "mbed Y-STEP"
 * Set jumper "mbed Power 1 Connect"
-* Set jumper "mbed common enable"
 * Set power jumper to either "PSU" or "USB" to power 3.3V regulator from either the power supply or the USB.
 * Do not set other jumpers
 
 Mbed using XpressoSmoothie's USB
 --------------------------------
+* Set both jumpers labeled "mbed enable XYA"
+* Set jumper "mbed Y-DIR"
+* Set jumper "mbed Y-STEP"
 * Set jumper "mbed Power 1 Connect"
-* Set jumper "mbed common enable"
 * Set jumper "Vgates to Vin"
 * Set power jumper to either "PSU" or "USB" to power 3.3V regulator from either the power supply or the USB.
 * Do not set other jumpers
