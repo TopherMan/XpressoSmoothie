@@ -69,13 +69,13 @@ F 3 "" H 10150 1250 60  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 2450 6450 2    30   Input ~ 0
-SCL
+SCL2
 Text GLabel 2500 6400 2    30   Input ~ 0
-SDA
+SDA2
 Text GLabel 7400 5900 0    30   Input ~ 0
-SCL
+SCL2
 Text GLabel 7400 6000 0    30   Input ~ 0
-SDA
+SDA2
 $Comp
 L GND #PWR01
 U 1 1 5194D3C0
@@ -122,7 +122,7 @@ F 3 "" H 3300 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1100 6150 0    30   Input ~ 0
-CS
+*CS
 $Comp
 L GND #PWR02
 U 1 1 51925E12
@@ -414,13 +414,13 @@ THERM1
 Text GLabel 3150 3450 1    30   Input ~ 0
 THERM0
 Text GLabel 2450 7150 2    30   Input ~ 0
-PLAY/PAUSE
+*PLAY/PAUSE
 Text GLabel 1100 5950 0    30   Input ~ 0
-RESET
+*RESET
 Text GLabel 9800 6150 0    30   Input ~ 0
-PLAY/PAUSE
+*PLAY/PAUSE
 Text GLabel 9750 5800 0    30   Input ~ 0
-RESET
+*RESET
 $Comp
 L GND #PWR05
 U 1 1 518FF959
@@ -454,12 +454,12 @@ F 3 "" H 10250 5800 60  0001 C CNN
 	1    10250 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 1150 6100 0    30   Input ~ 0
-SCK
+Text GLabel 1100 6100 0    30   Input ~ 0
+*SCK
 Text GLabel 1100 6050 0    30   Input ~ 0
-MISO
-Text GLabel 1150 6000 0    30   Input ~ 0
-MOSI
+*MISO
+Text GLabel 1100 6000 0    30   Input ~ 0
+*MOSI
 $Comp
 L GND #PWR06
 U 1 1 518FF740
@@ -472,21 +472,21 @@ F 3 "" H 5450 7050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3800 6200 0    60   Input ~ 0
-CS
+*CS
 Text GLabel 3800 6300 0    60   Input ~ 0
-MOSI
+*MOSI
 Text GLabel 3800 6450 0    60   Input ~ 0
-SCK
+*SCK
 Text GLabel 3800 6550 0    60   Input ~ 0
-MISO
+*MISO
 Text GLabel 9050 6700 2    30   Input ~ 0
-USB-D-
+*USB-D-
 Text GLabel 9050 6550 2    30   Input ~ 0
-USB-D+
+*USB-D+
 Text GLabel 2450 6250 2    30   Input ~ 0
-USB-D+
+*USB-D+
 Text GLabel 2500 6200 2    30   Input ~ 0
-USB-D-
+*USB-D-
 $Comp
 L R R1
 U 1 1 518FEBD7
@@ -1875,21 +1875,21 @@ F 4 "Ethernet" V 7850 6850 39  0000 C CNN "Explanation"
 	1    0    0    1   
 $EndComp
 Text GLabel 2900 5850 2    30   Input ~ 0
-32_RD-
+*32_RD-
 Text GLabel 2900 5950 2    30   Input ~ 0
-33_RD+
+*33_RD+
 Text GLabel 2900 6050 2    30   Input ~ 0
-34_TD-
+*34_TD-
 Text GLabel 2900 6150 2    30   Input ~ 0
-35_TD+
+*35_TD+
 Text GLabel 7500 6700 0    30   Input ~ 0
-32_RD-
+*32_RD-
 Text GLabel 7500 6800 0    30   Input ~ 0
-33_RD+
+*33_RD+
 Text GLabel 7500 6900 0    30   Input ~ 0
-34_TD-
+*34_TD-
 Text GLabel 7500 7000 0    30   Input ~ 0
-35_TD+
+*35_TD+
 $Comp
 L TC4422A U10
 U 1 1 519A861A
@@ -3182,9 +3182,9 @@ Connection ~ 10650 6150
 Wire Wire Line
 	10550 6150 10650 6150
 Wire Wire Line
-	1150 6100 1200 6100
+	1100 6100 1200 6100
 Wire Wire Line
-	1150 6000 1200 6000
+	1100 6000 1200 6000
 Wire Wire Line
 	2500 6200 2450 6200
 Wire Wire Line
@@ -3767,12 +3767,8 @@ F 3 "" H 8200 6350 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	8200 6250 8200 6100
-Wire Wire Line
-	600  6900 1200 6900
-Wire Wire Line
-	700  6950 1150 6950
 Text GLabel 2500 7050 2    30   Input ~ 0
-Bootloader
+*Bootloader
 Wire Wire Line
 	2400 7050 2500 7050
 $Comp
@@ -3786,8 +3782,6 @@ F 3 "" H 1800 6450 60  0001 C CNN
 	1    1800 6450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1200 6200
-NoConn ~ 1150 6250
 Wire Wire Line
 	1350 7500 1550 7500
 Wire Wire Line
@@ -3813,10 +3807,6 @@ Wire Wire Line
 Wire Wire Line
 	1850 7600 1850 7450
 Wire Wire Line
-	600  6900 600  7450
-Wire Wire Line
-	700  6950 700  7450
-Wire Wire Line
 	1100 7000 1200 7000
 Wire Wire Line
 	1200 7050 1100 7050
@@ -3826,7 +3816,7 @@ Wire Wire Line
 	1100 7150 1200 7150
 Wire Wire Line
 	1150 7200 1100 7200
-Text Notes 700  7600 0    30   ~ 0
+Text Notes 9100 5900 0    30   ~ 0
 Serial
 $Comp
 L JUMPER-2 JP6
@@ -3861,7 +3851,7 @@ Wire Wire Line
 	10550 6450 10650 6450
 Connection ~ 10650 6450
 Text GLabel 9800 6450 0    30   Input ~ 0
-Bootloader
+*Bootloader
 Wire Wire Line
 	9800 6450 9950 6450
 Text GLabel 6600 6700 2    30   Input ~ 0
@@ -3931,42 +3921,70 @@ Wire Wire Line
 $Comp
 L HEADER_4 J29
 U 1 1 51DCB9D5
-P 750 7550
-F 0 "J29" H 750 7800 60  0000 C CNN
-F 1 "HEADER_4" H 750 7300 60  0000 C CNN
-F 2 "" H 750 7550 60  0000 C CNN
-F 3 "" H 750 7550 60  0000 C CNN
-	1    750  7550
+P 9150 5850
+F 0 "J29" H 9150 6100 60  0000 C CNN
+F 1 "HEADER_4" H 9150 5600 60  0000 C CNN
+F 2 "" H 9150 5850 60  0000 C CNN
+F 3 "" H 9150 5850 60  0000 C CNN
+	1    9150 5850
 	0    1    1    0   
 $EndComp
 $Comp
 L +3.3VP #PWR085
 U 1 1 51DCB9E4
-P 800 7350
-F 0 "#PWR085" H 850 7380 20  0001 C CNN
-F 1 "+3.3VP" H 800 7440 30  0000 C CNN
-F 2 "" H 800 7350 60  0000 C CNN
-F 3 "" H 800 7350 60  0000 C CNN
-	1    800  7350
+P 9200 5650
+F 0 "#PWR085" H 9250 5680 20  0001 C CNN
+F 1 "+3.3VP" H 9200 5740 30  0000 C CNN
+F 2 "" H 9200 5650 60  0000 C CNN
+F 3 "" H 9200 5650 60  0000 C CNN
+	1    9200 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR086
 U 1 1 51DCB9F3
-P 1050 7450
-F 0 "#PWR086" H 1050 7450 30  0001 C CNN
-F 1 "GND" H 1050 7380 30  0001 C CNN
-F 2 "" H 1050 7450 60  0000 C CNN
-F 3 "" H 1050 7450 60  0000 C CNN
-	1    1050 7450
+P 9450 5750
+F 0 "#PWR086" H 9450 5750 30  0001 C CNN
+F 1 "GND" H 9450 5680 30  0001 C CNN
+F 2 "" H 9450 5750 60  0000 C CNN
+F 3 "" H 9450 5750 60  0000 C CNN
+	1    9450 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	800  7350 800  7450
+	9200 5650 9200 5750
 Wire Wire Line
-	900  7450 900  7400
+	9300 5750 9300 5700
 Wire Wire Line
-	900  7400 1050 7400
+	9300 5700 9450 5700
 Wire Wire Line
-	1050 7400 1050 7450
+	9450 5700 9450 5750
+Text GLabel 900  6900 0    30   Input ~ 0
+*RX
+Text GLabel 900  6950 0    30   Output ~ 0
+*TX
+Wire Wire Line
+	900  6900 1200 6900
+Wire Wire Line
+	900  6950 1150 6950
+Text GLabel 9000 5650 1    30   Input ~ 0
+*RX
+Text GLabel 9100 5650 1    30   Output ~ 0
+*TX
+Wire Wire Line
+	9000 5650 9000 5750
+Wire Wire Line
+	9100 5750 9100 5650
+Text Notes 500  7500 0    30   ~ 0
+NOTE: Pins 9 and 10 are \nhard-coded in Smoothie \nfor I2C communication\nwith current-sense chips.
+Text Notes 2450 7500 0    30   ~ 0
+*NOTE: Labels starting with * are\nhard-coded to a specific use and\ncannot be reassigned.
+Text GLabel 950  6200 0    30   Input ~ 0
+*SDA1
+Text GLabel 950  6250 0    30   Input ~ 0
+*SCL1
+Wire Wire Line
+	950  6200 1200 6200
+Wire Wire Line
+	950  6250 1150 6250
 $EndSCHEMATC
