@@ -28,13 +28,13 @@
 # Stepper module pins ( ports, and pin numbers, appending "!" to the number will invert a pin )
 alpha_step_pin                               2.5              # Pin for alpha stepper step signal
 alpha_dir_pin                                2.4              # Pin for alpha stepper direction
-alpha_en_pin                                 0.15             # Pin for alpha enable pin
+alpha_en_pin                                 1.31             # Pin for alpha enable pin
 # alpha_current                                1.5              # X stepper motor current NOT USED IN XPRESSOSMOOTHIE
 ##x_axis_max_speed                             30000            # mm/min
 
 beta_step_pin                                0.26             # Pin for beta stepper step signal
 beta_dir_pin                                 0.25             # Pin for beta stepper direction
-beta_en_pin                                  0.15             # Pin for beta enable
+beta_en_pin                                  1.31             # Pin for beta enable
 # beta_current                                 1.5              # Y stepper motor current NOT USED IN XPRESSOSMOOTHIE
 ##y_axis_max_speed                             30000            # mm/min
 

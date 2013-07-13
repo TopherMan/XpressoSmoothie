@@ -3833,7 +3833,7 @@ $EndComp
 Wire Wire Line
 	6200 6550 6300 6550
 Text GLabel 6600 6550 2    30   Input ~ 0
-A-EN
+Z-EN
 Wire Wire Line
 	6500 6550 6600 6550
 $Comp
