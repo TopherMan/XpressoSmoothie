@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 29 Nov 2013 02:07:13 PM EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 29 Nov 2013 02:11:14 PM EST
 
 BeginCmp
 TimeStamp = /51911758;
@@ -227,7 +227,7 @@ EndCmp
 BeginCmp
 TimeStamp = /529960D5;
 Reference = D9;
-ValeurCmp = 3V3;
+ValeurCmp = LED4;
 IdModule  = LED-0805;
 EndCmp
 
@@ -255,21 +255,21 @@ EndCmp
 BeginCmp
 TimeStamp = /529960AB;
 Reference = D13;
-ValeurCmp = 3V3;
+ValeurCmp = LED2;
 IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /529960C0;
 Reference = D14;
-ValeurCmp = 3V3;
+ValeurCmp = LED3;
 IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /52996090;
 Reference = D15;
-ValeurCmp = 3V3;
+ValeurCmp = LED1;
 IdModule  = LED-0805;
 EndCmp
 
@@ -403,7 +403,7 @@ BeginCmp
 TimeStamp = /5299525B;
 Reference = J13;
 ValeurCmp = HEADER_6;
-IdModule  = pin_array_4x2;
+IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
@@ -543,13 +543,6 @@ BeginCmp
 TimeStamp = /51A9B8EE;
 Reference = J252;
 ValeurCmp = HEADER_2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51DC868F;
-Reference = JP7;
-ValeurCmp = JUMPER-2;
 IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
@@ -711,7 +704,7 @@ BeginCmp
 TimeStamp = /529960B9;
 Reference = R17;
 ValeurCmp = 100;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -732,7 +725,7 @@ BeginCmp
 TimeStamp = /52996089;
 Reference = R20;
 ValeurCmp = 100;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -746,7 +739,7 @@ BeginCmp
 TimeStamp = /529960CE;
 Reference = R22;
 ValeurCmp = 100;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
@@ -774,7 +767,7 @@ BeginCmp
 TimeStamp = /529960A4;
 Reference = R26;
 ValeurCmp = 100;
-IdModule  = ;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
