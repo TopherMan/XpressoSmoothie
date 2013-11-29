@@ -370,11 +370,11 @@ F 3 "" H 2350 3650 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 2450 3450 1    30   Input ~ 0
-THERM2
+*THERM2
 Text GLabel 2800 3450 1    30   Input ~ 0
-THERM1
+*THERM1
 Text GLabel 3150 3450 1    30   Input ~ 0
-THERM0
+*THERM0
 Text GLabel 2450 7150 2    30   Input ~ 0
 *PLAY/PAUSE
 Text GLabel 1100 5950 0    30   Input ~ 0
