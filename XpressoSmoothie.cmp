@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 29 Nov 2013 01:24:15 PM EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 29 Nov 2013 02:07:13 PM EST
 
 BeginCmp
 TimeStamp = /51911758;
@@ -225,6 +225,13 @@ IdModule  = DO-41;
 EndCmp
 
 BeginCmp
+TimeStamp = /529960D5;
+Reference = D9;
+ValeurCmp = 3V3;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /5199029C;
 Reference = D10;
 ValeurCmp = V_IN;
@@ -241,6 +248,27 @@ EndCmp
 BeginCmp
 TimeStamp = /519902D3;
 Reference = D12;
+ValeurCmp = 3V3;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /529960AB;
+Reference = D13;
+ValeurCmp = 3V3;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /529960C0;
+Reference = D14;
+ValeurCmp = 3V3;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /52996090;
+Reference = D15;
 ValeurCmp = 3V3;
 IdModule  = LED-0805;
 EndCmp
@@ -372,9 +400,9 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A7C943;
+TimeStamp = /5299525B;
 Reference = J13;
-ValeurCmp = HEADER_4X2;
+ValeurCmp = HEADER_6;
 IdModule  = pin_array_4x2;
 EndCmp
 
@@ -491,6 +519,13 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
+TimeStamp = /5299367F;
+Reference = J30;
+ValeurCmp = HEADER_4;
+IdModule  = PIN_ARRAY_4x1;
+EndCmp
+
+BeginCmp
 TimeStamp = /51A9B7EF;
 Reference = J172;
 ValeurCmp = HEADER_2;
@@ -512,64 +547,8 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A7D1D1;
-Reference = JP1;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A7A651;
-Reference = JP2;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A7E41E;
-Reference = JP3;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51AB894A;
-Reference = JP4;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A81C9E;
-Reference = JP5;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51DC68BB;
-Reference = JP6;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
 TimeStamp = /51DC868F;
 Reference = JP7;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51DC81B8;
-Reference = JP8;
-ValeurCmp = JUMPER-2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51DC8423;
-Reference = JP9;
 ValeurCmp = JUMPER-2;
 IdModule  = PIN_ARRAY_2X1;
 EndCmp
@@ -729,6 +708,13 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /529960B9;
+Reference = R17;
+ValeurCmp = 100;
+IdModule  = ;
+EndCmp
+
+BeginCmp
 TimeStamp = /51901247;
 Reference = R18;
 ValeurCmp = 1k8;
@@ -743,10 +729,24 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /52996089;
+Reference = R20;
+ValeurCmp = 100;
+IdModule  = ;
+EndCmp
+
+BeginCmp
 TimeStamp = /519859F2;
 Reference = R21;
 ValeurCmp = 1k8;
 IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /529960CE;
+Reference = R22;
+ValeurCmp = 100;
+IdModule  = ;
 EndCmp
 
 BeginCmp
@@ -768,6 +768,13 @@ TimeStamp = /51988767;
 Reference = R25;
 ValeurCmp = 100;
 IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /529960A4;
+Reference = R26;
+ValeurCmp = 100;
+IdModule  = ;
 EndCmp
 
 BeginCmp
