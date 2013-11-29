@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 09 Jul 2013 09:06:27 PM EDT
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Fri 29 Nov 2013 01:24:15 PM EST
 
 BeginCmp
 TimeStamp = /51911758;
@@ -323,10 +323,10 @@ IdModule  = pin_array_3x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /519131B7;
+TimeStamp = /5298DB4B;
 Reference = J6;
-ValeurCmp = LPCXPRESSO_GENERIC_HEADER;
-IdModule  = LPCXPRESS0_1ROW;
+ValeurCmp = LPCXPRESSO_1769_HEADER;
+IdModule  = LPCXPRESS0_1769;
 EndCmp
 
 BeginCmp

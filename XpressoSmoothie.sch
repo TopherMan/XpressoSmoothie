@@ -68,14 +68,10 @@ F 3 "" H 10150 1250 60  0001 C CNN
 	1    10150 1250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 2450 6450 2    30   Input ~ 0
-SCL2
-Text GLabel 2500 6400 2    30   Input ~ 0
-SDA2
 Text GLabel 7400 5900 0    30   Input ~ 0
-SCL2
+*SCL0
 Text GLabel 7400 6000 0    30   Input ~ 0
-SDA2
+*SDA0
 $Comp
 L GND #PWR01
 U 1 1 5194D3C0
@@ -156,56 +152,22 @@ F 3 "" H 3500 3700 60  0001 C CNN
 	1    3500 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2900 7000 2    30   Input ~ 0
-ZMIN
-Text GLabel 2900 7100 2    30   Input ~ 0
-ZMAX
-Text GLabel 2250 7500 2    30   Input ~ 0
-YMIN
-Text GLabel 2250 7550 2    30   Input ~ 0
-YMAX
-Text GLabel 2250 7600 2    30   Input ~ 0
-XMIN
-Text GLabel 1350 7600 0    30   Input ~ 0
-XMAX
-Text GLabel 1350 7550 0    30   Input ~ 0
-B-EN
-Text GLabel 1350 7500 0    30   Input ~ 0
-B-STEP
-Text GLabel 1100 7200 0    30   Input ~ 0
-B-DIR
-Text GLabel 800  6300 0    30   Input ~ 0
-A-DIR
-Text GLabel 800  6350 0    30   Input ~ 0
-A-STEP
-Text GLabel 800  6400 0    30   Input ~ 0
-A-EN
-Text GLabel 800  6750 0    30   Input ~ 0
-Z-EN
-Text GLabel 800  6700 0    30   Input ~ 0
-Z-STEP
-Text GLabel 800  6450 0    30   Input ~ 0
-Z-DIR
-Text GLabel 1100 7100 0    30   Input ~ 0
-Y-EN
 Text GLabel 1100 7050 0    30   Input ~ 0
-Y-STEP
+A-DIR
 Text GLabel 1100 7000 0    30   Input ~ 0
+A-EN
+Text GLabel 1450 8000 3    30   Input ~ 0
+Z-EN
+Text GLabel 1400 8000 3    30   Input ~ 0
+Z-DIR
+Text GLabel 2900 6400 2    30   Input ~ 0
+Y-EN
+Text GLabel 2900 6450 2    30   Input ~ 0
 Y-DIR
-Text GLabel 2900 6750 2    30   Input ~ 0
-X-STEP
-Text GLabel 2900 6700 2    30   Input ~ 0
+Text GLabel 2900 6350 2    30   Input ~ 0
 X-DIR
-Text GLabel 1100 7150 0    30   Input ~ 0
+Text GLabel 2900 6300 2    30   Input ~ 0
 X-EN
-Text GLabel 2900 6550 2    30   Input ~ 0
-POWER4
-Text GLabel 2900 6600 2    30   Input ~ 0
-POWER3
-Text GLabel 2900 6650 2    30   Input ~ 0
-POWER2
-Text GLabel 2900 6900 2    30   Input ~ 0
-POWER1
 Text GLabel 10750 1250 1    30   Input ~ 0
 POWER4
 $Comp
@@ -336,11 +298,11 @@ ZMIN
 Text GLabel 1950 4700 2    30   Input ~ 0
 YMIN
 Text GLabel 1150 6600 0    30   Input ~ 0
-THERM2
+*THERM2
 Text GLabel 1100 6550 0    30   Input ~ 0
-THERM1
+*THERM1
 Text GLabel 1150 6500 0    30   Input ~ 0
-THERM0
+*THERM0
 $Comp
 L C C9
 U 1 1 518FFD3B
@@ -1525,8 +1487,6 @@ F 3 "" H 1150 2050 60  0001 C CNN
 	1    1150 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 6950 2    30   Input ~ 0
-SD_card_detect
 $Comp
 L HEADER_3 J3
 U 1 1 51972ED2
@@ -1836,14 +1796,6 @@ Text Notes 6550 2950 0    79   ~ 0
 STEPPER DRIVERS
 Text Notes 550  5250 0    39   ~ 0
 Seems most LPC pins are 5v tolerant, but dont abuse :)\nDirect connect short Rp_rcv pin to Signal (ex XMAX).\nRL_diode=(VCC-VF)/IF\nRp_rcv=(VCC-VCEsat)/(IC(on)*50%)\n\n
-Text GLabel 850  6650 0    30   Input ~ 0
-18_P0.26AOUT
-Text GLabel 2900 6300 2    30   Input ~ 0
-38_P0.4CAN
-Text GLabel 2900 6350 2    30   Input ~ 0
-39_P0.5CAN
-Text GLabel 2900 6400 2    30   Input ~ 0
-42_P2.0PWM
 Text GLabel 6350 6050 0    30   Input ~ 0
 18_P0.26AOUT
 Text GLabel 6350 5750 0    30   Input ~ 0
@@ -2114,17 +2066,6 @@ Text GLabel 4800 800  2    30   Input ~ 0
 Text Notes 3900 950  0    30   ~ 0
 Set this jumper to supply 3.3v into pin 28 (VIO).\nLPCXpresso needs 3v3 into the VIO line. This pin is VOUT on mbed. 
 $Comp
-L +5V #PWR048
-U 1 1 51A81469
-P 2750 5850
-F 0 "#PWR048" H 2750 5940 20  0001 C CNN
-F 1 "+5V" H 2750 5940 30  0000 C CNN
-F 2 "" H 2750 5850 60  0000 C CNN
-F 3 "" H 2750 5850 60  0000 C CNN
-	1    2750 5850
-	1    0    0    -1  
-$EndComp
-$Comp
 L JUMPER-2 JP5
 U 1 1 51A81C9E
 P 4500 1200
@@ -2138,8 +2079,6 @@ F 4 "vin" H 4500 1250 60  0000 C CNN "Explanation"
 $EndComp
 Text Notes 3950 1350 0    30   ~ 0
 Set this jumper to supply Vgates into the pin 2 (VIN on mbed).\nThis requires vgates regulator = LM7809 (VIN=4,5-9Vmax)
-Text GLabel 900  5850 0    30   Input ~ 0
-VIN
 Text GLabel 4800 1200 2    30   Input ~ 0
 VIN
 Text GLabel 4200 1200 0    39   Input ~ 8
@@ -2540,6 +2479,376 @@ F 3 "" H 1200 3750 60  0001 C CNN
 	1    1200 3750
 	0    1    1    0   
 $EndComp
+$Comp
+L GND #PWR079
+U 1 1 51A9E6F8
+P 1000 4000
+F 0 "#PWR079" H 1000 4000 30  0001 C CNN
+F 1 "GND" H 1000 3930 30  0001 C CNN
+F 2 "" H 1000 4000 60  0001 C CNN
+F 3 "" H 1000 4000 60  0001 C CNN
+	1    1000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR080
+U 1 1 51A9E6FE
+P 1100 4100
+F 0 "#PWR080" H 1100 4190 20  0001 C CNN
+F 1 "+5V" H 1100 4190 30  0000 C CNN
+F 2 "" H 1100 4100 60  0000 C CNN
+F 3 "" H 1100 4100 60  0000 C CNN
+	1    1100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR081
+U 1 1 51A9E704
+P 1400 4200
+F 0 "#PWR081" H 1450 4230 20  0001 C CNN
+F 1 "+3.3VP" H 1400 4290 30  0000 C CNN
+F 2 "" H 1400 4200 60  0000 C CNN
+F 3 "" H 1400 4200 60  0000 C CNN
+	1    1400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R RL_diode2
+U 1 1 51A9E70A
+P 1200 4300
+F 0 "RL_diode2" V 1100 4300 39  0000 C CNN
+F 1 "100R" V 1200 4300 50  0000 C CNN
+F 2 "" H 1200 4300 60  0001 C CNN
+F 3 "" H 1200 4300 60  0001 C CNN
+	1    1200 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L R Rp_rcv2
+U 1 1 51A9E710
+P 1200 4400
+F 0 "Rp_rcv2" V 1300 4400 39  0000 C CNN
+F 1 "1k5" V 1200 4400 50  0000 C CNN
+F 2 "" H 1200 4400 60  0001 C CNN
+F 3 "" H 1200 4400 60  0001 C CNN
+	1    1200 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR082
+U 1 1 51A9E737
+P 1000 4650
+F 0 "#PWR082" H 1000 4650 30  0001 C CNN
+F 1 "GND" H 1000 4580 30  0001 C CNN
+F 2 "" H 1000 4650 60  0001 C CNN
+F 3 "" H 1000 4650 60  0001 C CNN
+	1    1000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR083
+U 1 1 51A9E73D
+P 1100 4750
+F 0 "#PWR083" H 1100 4840 20  0001 C CNN
+F 1 "+5V" H 1100 4840 30  0000 C CNN
+F 2 "" H 1100 4750 60  0000 C CNN
+F 3 "" H 1100 4750 60  0000 C CNN
+	1    1100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3VP #PWR084
+U 1 1 51A9E743
+P 1400 4850
+F 0 "#PWR084" H 1450 4880 20  0001 C CNN
+F 1 "+3.3VP" H 1400 4940 30  0000 C CNN
+F 2 "" H 1400 4850 60  0000 C CNN
+F 3 "" H 1400 4850 60  0000 C CNN
+	1    1400 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R RL_diode3
+U 1 1 51A9E749
+P 1200 4950
+F 0 "RL_diode3" V 1100 4950 39  0000 C CNN
+F 1 "100R" V 1200 4950 50  0000 C CNN
+F 2 "" H 1200 4950 60  0001 C CNN
+F 3 "" H 1200 4950 60  0001 C CNN
+	1    1200 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L R Rp_rcv3
+U 1 1 51A9E74F
+P 1200 5050
+F 0 "Rp_rcv3" V 1300 5050 39  0000 C CNN
+F 1 "1k5" V 1200 5050 50  0000 C CNN
+F 2 "" H 1200 5050 60  0001 C CNN
+F 3 "" H 1200 5050 60  0001 C CNN
+	1    1200 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L HEADER_2 J172
+U 1 1 51A9B7EF
+P 800 3700
+F 0 "J172" H 1000 3600 60  0000 C CNN
+F 1 "HEADER_2" H 800 3550 28  0001 C CNN
+F 2 "" H 800 3700 60  0000 C CNN
+F 3 "" H 800 3700 60  0000 C CNN
+	1    800  3700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_4 J17
+U 1 1 51A9B821
+P 800 3400
+F 0 "J17" H 1000 3550 60  0000 C CNN
+F 1 "HEADER_4" V 950 3400 28  0001 C CNN
+F 2 "" H 800 3400 60  0001 C CNN
+F 3 "" H 800 3400 60  0001 C CNN
+F 4 "endstop" V 850 3400 39  0000 C CNN "Explanation"
+	1    800  3400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_4 J23
+U 1 1 51A9B828
+P 800 4050
+F 0 "J23" H 1000 4200 60  0000 C CNN
+F 1 "HEADER_4" V 950 4050 28  0001 C CNN
+F 2 "" H 800 4050 60  0001 C CNN
+F 3 "" H 800 4050 60  0001 C CNN
+F 4 "endstop" V 850 4050 39  0000 C CNN "Explanation"
+	1    800  4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_4 J25
+U 1 1 51A9B82F
+P 800 4700
+F 0 "J25" H 1000 4850 60  0000 C CNN
+F 1 "HEADER_4" V 950 4700 28  0001 C CNN
+F 2 "" H 800 4700 60  0001 C CNN
+F 3 "" H 800 4700 60  0001 C CNN
+F 4 "endstop" V 850 4700 39  0000 C CNN "Explanation"
+	1    800  4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J232
+U 1 1 51A9B8DD
+P 800 4350
+F 0 "J232" H 1000 4250 60  0000 C CNN
+F 1 "HEADER_2" H 800 4200 28  0001 C CNN
+F 2 "" H 800 4350 60  0000 C CNN
+F 3 "" H 800 4350 60  0000 C CNN
+	1    800  4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L HEADER_2 J252
+U 1 1 51A9B8EE
+P 800 5000
+F 0 "J252" H 1000 4900 60  0000 C CNN
+F 1 "HEADER_2" H 800 4850 28  0001 C CNN
+F 2 "" H 800 5000 60  0000 C CNN
+F 3 "" H 800 5000 60  0000 C CNN
+	1    800  5000
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 1200 5900
+$Comp
+L JUMPER-2 JP4
+U 1 1 51AB894A
+P 8200 6350
+F 0 "JP4" H 8200 6275 30  0000 C CNN
+F 1 "JUMPER-2" H 8200 6350 30  0001 C CNN
+F 2 "" H 8200 6350 60  0000 C CNN
+F 3 "" H 8200 6350 60  0000 C CNN
+	1    8200 6350
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2500 7050 2    30   Input ~ 0
+*Bootloader
+Text Notes 9100 5900 0    30   ~ 0
+Serial
+$Comp
+L JUMPER-2 JP6
+U 1 1 51DC68BB
+P 6400 6550
+F 0 "JP6" H 6400 6475 30  0000 C CNN
+F 1 "JUMPER-2" H 6400 6550 30  0001 C CNN
+F 2 "" H 6400 6550 60  0000 C CNN
+F 3 "" H 6400 6550 60  0000 C CNN
+F 4 "common_enable" H 6400 6600 28  0000 C CNN "Explanation"
+	1    6400 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 6600 6550 2    30   Input ~ 0
+Z-EN
+$Comp
+L SW_PUSH SW3
+U 1 1 51DC7888
+P 10250 6450
+F 0 "SW3" H 10400 6560 50  0000 C CNN
+F 1 "SW_PUSH" H 10250 6370 50  0000 C CNN
+F 2 "" H 10250 6450 60  0001 C CNN
+F 3 "" H 10250 6450 60  0001 C CNN
+	1    10250 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 9800 6450 0    30   Input ~ 0
+*Bootloader
+Text GLabel 6600 6700 2    30   Input ~ 0
+Y-STEP
+$Comp
+L JUMPER-2 JP8
+U 1 1 51DC81B8
+P 6400 6700
+F 0 "JP8" H 6400 6625 30  0000 C CNN
+F 1 "JUMPER-2" H 6400 6700 30  0001 C CNN
+F 2 "" H 6400 6700 60  0000 C CNN
+F 3 "" H 6400 6700 60  0000 C CNN
+F 4 "common_enable" H 6400 6750 28  0000 C CNN "Explanation"
+	1    6400 6700
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 6700 0    30   Input ~ 0
+18_P0.26AOUT
+Text GLabel 6600 6800 2    30   Input ~ 0
+Y-DIR
+$Comp
+L JUMPER-2 JP9
+U 1 1 51DC8423
+P 6400 6800
+F 0 "JP9" H 6400 6725 30  0000 C CNN
+F 1 "JUMPER-2" H 6400 6800 30  0001 C CNN
+F 2 "" H 6400 6800 60  0000 C CNN
+F 3 "" H 6400 6800 60  0000 C CNN
+F 4 "common_enable" H 6400 6850 28  0000 C CNN "Explanation"
+	1    6400 6800
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 6800 0    30   Input ~ 0
+THERM2
+$Comp
+L JUMPER-2 JP7
+U 1 1 51DC868F
+P 2500 3500
+F 0 "JP7" H 2500 3425 30  0000 C CNN
+F 1 "JUMPER-2" H 2500 3500 30  0001 C CNN
+F 2 "" H 2500 3500 60  0000 C CNN
+F 3 "" H 2500 3500 60  0000 C CNN
+F 4 "common_enable" H 2500 3550 28  0000 C CNN "Explanation"
+	1    2500 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L HEADER_4 J29
+U 1 1 51DCB9D5
+P 9150 5850
+F 0 "J29" H 9150 6100 60  0000 C CNN
+F 1 "HEADER_4" H 9150 5600 60  0000 C CNN
+F 2 "" H 9150 5850 60  0000 C CNN
+F 3 "" H 9150 5850 60  0000 C CNN
+	1    9150 5850
+	0    1    1    0   
+$EndComp
+$Comp
+L +3.3VP #PWR085
+U 1 1 51DCB9E4
+P 9200 5650
+F 0 "#PWR085" H 9250 5680 20  0001 C CNN
+F 1 "+3.3VP" H 9200 5740 30  0000 C CNN
+F 2 "" H 9200 5650 60  0000 C CNN
+F 3 "" H 9200 5650 60  0000 C CNN
+	1    9200 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR086
+U 1 1 51DCB9F3
+P 9450 5750
+F 0 "#PWR086" H 9450 5750 30  0001 C CNN
+F 1 "GND" H 9450 5680 30  0001 C CNN
+F 2 "" H 9450 5750 60  0000 C CNN
+F 3 "" H 9450 5750 60  0000 C CNN
+	1    9450 5750
+	1    0    0    -1  
+$EndComp
+Text GLabel 900  6900 0    30   Input ~ 0
+*RX
+Text GLabel 900  6950 0    30   Output ~ 0
+*TX
+Text GLabel 9000 5650 1    30   Input ~ 0
+*RX
+Text GLabel 9100 5650 1    30   Output ~ 0
+*TX
+Text Notes 2450 7500 0    30   ~ 0
+*NOTE: Labels starting with * are\nhard-coded to a specific use and\ncannot be reassigned.
+Text GLabel 950  6200 0    30   Input ~ 0
+*SDA1
+Text GLabel 950  6250 0    30   Input ~ 0
+*SCL1
+$Comp
+L LPCXPRESSO_1769_HEADER J6
+U 1 1 5298DB4B
+P 1800 6450
+F 0 "J6" H 1800 7200 60  0000 C CNN
+F 1 "LPCXPRESSO_1769_HEADER" H 1800 5150 60  0000 C CNN
+F 2 "" H 1800 6450 60  0000 C CNN
+F 3 "" H 1800 6450 60  0000 C CNN
+	1    1800 6450
+	1    0    0    -1  
+$EndComp
+Text GLabel 2250 8000 3    30   Input ~ 0
+*LED1
+Text GLabel 2200 8000 3    30   Input ~ 0
+*LED2
+Text GLabel 2150 8000 3    30   Input ~ 0
+*LED3
+Text GLabel 2100 8000 3    30   Input ~ 0
+*LED4
+Text GLabel 1950 7950 3    30   Input ~ 0
+XMIN
+Text GLabel 1900 7950 3    30   Input ~ 0
+XMAX
+Text GLabel 1850 7950 3    30   Input ~ 0
+YMIN
+Text GLabel 1800 7950 3    30   Input ~ 0
+YMAX
+Text GLabel 1750 7950 3    30   Input ~ 0
+ZMIN
+Text GLabel 1700 7950 3    30   Input ~ 0
+ZMAX
+Text GLabel 2900 6500 2    30   Input ~ 0
+X-STEP
+Text GLabel 2900 6550 2    30   Input ~ 0
+Y-STEP
+Text GLabel 2900 6600 2    30   Input ~ 0
+Z-STEP
+Text GLabel 2900 6650 2    30   Input ~ 0
+A-STEP
+Text GLabel 2900 6700 2    30   Input ~ 0
+PS-ON
+Text GLabel 2900 6750 2    30   Input ~ 0
+POWER1
+Text GLabel 2900 6900 2    30   Input ~ 0
+POWER2
+Text GLabel 2900 6950 2    30   Input ~ 0
+POWER3
+Text GLabel 2900 7000 2    30   Input ~ 0
+B-STEP
+Text GLabel 2900 7100 2    30   Input ~ 0
+POWER4
+Text Notes 500  7500 0    30   ~ 0
+NOTE: Pins 9 and 10 are \nhard-coded in Smoothie \nfor I2C communication\nwith current-sense chips.
+Text GLabel 900  7100 0    30   Input ~ 0
+*SDA0
+Text GLabel 900  7150 0    30   Input ~ 0
+*SCL0
 Wire Wire Line
 	2600 4650 2600 4400
 Wire Wire Line
@@ -2550,10 +2859,6 @@ Wire Wire Line
 	4200 1200 4400 1200
 Wire Wire Line
 	4800 1200 4600 1200
-Wire Wire Line
-	1150 5850 900  5850
-Wire Wire Line
-	2400 5850 2750 5850
 Wire Wire Line
 	4550 800  4800 800 
 Wire Wire Line
@@ -2590,21 +2895,9 @@ Wire Wire Line
 Wire Wire Line
 	2450 7000 2900 7000
 Wire Wire Line
-	2400 6950 2800 6950
+	2400 6950 2900 6950
 Wire Wire Line
 	2450 6900 2900 6900
-Wire Wire Line
-	800  6750 1150 6750
-Wire Wire Line
-	800  6700 1200 6700
-Wire Wire Line
-	800  6450 1150 6450
-Wire Wire Line
-	800  6400 1200 6400
-Wire Wire Line
-	800  6350 1150 6350
-Wire Wire Line
-	800  6300 1200 6300
 Wire Wire Line
 	2900 6750 2400 6750
 Wire Wire Line
@@ -2615,10 +2908,6 @@ Wire Wire Line
 	2900 6600 2450 6600
 Wire Wire Line
 	2900 6550 2400 6550
-Wire Wire Line
-	2800 6500 2900 6400
-Wire Wire Line
-	2450 6500 2800 6500
 Connection ~ 5450 6900
 Wire Wire Line
 	5450 6900 5250 6900
@@ -3163,8 +3452,6 @@ Wire Wire Line
 Wire Wire Line
 	1150 6550 1100 6550
 Wire Wire Line
-	2450 6400 2500 6400
-Wire Wire Line
 	7400 6000 7700 6000
 Wire Wire Line
 	10000 2450 10000 2250
@@ -3238,8 +3525,6 @@ Wire Wire Line
 	1100 6150 1150 6150
 Wire Wire Line
 	7400 5900 7700 5900
-Wire Wire Line
-	2450 6450 2400 6450
 Wire Wire Line
 	1150 6600 1200 6600
 Wire Wire Line
@@ -3480,61 +3765,6 @@ Wire Notes Line
 	550  3550 550  3750
 Wire Notes Line
 	550  3350 700  3350
-$Comp
-L GND #PWR079
-U 1 1 51A9E6F8
-P 1000 4000
-F 0 "#PWR079" H 1000 4000 30  0001 C CNN
-F 1 "GND" H 1000 3930 30  0001 C CNN
-F 2 "" H 1000 4000 60  0001 C CNN
-F 3 "" H 1000 4000 60  0001 C CNN
-	1    1000 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR080
-U 1 1 51A9E6FE
-P 1100 4100
-F 0 "#PWR080" H 1100 4190 20  0001 C CNN
-F 1 "+5V" H 1100 4190 30  0000 C CNN
-F 2 "" H 1100 4100 60  0000 C CNN
-F 3 "" H 1100 4100 60  0000 C CNN
-	1    1100 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3VP #PWR081
-U 1 1 51A9E704
-P 1400 4200
-F 0 "#PWR081" H 1450 4230 20  0001 C CNN
-F 1 "+3.3VP" H 1400 4290 30  0000 C CNN
-F 2 "" H 1400 4200 60  0000 C CNN
-F 3 "" H 1400 4200 60  0000 C CNN
-	1    1400 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L R RL_diode2
-U 1 1 51A9E70A
-P 1200 4300
-F 0 "RL_diode2" V 1100 4300 39  0000 C CNN
-F 1 "100R" V 1200 4300 50  0000 C CNN
-F 2 "" H 1200 4300 60  0001 C CNN
-F 3 "" H 1200 4300 60  0001 C CNN
-	1    1200 4300
-	0    1    1    0   
-$EndComp
-$Comp
-L R Rp_rcv2
-U 1 1 51A9E710
-P 1200 4400
-F 0 "Rp_rcv2" V 1300 4400 39  0000 C CNN
-F 1 "1k5" V 1200 4400 50  0000 C CNN
-F 2 "" H 1200 4400 60  0001 C CNN
-F 3 "" H 1200 4400 60  0001 C CNN
-	1    1200 4400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	900  4100 1100 4100
 Wire Wire Line
@@ -3582,61 +3812,6 @@ Wire Notes Line
 	550  4200 550  4400
 Wire Notes Line
 	550  4000 700  4000
-$Comp
-L GND #PWR082
-U 1 1 51A9E737
-P 1000 4650
-F 0 "#PWR082" H 1000 4650 30  0001 C CNN
-F 1 "GND" H 1000 4580 30  0001 C CNN
-F 2 "" H 1000 4650 60  0001 C CNN
-F 3 "" H 1000 4650 60  0001 C CNN
-	1    1000 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR083
-U 1 1 51A9E73D
-P 1100 4750
-F 0 "#PWR083" H 1100 4840 20  0001 C CNN
-F 1 "+5V" H 1100 4840 30  0000 C CNN
-F 2 "" H 1100 4750 60  0000 C CNN
-F 3 "" H 1100 4750 60  0000 C CNN
-	1    1100 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3VP #PWR084
-U 1 1 51A9E743
-P 1400 4850
-F 0 "#PWR084" H 1450 4880 20  0001 C CNN
-F 1 "+3.3VP" H 1400 4940 30  0000 C CNN
-F 2 "" H 1400 4850 60  0000 C CNN
-F 3 "" H 1400 4850 60  0000 C CNN
-	1    1400 4850
-	1    0    0    -1  
-$EndComp
-$Comp
-L R RL_diode3
-U 1 1 51A9E749
-P 1200 4950
-F 0 "RL_diode3" V 1100 4950 39  0000 C CNN
-F 1 "100R" V 1200 4950 50  0000 C CNN
-F 2 "" H 1200 4950 60  0001 C CNN
-F 3 "" H 1200 4950 60  0001 C CNN
-	1    1200 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L R Rp_rcv3
-U 1 1 51A9E74F
-P 1200 5050
-F 0 "Rp_rcv3" V 1300 5050 39  0000 C CNN
-F 1 "1k5" V 1200 5050 50  0000 C CNN
-F 2 "" H 1200 5050 60  0001 C CNN
-F 3 "" H 1200 5050 60  0001 C CNN
-	1    1200 5050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	900  4750 1100 4750
 Wire Wire Line
@@ -3684,230 +3859,39 @@ Wire Notes Line
 	550  4850 550  5050
 Wire Notes Line
 	550  4650 700  4650
-$Comp
-L HEADER_2 J172
-U 1 1 51A9B7EF
-P 800 3700
-F 0 "J172" H 1000 3600 60  0000 C CNN
-F 1 "HEADER_2" H 800 3550 28  0001 C CNN
-F 2 "" H 800 3700 60  0000 C CNN
-F 3 "" H 800 3700 60  0000 C CNN
-	1    800  3700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L HEADER_4 J17
-U 1 1 51A9B821
-P 800 3400
-F 0 "J17" H 1000 3550 60  0000 C CNN
-F 1 "HEADER_4" V 950 3400 28  0001 C CNN
-F 2 "" H 800 3400 60  0001 C CNN
-F 3 "" H 800 3400 60  0001 C CNN
-F 4 "endstop" V 850 3400 39  0000 C CNN "Explanation"
-	1    800  3400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L HEADER_4 J23
-U 1 1 51A9B828
-P 800 4050
-F 0 "J23" H 1000 4200 60  0000 C CNN
-F 1 "HEADER_4" V 950 4050 28  0001 C CNN
-F 2 "" H 800 4050 60  0001 C CNN
-F 3 "" H 800 4050 60  0001 C CNN
-F 4 "endstop" V 850 4050 39  0000 C CNN "Explanation"
-	1    800  4050
-	-1   0    0    -1  
-$EndComp
-$Comp
-L HEADER_4 J25
-U 1 1 51A9B82F
-P 800 4700
-F 0 "J25" H 1000 4850 60  0000 C CNN
-F 1 "HEADER_4" V 950 4700 28  0001 C CNN
-F 2 "" H 800 4700 60  0001 C CNN
-F 3 "" H 800 4700 60  0001 C CNN
-F 4 "endstop" V 850 4700 39  0000 C CNN "Explanation"
-	1    800  4700
-	-1   0    0    -1  
-$EndComp
-$Comp
-L HEADER_2 J232
-U 1 1 51A9B8DD
-P 800 4350
-F 0 "J232" H 1000 4250 60  0000 C CNN
-F 1 "HEADER_2" H 800 4200 28  0001 C CNN
-F 2 "" H 800 4350 60  0000 C CNN
-F 3 "" H 800 4350 60  0000 C CNN
-	1    800  4350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L HEADER_2 J252
-U 1 1 51A9B8EE
-P 800 5000
-F 0 "J252" H 1000 4900 60  0000 C CNN
-F 1 "HEADER_2" H 800 4850 28  0001 C CNN
-F 2 "" H 800 5000 60  0000 C CNN
-F 3 "" H 800 5000 60  0000 C CNN
-	1    800  5000
-	-1   0    0    -1  
-$EndComp
-NoConn ~ 1200 5900
-$Comp
-L JUMPER-2 JP4
-U 1 1 51AB894A
-P 8200 6350
-F 0 "JP4" H 8200 6275 30  0000 C CNN
-F 1 "JUMPER-2" H 8200 6350 30  0001 C CNN
-F 2 "" H 8200 6350 60  0000 C CNN
-F 3 "" H 8200 6350 60  0000 C CNN
-	1    8200 6350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8200 6250 8200 6100
-Text GLabel 2500 7050 2    30   Input ~ 0
-*Bootloader
 Wire Wire Line
 	2400 7050 2500 7050
-$Comp
-L LPCXPRESSO_GENERIC_HEADER J6
-U 1 1 519131B7
-P 1800 6450
-F 0 "J6" H 1800 7200 60  0000 C CNN
-F 1 "LPCXPRESSO_GENERIC_HEADER" H 1800 5150 60  0000 C CNN
-F 2 "" H 1800 6450 60  0001 C CNN
-F 3 "" H 1800 6450 60  0001 C CNN
-	1    1800 6450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 7500 1550 7500
-Wire Wire Line
-	1550 7500 1550 7450
-Wire Wire Line
-	1350 7550 1650 7550
-Wire Wire Line
-	1650 7550 1650 7450
-Wire Wire Line
-	1350 7600 1750 7600
-Wire Wire Line
-	1750 7600 1750 7450
-Wire Wire Line
-	2250 7500 2050 7500
-Wire Wire Line
-	2050 7500 2050 7450
-Wire Wire Line
-	2250 7550 1950 7550
-Wire Wire Line
-	1950 7550 1950 7450
-Wire Wire Line
-	2250 7600 1850 7600
-Wire Wire Line
-	1850 7600 1850 7450
 Wire Wire Line
 	1100 7000 1200 7000
 Wire Wire Line
 	1200 7050 1100 7050
 Wire Wire Line
-	1100 7100 1150 7100
+	900  7100 1150 7100
 Wire Wire Line
-	1100 7150 1200 7150
+	900  7150 1200 7150
 Wire Wire Line
 	1150 7200 1100 7200
-Text Notes 9100 5900 0    30   ~ 0
-Serial
-$Comp
-L JUMPER-2 JP6
-U 1 1 51DC68BB
-P 6400 6550
-F 0 "JP6" H 6400 6475 30  0000 C CNN
-F 1 "JUMPER-2" H 6400 6550 30  0001 C CNN
-F 2 "" H 6400 6550 60  0000 C CNN
-F 3 "" H 6400 6550 60  0000 C CNN
-F 4 "common_enable" H 6400 6600 28  0000 C CNN "Explanation"
-	1    6400 6550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6200 6550 6300 6550
-Text GLabel 6600 6550 2    30   Input ~ 0
-Z-EN
 Wire Wire Line
 	6500 6550 6600 6550
-$Comp
-L SW_PUSH SW3
-U 1 1 51DC7888
-P 10250 6450
-F 0 "SW3" H 10400 6560 50  0000 C CNN
-F 1 "SW_PUSH" H 10250 6370 50  0000 C CNN
-F 2 "" H 10250 6450 60  0001 C CNN
-F 3 "" H 10250 6450 60  0001 C CNN
-	1    10250 6450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10550 6450 10650 6450
 Connection ~ 10650 6450
-Text GLabel 9800 6450 0    30   Input ~ 0
-*Bootloader
 Wire Wire Line
 	9800 6450 9950 6450
-Text GLabel 6600 6700 2    30   Input ~ 0
-Y-STEP
-$Comp
-L JUMPER-2 JP8
-U 1 1 51DC81B8
-P 6400 6700
-F 0 "JP8" H 6400 6625 30  0000 C CNN
-F 1 "JUMPER-2" H 6400 6700 30  0001 C CNN
-F 2 "" H 6400 6700 60  0000 C CNN
-F 3 "" H 6400 6700 60  0000 C CNN
-F 4 "common_enable" H 6400 6750 28  0000 C CNN "Explanation"
-	1    6400 6700
-	1    0    0    -1  
-$EndComp
-Text GLabel 6200 6700 0    30   Input ~ 0
-18_P0.26AOUT
 Wire Wire Line
 	6600 6700 6500 6700
 Wire Wire Line
 	6300 6700 6200 6700
-Text GLabel 6600 6800 2    30   Input ~ 0
-Y-DIR
-$Comp
-L JUMPER-2 JP9
-U 1 1 51DC8423
-P 6400 6800
-F 0 "JP9" H 6400 6725 30  0000 C CNN
-F 1 "JUMPER-2" H 6400 6800 30  0001 C CNN
-F 2 "" H 6400 6800 60  0000 C CNN
-F 3 "" H 6400 6800 60  0000 C CNN
-F 4 "common_enable" H 6400 6850 28  0000 C CNN "Explanation"
-	1    6400 6800
-	1    0    0    -1  
-$EndComp
-Text GLabel 6200 6800 0    30   Input ~ 0
-THERM2
 Wire Wire Line
 	6600 6800 6500 6800
 Wire Wire Line
 	6300 6800 6200 6800
 Wire Wire Line
 	2450 3800 2450 4650
-$Comp
-L JUMPER-2 JP7
-U 1 1 51DC868F
-P 2500 3500
-F 0 "JP7" H 2500 3425 30  0000 C CNN
-F 1 "JUMPER-2" H 2500 3500 30  0001 C CNN
-F 2 "" H 2500 3500 60  0000 C CNN
-F 3 "" H 2500 3500 60  0000 C CNN
-F 4 "common_enable" H 2500 3550 28  0000 C CNN "Explanation"
-	1    2500 3500
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	2450 3800 2500 3800
 Wire Wire Line
@@ -3918,39 +3902,6 @@ Wire Wire Line
 	2500 3300 2550 3300
 Wire Wire Line
 	2550 3300 2550 3200
-$Comp
-L HEADER_4 J29
-U 1 1 51DCB9D5
-P 9150 5850
-F 0 "J29" H 9150 6100 60  0000 C CNN
-F 1 "HEADER_4" H 9150 5600 60  0000 C CNN
-F 2 "" H 9150 5850 60  0000 C CNN
-F 3 "" H 9150 5850 60  0000 C CNN
-	1    9150 5850
-	0    1    1    0   
-$EndComp
-$Comp
-L +3.3VP #PWR085
-U 1 1 51DCB9E4
-P 9200 5650
-F 0 "#PWR085" H 9250 5680 20  0001 C CNN
-F 1 "+3.3VP" H 9200 5740 30  0000 C CNN
-F 2 "" H 9200 5650 60  0000 C CNN
-F 3 "" H 9200 5650 60  0000 C CNN
-	1    9200 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR086
-U 1 1 51DCB9F3
-P 9450 5750
-F 0 "#PWR086" H 9450 5750 30  0001 C CNN
-F 1 "GND" H 9450 5680 30  0001 C CNN
-F 2 "" H 9450 5750 60  0000 C CNN
-F 3 "" H 9450 5750 60  0000 C CNN
-	1    9450 5750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	9200 5650 9200 5750
 Wire Wire Line
@@ -3959,32 +3910,95 @@ Wire Wire Line
 	9300 5700 9450 5700
 Wire Wire Line
 	9450 5700 9450 5750
-Text GLabel 900  6900 0    30   Input ~ 0
-*RX
-Text GLabel 900  6950 0    30   Output ~ 0
-*TX
 Wire Wire Line
 	900  6900 1200 6900
 Wire Wire Line
 	900  6950 1150 6950
-Text GLabel 9000 5650 1    30   Input ~ 0
-*RX
-Text GLabel 9100 5650 1    30   Output ~ 0
-*TX
 Wire Wire Line
 	9000 5650 9000 5750
 Wire Wire Line
 	9100 5750 9100 5650
-Text Notes 500  7500 0    30   ~ 0
-NOTE: Pins 9 and 10 are \nhard-coded in Smoothie \nfor I2C communication\nwith current-sense chips.
-Text Notes 2450 7500 0    30   ~ 0
-*NOTE: Labels starting with * are\nhard-coded to a specific use and\ncannot be reassigned.
-Text GLabel 950  6200 0    30   Input ~ 0
-*SDA1
-Text GLabel 950  6250 0    30   Input ~ 0
-*SCL1
 Wire Wire Line
 	950  6200 1200 6200
 Wire Wire Line
 	950  6250 1150 6250
+Wire Wire Line
+	2450 6400 2900 6400
+Wire Wire Line
+	2900 6450 2400 6450
+Wire Wire Line
+	1450 8000 1450 7550
+Wire Wire Line
+	1400 7600 1400 8000
+Wire Wire Line
+	2100 8000 2100 7500
+Wire Wire Line
+	2150 7600 2150 8000
+Wire Wire Line
+	2200 8000 2200 7550
+Wire Wire Line
+	2250 7500 2250 8000
+Wire Wire Line
+	1950 7950 1950 7500
+Wire Wire Line
+	1900 7550 1900 7950
+Wire Wire Line
+	1850 7950 1850 7600
+Wire Wire Line
+	1800 7500 1800 7950
+Wire Wire Line
+	1750 7950 1750 7550
+Wire Wire Line
+	1700 7600 1700 7950
+Wire Wire Line
+	2450 6500 2900 6500
+Text GLabel 1100 7200 0    30   Input ~ 0
+B-DIR
+Text GLabel 1500 8000 3    30   Input ~ 0
+B-EN
+Wire Wire Line
+	1500 8000 1500 7500
+Text GLabel 1550 7900 3    30   Input ~ 0
+*PLAY_LED
+Wire Wire Line
+	1550 7900 1550 7600
+Text GLabel 1350 7850 3    30   Input ~ 0
+*USB_SOFT_CONNECT
+Wire Wire Line
+	1350 7850 1350 7650
+Text Label 850  6650 2    30   ~ 0
+THERM3
+Text GLabel 1000 6300 0    30   Input ~ 0
+*MOSI0
+Text GLabel 1000 6350 0    30   Input ~ 0
+*MIS00
+Text GLabel 1000 6400 0    30   Input ~ 0
+*SCK0
+Text GLabel 1000 6450 0    30   Input ~ 0
+*CS0
+Wire Wire Line
+	1000 6400 1200 6400
+Wire Wire Line
+	1000 6450 1150 6450
+Wire Wire Line
+	1150 6350 1000 6350
+Wire Wire Line
+	1000 6300 1200 6300
+Wire Wire Line
+	1150 5850 900  5850
+Text GLabel 900  5850 0    30   Input ~ 0
+VIN
+Wire Wire Line
+	2400 5850 2750 5850
+$Comp
+L +5V #PWR048
+U 1 1 51A81469
+P 2750 5850
+F 0 "#PWR048" H 2750 5940 20  0001 C CNN
+F 1 "+5V" H 2750 5940 30  0000 C CNN
+F 2 "" H 2750 5850 60  0000 C CNN
+F 3 "" H 2750 5850 60  0000 C CNN
+	1    2750 5850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
