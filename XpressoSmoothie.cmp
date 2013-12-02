@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Mon 02 Dec 2013 02:21:42 PM EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Mon 02 Dec 2013 03:30:25 PM EST
 
 BeginCmp
 TimeStamp = /51911758;
@@ -421,24 +421,24 @@ IdModule  = PIN_ARRAY_4x1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A87853;
+TimeStamp = /529CF256;
 Reference = J16;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A9B821;
+TimeStamp = /529CF265;
 Reference = J17;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A8E7B1;
+TimeStamp = /529CF274;
 Reference = J18;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
@@ -470,24 +470,24 @@ IdModule  = bornier2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A9B828;
+TimeStamp = /529CF3B6;
 Reference = J23;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A8E80D;
+TimeStamp = /529CF3BC;
 Reference = J24;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A9B82F;
+TimeStamp = /529CF3C2;
 Reference = J25;
-ValeurCmp = HEADER_4;
-IdModule  = PIN_ARRAY_4x1;
+ValeurCmp = HEADER_3;
+IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
@@ -523,27 +523,6 @@ TimeStamp = /5299367F;
 Reference = J30;
 ValeurCmp = HEADER_4;
 IdModule  = PIN_ARRAY_4x1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9B7EF;
-Reference = J172;
-ValeurCmp = HEADER_2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9B8DD;
-Reference = J232;
-ValeurCmp = HEADER_2;
-IdModule  = PIN_ARRAY_2X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9B8EE;
-Reference = J252;
-ValeurCmp = HEADER_2;
-IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
@@ -788,48 +767,6 @@ BeginCmp
 TimeStamp = /519902CD;
 Reference = R30;
 ValeurCmp = 100;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9B41A;
-Reference = RL_diode1;
-ValeurCmp = 100R;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9E70A;
-Reference = RL_diode2;
-ValeurCmp = 100R;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9E749;
-Reference = RL_diode3;
-ValeurCmp = 100R;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9B439;
-Reference = Rp_rcv1;
-ValeurCmp = 1k5;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9E710;
-Reference = Rp_rcv2;
-ValeurCmp = 1k5;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A9E74F;
-Reference = Rp_rcv3;
-ValeurCmp = 1k5;
 IdModule  = SM0805;
 EndCmp
 
