@@ -38,3 +38,4 @@ Authors
 =======
 TopherMan (Chris George) -- Initial design idea and basic layout, as well as testing and assembly.
 Noobman -- Significant input on design, and completed nearly all routing.
+Bobc -- kicad libraries are borrowed from his repo here: https://github.com/bobc/bobc_hardware Additionally, blade fuse usage based on his design for RAMPS_FD
