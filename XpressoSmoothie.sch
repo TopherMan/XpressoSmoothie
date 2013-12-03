@@ -152,21 +152,21 @@ F 3 "" H 3500 3700 60  0001 C CNN
 	1    3500 3700
 	1    0    0    -1  
 $EndComp
-Text GLabel 1100 7050 0    30   Input ~ 0
-A-DIR
-Text GLabel 1100 7000 0    30   Input ~ 0
-A-EN
-Text GLabel 1450 8000 3    30   Input ~ 0
-Z-EN
-Text GLabel 1400 8000 3    30   Input ~ 0
-Z-DIR
-Text GLabel 2900 6400 2    30   Input ~ 0
-Y-EN
-Text GLabel 2900 6450 2    30   Input ~ 0
-Y-DIR
-Text GLabel 2900 6350 2    30   Input ~ 0
-X-DIR
 Text GLabel 2900 6300 2    30   Input ~ 0
+A-DIR
+Text GLabel 2900 6350 2    30   Input ~ 0
+A-EN
+Text GLabel 2900 6450 2    30   Input ~ 0
+Z-EN
+Text GLabel 2900 6400 2    30   Input ~ 0
+Z-DIR
+Text GLabel 1100 7050 0    30   Input ~ 0
+Y-EN
+Text GLabel 1100 7000 0    30   Input ~ 0
+Y-DIR
+Text GLabel 1400 8000 3    30   Input ~ 0
+X-DIR
+Text GLabel 1100 7200 0    30   Input ~ 0
 X-EN
 Text GLabel 10750 1250 1    30   Input ~ 0
 POWER4
@@ -2319,27 +2319,27 @@ Text GLabel 1900 7950 3    30   Input ~ 0
 XMAX
 Text GLabel 1850 7950 3    30   Input ~ 0
 YMIN
-Text GLabel 1800 7950 3    30   Input ~ 0
+Text GLabel 1600 8000 3    30   Input ~ 0
 YMAX
 Text GLabel 1750 7950 3    30   Input ~ 0
 ZMIN
-Text GLabel 1700 7950 3    30   Input ~ 0
+Text GLabel 1800 7950 3    30   Input ~ 0
 ZMAX
-Text GLabel 2900 6500 2    30   Input ~ 0
-X-STEP
-Text GLabel 2900 6550 2    30   Input ~ 0
-Y-STEP
-Text GLabel 2900 6600 2    30   Input ~ 0
-Z-STEP
 Text GLabel 2900 6650 2    30   Input ~ 0
+X-STEP
+Text GLabel 2900 6600 2    30   Input ~ 0
+Y-STEP
+Text GLabel 2900 6550 2    30   Input ~ 0
+Z-STEP
+Text GLabel 2900 6500 2    30   Input ~ 0
 A-STEP
 Text GLabel 2900 6700 2    30   Input ~ 0
 PS-ON
-Text GLabel 2900 6750 2    30   Input ~ 0
+Text GLabel 2900 6950 2    30   Input ~ 0
 POWER1
 Text GLabel 2900 6900 2    30   Input ~ 0
 POWER2
-Text GLabel 2900 6950 2    30   Input ~ 0
+Text GLabel 2900 6750 2    30   Input ~ 0
 POWER3
 Text GLabel 2900 7000 2    30   Input ~ 0
 B-STEP
@@ -2351,7 +2351,7 @@ Text GLabel 900  7100 0    30   Input ~ 0
 *SDA0
 Text GLabel 900  7150 0    30   Input ~ 0
 *SCL0
-Text GLabel 1100 7200 0    30   Input ~ 0
+Text GLabel 1450 8000 3    30   Input ~ 0
 B-DIR
 Text GLabel 1500 8000 3    30   Input ~ 0
 B-EN
@@ -2364,7 +2364,7 @@ THERM3
 Text GLabel 1000 6300 0    30   Input ~ 0
 *MOSI0
 Text GLabel 1000 6350 0    30   Input ~ 0
-*MIS00
+*MISO0
 Text GLabel 1000 6400 0    30   Input ~ 0
 *SCK0
 Text GLabel 1000 6450 0    30   Input ~ 0
@@ -3739,4 +3739,6 @@ Wire Wire Line
 	1150 5000 1150 4900
 Wire Wire Line
 	1150 4900 1050 4900
+Wire Wire Line
+	1600 8000 1600 7550
 $EndSCHEMATC
