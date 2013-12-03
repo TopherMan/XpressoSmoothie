@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Mon 02 Dec 2013 03:30:25 PM EST
+Cmp-Mod V01 Created by CvPcb (2013-mar-13)-testing date = Tue 03 Dec 2013 03:20:42 PM EST
 
 BeginCmp
 TimeStamp = /51911758;
@@ -228,13 +228,6 @@ BeginCmp
 TimeStamp = /529960D5;
 Reference = D9;
 ValeurCmp = LED4;
-IdModule  = LED-0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /5199029C;
-Reference = D10;
-ValeurCmp = V_IN;
 IdModule  = LED-0805;
 EndCmp
 
@@ -750,13 +743,6 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /51990296;
-Reference = R28;
-ValeurCmp = 1k8;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
 TimeStamp = /519902B8;
 Reference = R29;
 ValeurCmp = 680;
@@ -886,7 +872,7 @@ BeginCmp
 TimeStamp = /5198DDFC;
 Reference = U12;
 ValeurCmp = LM1117-3.3;
-IdModule  = SOT223_LM1117;
+IdModule  = TO220_VERT_1117;
 EndCmp
 
 EndListe
